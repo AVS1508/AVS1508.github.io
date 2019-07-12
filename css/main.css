@@ -11,7 +11,7 @@ body {
 
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Geneva"; /* OPTIONAL: Google Fonts - title font */
+  font-family: "Proxima Nova Alt"; /* OPTIONAL: Google Fonts - title font */
   font-weight: 500;
   color: #333;
 }
@@ -28,7 +28,7 @@ p {
 
 /* Links */
 a {
-  color: #1CBCAD;
+  color: #1CBCAD; 
   word-wrap: break-word;
 
   -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -303,4 +303,16 @@ body {
   -moz-animation-name: fadeInUp;
   -o-animation-name: fadeInUp;
   animation-name: fadeInUp;
-  }
+}
+/*Post initial commit additions*/
+.social-icon {
+    font-size: 36px;
+}
+
+#heading-name {
+    font-size: 105px;
+}
+
+#heading-desc {
+    font-size: 36px;
+}
