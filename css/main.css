@@ -1,6 +1,6 @@
 body {
   background-color: #f2f2f2;
-  font-family: "Lato"; /* OPTIONAL: Google Fonts - base font */
+  font-family: "DM Sans"; /* OPTIONAL: Google Fonts - base font */
   font-weight: 300;
   font-size: 16px;
   color: #555;
@@ -11,7 +11,7 @@ body {
 
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Proxima Nova Alt"; /* OPTIONAL: Google Fonts - title font */
+  font-family: "Rubik"; /* OPTIONAL: Google Fonts - title font */
   font-weight: 500;
   color: #333;
 }
@@ -312,7 +312,7 @@ body {
 
 .social-icon-2 {
     font-size: 36px;
-    color: azure;
+    color: white;
 }
 
 #heading-name {
@@ -330,7 +330,7 @@ body {
     position:absolute;
     bottom: -60px !important;
     left: 50%;
-    width: 350px;
+    width: 360px;
     background: #2c3e50;
     padding: 5px;
     text-align: center;
@@ -349,6 +349,57 @@ body {
     height:0%;
 }
 
+.subheading {
+    font-family: "Jura";
+    font-weight: 900;
+    font-size: 18px;
+    margin-left: -50px;
+}
+
+ul {
+    list-style-type: circle;
+    display: block;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.Skillbar{
+    padding: 10px 10px 10px 10px;
+    margin: 0 0 0 0;
+    border: 1px solid black;
+    outline-style:ridge;
+    outline-color: #34495e;
+}
+
+.Skill{
+    text-align: left;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-top: 5px;
+    color:white;
+    background: #34495e;
+    border: 1px dashed black;
+}
+
+.Cpp {width:85%;}
+.Python {width:75%;}
+.Java {width:40%;}
+.HTML {width:80%;}
+.CSS {width:70%;}
+.JavaScript {width:40%;}
+.PHP {width:30%;}
+.SQL {width:60%;}
+.Illustrator {width:80%;}
+.Photoshop {width:85%;}
+.Blender {width:85%;}
+.English {width:95%;}
+.Hindi {width:75%;}
+.French {width:35%;}
+.Bengali {width:30%;}
 /*
 @keyframes up {
   0% {
