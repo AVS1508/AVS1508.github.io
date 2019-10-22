@@ -250,6 +250,10 @@ body {
     }
 }
 
+#about {
+    text-align: justify-all;
+}
+
 .fadeIn {
     -webkit-animation-name: fadeIn;
     -moz-animation-name: fadeIn;
