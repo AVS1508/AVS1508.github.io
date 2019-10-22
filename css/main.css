@@ -27,6 +27,7 @@ h6 {
 p {
     line-height: 28px;
     margin-bottom: 25px;
+    text-align: justify;
 }
 
 .centered {
@@ -194,7 +195,7 @@ sm {
 
 /* define some CSS3 animations: */
 body {
-    /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
+    /* Addresses a small issue in webkit: https://bit.ly/NEdoDq */
     -webkit-backface-visibility: hidden;
 }
 
