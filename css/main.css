@@ -1,8 +1,8 @@
 body {
     background-color: #f2f2f2;
-    font-family: "DM Sans";
+    font-family: "Rubik";
     /* OPTIONAL: Google Fonts - base font */
-    font-weight: 300;
+    font-weight: 400;
     font-size: 16px;
     color: #555;
 
@@ -72,12 +72,11 @@ hr {
 }
 
 /*---------------------------------------------------
-  SECTION WRAPS
+SECTION WRAPS
 ---------------------------------------------------*/
 
 /* Header Wrap */
 .header {
-    background: #1cbcad;
     background: url(../images/me-1.jpg) no-repeat center top;
     padding-top: 140px;
     text-align: center;
@@ -123,6 +122,11 @@ hr {
 .about h5,
 p {
     color: white;
+}
+
+td {
+    color: white;
+    padding-right: 20px;
 }
 
 .about i {
@@ -319,7 +323,7 @@ body {
 
 /*Post initial commit additions*/
 .social-icon {
-    font-size: 36px;
+    font-size: 72px;
 }
 
 .social-icon-2 {
@@ -335,6 +339,42 @@ body {
 #heading-desc {
     font-size: 36px;
     text-shadow: 2px 2px #000000;
+}
+
+.tab {
+    overflow: hidden;
+    background-color: inherit;
+}
+
+.tab button{
+    background-color: #2c3e50;
+    float: center;
+    border: solid;
+    outline: none;
+    cursor: pointer;
+    padding: 16px 16px;
+    transition: 0.3s;
+}
+
+.tab button:hover{
+    background-color: white;
+    color: #1cbcad;
+}
+
+.closeSkill {
+    text-align: right;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+}
+
+.tablinks {
+    color: aliceblue;
+    word-wrap: break-word;
+    text-align: center;
+    font-weight: bold;
 }
 
 .social-panel {
@@ -362,7 +402,7 @@ body {
 }
 
 .subheading {
-    font-family: "Jura";
+    font-family: "Rubik";
     font-weight: 900;
     font-size: 18px;
     margin-left: -50px;
@@ -457,144 +497,164 @@ ul {
     width: 30%;
 }
 
+img {
+    border-radius: 50%;
+    position: absolute;
+    right: 60px;
+    top: 60px;
+}
+
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../assets/orb.gif) center no-repeat #fff;
+    background-color: black;
+}
+
 /*
 @keyframes up {
-  0% {
-  opacity: 0;
-  }
-  10%, 90% {
-  opacity: 1;
-  }
-  100% {
-  opacity: 0;
-  transform: translateY(-1024px);
-  }
+0% {
+opacity: 0;
+}
+10%, 90% {
+opacity: 1;
+}
+100% {
+opacity: 0;
+transform: translateY(-1024px);
+}
 }
 
 @keyframes wobble {
-  33% {
-  transform: translateX(-50px);
-  }
-  66% {
-  transform: translateX(50px);
-  } 
+33% {
+transform: translateX(-50px);
+}
+66% {
+transform: translateX(50px);
+} 
 }
 
 .bubbles-large > g {
-  opacity: 0;
-  will-change: transform, opacity;
+opacity: 0;
+will-change: transform, opacity;
 }
 
 .bubbles-large g:nth-of-type(1) {
-  animation: up 6.5s infinite; }
+animation: up 6.5s infinite; }
 
 .bubbles-large g:nth-of-type(1) circle {
-  animation: wobble 3s infinite ease-in-out; }
+animation: wobble 3s infinite ease-in-out; }
 
 .bubbles-large g:nth-of-type(2) {
-  animation: up 6.5s infinite; }
+animation: up 6.5s infinite; }
 
 .bubbles-large g:nth-of-type(2) circle {
-  animation: wobble 3s infinite ease-in-out; }
+animation: wobble 3s infinite ease-in-out; }
 
 .bubbles-large g:nth-of-type(3) {
-  animation: up 6.5s infinite; }
+animation: up 6.5s infinite; }
 
 .bubbles-large g:nth-of-type(3) circle {
-  animation: wobble 3s infinite ease-in-out; }
+animation: wobble 3s infinite ease-in-out; }
 
 .bubbles-large g:nth-of-type(4) {
-  animation: up 6.5s infinite; }
+animation: up 6.5s infinite; }
 
 .bubbles-large g:nth-of-type(4) circle {
-  animation: wobble 3s infinite ease-in-out; }
+animation: wobble 3s infinite ease-in-out; }
 
 .bubbles-large g:nth-of-type(5) {
-  animation: up 6.5s infinite; }
+animation: up 6.5s infinite; }
 
 .bubbles-large g:nth-of-type(5) circle {
-  animation: wobble 3s infinite ease-in-out; }
+animation: wobble 3s infinite ease-in-out; }
 
 .bubbles-large g:nth-of-type(6) {
-  animation: up 6.5s infinite; }
+animation: up 6.5s infinite; }
 
 .bubbles-large g:nth-of-type(6) circle {
-  animation: wobble 3s infinite ease-in-out; }
+animation: wobble 3s infinite ease-in-out; }
 
 .bubbles-large g:nth-of-type(7) {
-  animation: up 6.5s infinite; }
+animation: up 6.5s infinite; }
 
 .bubbles-large g:nth-of-type(7) circle {
-  animation: wobble 3s infinite ease-in-out; }
+animation: wobble 3s infinite ease-in-out; }
 
 .bubbles-large g:nth-of-type(8) {
-  animation: up 6.5s infinite; }
+animation: up 6.5s infinite; }
 
 .bubbles-large g:nth-of-type(8) circle {
-  animation: wobble 3s infinite ease-in-out; }
+animation: wobble 3s infinite ease-in-out; }
 
 .bubbles-large g:nth-of-type(9) {
-  animation: up 6.5s infinite; }
+animation: up 6.5s infinite; }
 
 .bubbles-large g:nth-of-type(9) circle {
-  animation: wobble 3s infinite ease-in-out; }
+animation: wobble 3s infinite ease-in-out; }
 
 .bubbles-large g:nth-of-type(10) {
-  animation: up 6.5s infinite; }
+animation: up 6.5s infinite; }
 
 .bubbles-small g:nth-of-type(1) {
 animation: up 6s 900ms infinite;}
 
 .bubbles-small g:nth-of-type(1) circle {
-  animation: wobble 3s 275ms infinite ease-in-out; }
+animation: wobble 3s 275ms infinite ease-in-out; }
 
 .bubbles-small g:nth-of-type(2) {
 animation: up 6s 900ms infinite;}
 
 .bubbles-small g:nth-of-type(2) circle {
-  animation: wobble 3s 275ms infinite ease-in-out; }
+animation: wobble 3s 275ms infinite ease-in-out; }
 
 .bubbles-small g:nth-of-type(3) {
 animation: up 6s 900ms infinite;}
 
 .bubbles-small g:nth-of-type(3) circle {
-  animation: wobble 3s 275ms infinite ease-in-out; }
+animation: wobble 3s 275ms infinite ease-in-out; }
 
 .bubbles-small g:nth-of-type(4) {
 animation: up 6s 900ms infinite;}
 
 .bubbles-small g:nth-of-type(4) circle {
-  animation: wobble 3s 275ms infinite ease-in-out; }
+animation: wobble 3s 275ms infinite ease-in-out; }
 
 .bubbles-small g:nth-of-type(5) {
 animation: up 6s 900ms infinite;}
 
 .bubbles-small g:nth-of-type(5) circle {
-  animation: wobble 3s 275ms infinite ease-in-out; }
+animation: wobble 3s 275ms infinite ease-in-out; }
 
 .bubbles-small g:nth-of-type(6) {
 animation: up 6s 900ms infinite;}
 
 .bubbles-small g:nth-of-type(6) circle {
-  animation: wobble 3s 275ms infinite ease-in-out; }
+animation: wobble 3s 275ms infinite ease-in-out; }
 
 .bubbles-small g:nth-of-type(7) {
 animation: up 6s 900ms infinite;}
 
 .bubbles-small g:nth-of-type(7) circle {
-  animation: wobble 3s 275ms infinite ease-in-out; }
+animation: wobble 3s 275ms infinite ease-in-out; }
 
 .bubbles-small g:nth-of-type(8) {
 animation: up 6s 900ms infinite;}
 
 .bubbles-small g:nth-of-type(8) circle {
-  animation: wobble 3s 275ms infinite ease-in-out; }
+animation: wobble 3s 275ms infinite ease-in-out; }
 
 .bubbles-small g:nth-of-type(9) {
 animation: up 6s 900ms infinite;}
 
 .bubbles-small g:nth-of-type(9) circle {
-  animation: wobble 3s 275ms infinite ease-in-out; }
+animation: wobble 3s 275ms infinite ease-in-out; }
 
 .bubbles-small g:nth-of-type(10) {
 animation: up 6s 900ms infinite;}
