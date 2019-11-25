@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #f2f2f2;
     font-family: "Rubik";
@@ -197,6 +201,10 @@ sm {
     margin-bottom: 10px;
 }
 
+#navmenu {
+    margin-bottom: 20px;
+}
+
 /* define some CSS3 animations: */
 body {
     /* Addresses a small issue in webkit: https://bit.ly/NEdoDq */
@@ -346,7 +354,7 @@ body {
     background-color: inherit;
 }
 
-.tab button{
+.tab button {
     background-color: #2c3e50;
     float: center;
     border: solid;
@@ -356,7 +364,7 @@ body {
     transition: 0.3s;
 }
 
-.tab button:hover{
+.tab button:hover {
     background-color: white;
     color: #1cbcad;
 }
@@ -419,101 +427,86 @@ ul {
     padding-bottom: 0;
 }
 
-.Skillbar {
-    padding: 10px 10px 10px 10px;
-    margin: 0 0 0 0;
-    border: 1px solid black;
-    outline-style: ridge;
-    outline-color: #34495e;
+.skill {
+    border: 2px solid #2c3e50;
+    background: white;
+    padding: 20px;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 25px;
 }
 
-.Skill {
-    text-align: left;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-top: 5px;
-    color: white;
-    background: #34495e;
-    border: 1px dashed black;
-}
-
-.Cpp {
-    width: 85%;
-}
-
-.Python {
-    width: 75%;
-}
-
-.Java {
-    width: 40%;
-}
-
-.HTML {
-    width: 80%;
-}
-
-.CSS {
-    width: 70%;
-}
-
-.JavaScript {
-    width: 40%;
-}
-
-.PHP {
-    width: 30%;
-}
-
-.SQL {
-    width: 60%;
-}
-
-.Illustrator {
-    width: 80%;
-}
-
-.Photoshop {
-    width: 85%;
-}
-
-.Blender {
-    width: 85%;
-}
-
-.English {
-    width: 95%;
-}
-
-.Hindi {
-    width: 75%;
-}
-
-.French {
-    width: 35%;
-}
-
-.Bengali {
-    width: 30%;
-}
-
-img {
+.img-2 {
+    margin-top: -75px;
+    max-width: 100%;
     border-radius: 50%;
     position: absolute;
     right: 60px;
     top: 60px;
 }
 
-.no-js #loader { display: none;  }
-.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.img-1 {
+    max-width: 100%;
+    border-radius: 50%;
+    position: absolute;
+    right: 60px;
+    top: 60px;
+}
+
+#navbar {
+    list-style-type: none;
+    padding: 0;
+    background-color: #2c3e50;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 99999;
+}
+
+.navlink {
+  display:inline-block;
+}
+
+.navlink a {
+  font-size: 18px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navlink a:hover {
+    background-color: white;
+    color: #1cbcad;
+}
+
+.active {
+    background-color: #1cbcad;
+    color: white;
+}
+
+.no-js #loader {
+    display: none;
+}
+
+.js #loader {
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 0;
+}
+
 .se-pre-con {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-	background: url(../assets/orb.gif) center no-repeat #fff;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(../assets/orb.gif) center no-repeat #fff;
     background-color: black;
 }
 
