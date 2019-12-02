@@ -9,6 +9,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     color: #555;
+    align-items: right;
 
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
@@ -400,6 +401,7 @@ body {
     opacity: 1;
     box-shadow: 0 0 40px rgba(0, 0, 0, 5);
     transition: all 1s;
+    border-radius: 20px 20px 20px 20px;
 }
 
 .social-panel-outer {
@@ -413,7 +415,6 @@ body {
     font-family: "Rubik";
     font-weight: 900;
     font-size: 18px;
-    margin-left: -50px;
 }
 
 ul {
@@ -436,21 +437,38 @@ ul {
     border-radius: 25px;
 }
 
-.img-2 {
-    margin-top: -75px;
-    max-width: 100%;
-    border-radius: 50%;
-    position: absolute;
-    right: 60px;
-    top: 60px;
+
+
+@media (min-aspect-ratio: 4/3) {
+    .img-1 {
+        max-width: 100%;
+        height: auto;
+        border-radius: 50%;
+        position: static;
+    }
+
+    .img-2 {
+        max-width: 100%;
+        height: auto;
+        border-radius: 50%;
+        position: static;
+    }
 }
 
-.img-1 {
-    max-width: 100%;
-    border-radius: 50%;
-    position: absolute;
-    right: 60px;
-    top: 60px;
+@media (max-aspect-ratio: 4/3) {
+    .img-1 {
+        max-width: 35%;
+        height: auto;
+        border-radius: 50%;
+        position: static;
+    }
+
+    .img-2 {
+        max-width: 35%;
+        height: auto;
+        border-radius: 50%;
+        position: static;
+    }
 }
 
 #navbar {
@@ -466,16 +484,16 @@ ul {
 }
 
 .navlink {
-  display:inline-block;
+    display: inline-block;
 }
 
 .navlink a {
-  font-size: 18px;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+    font-size: 18px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 .navlink a:hover {
@@ -509,146 +527,3 @@ ul {
     background: url(../assets/orb.gif) center no-repeat #fff;
     background-color: black;
 }
-
-/*
-@keyframes up {
-0% {
-opacity: 0;
-}
-10%, 90% {
-opacity: 1;
-}
-100% {
-opacity: 0;
-transform: translateY(-1024px);
-}
-}
-
-@keyframes wobble {
-33% {
-transform: translateX(-50px);
-}
-66% {
-transform: translateX(50px);
-} 
-}
-
-.bubbles-large > g {
-opacity: 0;
-will-change: transform, opacity;
-}
-
-.bubbles-large g:nth-of-type(1) {
-animation: up 6.5s infinite; }
-
-.bubbles-large g:nth-of-type(1) circle {
-animation: wobble 3s infinite ease-in-out; }
-
-.bubbles-large g:nth-of-type(2) {
-animation: up 6.5s infinite; }
-
-.bubbles-large g:nth-of-type(2) circle {
-animation: wobble 3s infinite ease-in-out; }
-
-.bubbles-large g:nth-of-type(3) {
-animation: up 6.5s infinite; }
-
-.bubbles-large g:nth-of-type(3) circle {
-animation: wobble 3s infinite ease-in-out; }
-
-.bubbles-large g:nth-of-type(4) {
-animation: up 6.5s infinite; }
-
-.bubbles-large g:nth-of-type(4) circle {
-animation: wobble 3s infinite ease-in-out; }
-
-.bubbles-large g:nth-of-type(5) {
-animation: up 6.5s infinite; }
-
-.bubbles-large g:nth-of-type(5) circle {
-animation: wobble 3s infinite ease-in-out; }
-
-.bubbles-large g:nth-of-type(6) {
-animation: up 6.5s infinite; }
-
-.bubbles-large g:nth-of-type(6) circle {
-animation: wobble 3s infinite ease-in-out; }
-
-.bubbles-large g:nth-of-type(7) {
-animation: up 6.5s infinite; }
-
-.bubbles-large g:nth-of-type(7) circle {
-animation: wobble 3s infinite ease-in-out; }
-
-.bubbles-large g:nth-of-type(8) {
-animation: up 6.5s infinite; }
-
-.bubbles-large g:nth-of-type(8) circle {
-animation: wobble 3s infinite ease-in-out; }
-
-.bubbles-large g:nth-of-type(9) {
-animation: up 6.5s infinite; }
-
-.bubbles-large g:nth-of-type(9) circle {
-animation: wobble 3s infinite ease-in-out; }
-
-.bubbles-large g:nth-of-type(10) {
-animation: up 6.5s infinite; }
-
-.bubbles-small g:nth-of-type(1) {
-animation: up 6s 900ms infinite;}
-
-.bubbles-small g:nth-of-type(1) circle {
-animation: wobble 3s 275ms infinite ease-in-out; }
-
-.bubbles-small g:nth-of-type(2) {
-animation: up 6s 900ms infinite;}
-
-.bubbles-small g:nth-of-type(2) circle {
-animation: wobble 3s 275ms infinite ease-in-out; }
-
-.bubbles-small g:nth-of-type(3) {
-animation: up 6s 900ms infinite;}
-
-.bubbles-small g:nth-of-type(3) circle {
-animation: wobble 3s 275ms infinite ease-in-out; }
-
-.bubbles-small g:nth-of-type(4) {
-animation: up 6s 900ms infinite;}
-
-.bubbles-small g:nth-of-type(4) circle {
-animation: wobble 3s 275ms infinite ease-in-out; }
-
-.bubbles-small g:nth-of-type(5) {
-animation: up 6s 900ms infinite;}
-
-.bubbles-small g:nth-of-type(5) circle {
-animation: wobble 3s 275ms infinite ease-in-out; }
-
-.bubbles-small g:nth-of-type(6) {
-animation: up 6s 900ms infinite;}
-
-.bubbles-small g:nth-of-type(6) circle {
-animation: wobble 3s 275ms infinite ease-in-out; }
-
-.bubbles-small g:nth-of-type(7) {
-animation: up 6s 900ms infinite;}
-
-.bubbles-small g:nth-of-type(7) circle {
-animation: wobble 3s 275ms infinite ease-in-out; }
-
-.bubbles-small g:nth-of-type(8) {
-animation: up 6s 900ms infinite;}
-
-.bubbles-small g:nth-of-type(8) circle {
-animation: wobble 3s 275ms infinite ease-in-out; }
-
-.bubbles-small g:nth-of-type(9) {
-animation: up 6s 900ms infinite;}
-
-.bubbles-small g:nth-of-type(9) circle {
-animation: wobble 3s 275ms infinite ease-in-out; }
-
-.bubbles-small g:nth-of-type(10) {
-animation: up 6s 900ms infinite;}
-*/
