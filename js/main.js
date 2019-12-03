@@ -1,6 +1,6 @@
 // Display of loading screen and adjustment of body elements with respect to navigation bar, while loading the page in browser.
 $(window).load(function () {
-    $(".se-pre-con").fadeOut(600);
+    $(".se-pre-con").fadeOut(300);
     $('body').css('padding-top', $('#navbar').height() - 53);
 });
 
