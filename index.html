@@ -47,7 +47,7 @@
 
     <!--NAVIGATION MENU-->
     <div>
-        <ul id="navbar">
+        <ul id="navbar" class="navbar-inverse navbar-static-top">
             <li class="navlink"><a class="active" href="">Home</a></li>
             <li class="navlink"><a href=#about>About</a></li>
             <li class="navlink"><a href=#education>Education</a></li>
@@ -59,6 +59,12 @@
             <li class="navlink"><a href=#contact>Contact Me</a></li>
         </ul><br /><br />
         <script>
+            $(window).resize(function() {
+                $('body').css('padding-top', $('#navbar').height()-53);
+            });
+            $(window).load(function() {
+               $('body').css('padding-top', $('#navbar').height()-53);
+            });
             $(window).scroll(function() {
                 var scrollDistance = $(window).scrollTop();
                 $('.navsection').each(function(i) {
@@ -72,7 +78,7 @@
         </script>
     </div>
     <!--HEADER DESCRIPTION-->
-    <div id="header" class="header navsection">
+    <div class="header navsection">
         <div class="container">
             <div class="row centered">
                 <div class="col-lg-12">
