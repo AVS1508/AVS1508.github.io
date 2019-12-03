@@ -82,7 +82,7 @@ SECTION WRAPS
 
 /* Header Wrap */
 .header {
-    background: url(../images/me-1.jpg) no-repeat center top;
+    background: url(../assets/cocoa-beach-me.jpg) no-repeat center top;
     padding-top: 140px;
     text-align: center;
     background-attachment: relative;
@@ -436,14 +436,14 @@ ul {
 
 
 @media (min-aspect-ratio: 4/3) {
-    .img-1 {
+    .footer-img {
         max-width: 100%;
         height: auto;
         border-radius: 50%;
         position: static;
     }
 
-    .img-2 {
+    .header-img {
         max-width: 100%;
         height: auto;
         border-radius: 50%;
@@ -452,16 +452,17 @@ ul {
 }
 
 @media (max-aspect-ratio: 4/3) {
-    .img-1 {
+    .footer-img {
         max-width: 35%;
         height: auto;
         border-radius: 50%;
         position: static;
     }
 
-    .img-2 {
+    .header-img {
         max-width: 35%;
         height: auto;
+        padding: 15px;
         border-radius: 50%;
         position: static;
     }
@@ -519,6 +520,6 @@ ul {
     width: 100%;
     height: 100%;
     z-index: 9999;
-    background: url(../assets/orb.gif) center no-repeat #fff;
+    background: url(../assets/loading-screen.gif) center no-repeat #fff;
     background-color: black;
 }

@@ -2,48 +2,42 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <!-- OPTIONAL: description -->
-    <meta name="description" content="Personal Resume Website">
-    <!-- OPTIONAL: author -->
-    <meta name="author" content="Aditya Vikram Singh">
-    <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="apple-touch-icon" href="icon.png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- EDIT: title -->
+    <!-- Metadata of the Webpage -->
+    <!-- Character-set Metadata -->
+    <meta charset="utf-8">
+    <!-- Viewport Metadata -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Description Metadata-->
+    <meta name="description" content="Personal Website">
+    <!-- Author Metadata -->
+    <meta name="author" content="Aditya Vikram Singh">
+
+    <!-- Webpage Logo -->
+    <link rel="shortcut icon" href="favicon.ico" />
+    <!-- Webpage Title -->
     <title>Aditya Vikram Singh</title>
 
-    <!-- Bootstrap core CSS -->
+    <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/ee9ada9308.js" crossorigin="anonymous"></script>
-    <!-- Link the main.css stylesheet -->
+    <!-- Google Fonts CSS -->
+    <!-- Rubik Font-->
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet" type='text/css'>
+    <!-- main CSS -->
     <link href="css/main.css" rel="stylesheet">
 
-    <!-- OPTIONAL: Google Fonts (don't forget to edit main.css also) -->
-    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet" type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" type='text/css'>
+    <!-- Font Awesome Logos JS-->
+    <script src="https://kit.fontawesome.com/ee9ada9308.js" crossorigin="anonymous"></script>
+    <!--jQuery JS-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
-    <!--<script>
-        $(window).load(function() {
-            $(".se-pre-con").fadeOut(600);
-        });
+    <!-- main JS -->
+    <script src="js/main.js"></script>
 
-    </script>-->
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-<script src="js/html5shiv.js"></script>
-<script src="js/respond.min.js"></script>
-<![endif]-->
 </head>
 
 <body>
     <!--LOADING SCREEN-->
-    <!--<div class="se-pre-con"></div>-->
+    <div class="se-pre-con"></div>
 
     <!--NAVIGATION MENU-->
     <div>
@@ -57,86 +51,69 @@
             <li class="navlink"><a href=#projects>Projects</a></li>
             <li class="navlink"><a href=#awards>Honors & Awards</a></li>
             <li class="navlink"><a href=#contact>Contact Me</a></li>
-        </ul><br /><br />
-        <script>
-            $(window).resize(function() {
-                $('body').css('padding-top', $('#navbar').height()-53);
-            });
-            $(window).load(function() {
-               $('body').css('padding-top', $('#navbar').height()-53);
-            });
-            $(window).scroll(function() {
-                var scrollDistance = $(window).scrollTop();
-                $('.navsection').each(function(i) {
-                    if ($(this).position().top <= scrollDistance) {
-                        $('#navbar li a.active').removeClass('active');
-                        $('#navbar li a').eq(i).addClass('active');
-                    }
-                });
-            }).scroll();
-
-        </script>
+        </ul><br/><br/>
     </div>
-    <!--HEADER DESCRIPTION-->
+
+    <!--HEADER SECTION-->
     <div class="header navsection">
         <div class="container">
             <div class="row centered">
                 <div class="col-lg-12">
-                    <!-- EDIT: name -->
+                    <!-- Header Name -->
                     <h1 id="heading-name" class="animated fadeInUp">ADITYA VIKRAM SINGH</h1>
-                    <!-- EDIT: title | email -->
+                    <!-- Header Description-->
                     <h3 id="heading-desc">PROGRAMMER • WEB DEVELOPER • GRAPHIC DESIGNER • IDEATOR</h3>
                 </div>
-                <!--/.col-lg-12 -->
             </div>
-            <!--/.row -->
         </div>
-        <!--/.container -->
     </div>
-    <!--/.header -->
 
     <!-- ABOUT SECTION -->
     <section id="about" name="about" class="navsection"></section>
     <div class="about">
         <div style="text-align: center">
+            <!-- About Heading -->
             <h5 class="subheading">ABOUT</h5>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-2" style="text-align: center">
-                    <img class="img-2 .img-fluid" src="images/me-2.png">
+                    <!-- About Image -->
+                    <img class="header-img .img-fluid" src="assets/professional-me.jpg">
                 </div>
                 <div class="col-lg-8">
-                    <!-- EDIT: about -->
+                    <!-- About Description -->
                     <p id='about'>I'm a freshman at the College of Engineering at the University of Massachusetts Amherst, intent on studying Computer Systems Engineering, Computer Science, and Statistics. I am interested in the fields of Deep Learning, IoT and Data Science. Some of my other interests include Competitive Programming, App Development, and Front-End Web Development. I'm proficient in C++, Python, and Java, and possess a working knowledge of Git, HTML5, CSS, and JavaScript. My hobbies involve Graphic Design, 3D Modelling & Photography.</p>
                 </div>
                 <div class="col-lg-2">
-                    <!-- EDIT: download link -->
-                    <p><a href="my-resume.pdf" target="_blank"><i class="fa fa-file-text"></i>
+                    <!-- Resume Link-->
+                    <p><a href="my-resume.pdf" target="_blank"><i class="fas fa-file-alt"></i>
                             <strong>My Resume</strong>
                         </a></p>
                 </div>
-
             </div>
-            <!--/.row -->
         </div>
-        <!--/.container -->
     </div>
-    <!--/ #intro -->
 
     <!--SOCIAL MEDIA PANEL-->
     <div class="social-panel-outer">
         <div class="social-panel" style="opacity: 1; bottom: 40px;">
+            <!--Github Link-->
             <a class="social-icon-2" href="https://github.com/AVS1508" target="_blank"><i class="fab fa-github-square"></i></a>
-            &nbsp;&nbsp;&nbsp;&nbsp;
+            &emsp;
+            <!--Behance Link-->
             <a class="social-icon-2" href="https://www.behance.net/AVS1508" target="_blank"><i class="fab fa-behance-square"></i></a>
-            &nbsp;&nbsp;&nbsp;&nbsp;
-            <a class="social-icon-2" href="https://www.linkedin.com/in/avs1508" target="_blank"><i class="fab fa-linkedin-square"></i></a>
-            &nbsp;&nbsp;&nbsp;&nbsp;
+            &emsp;
+            <!--LinkedIn Link-->
+            <a class="social-icon-2" href="https://www.linkedin.com/in/avs1508" target="_blank"><i class="fab fa-linkedin"></i></a>
+            &emsp;
+            <!--Facebook Link-->
             <a class="social-icon-2" href="https://www.facebook.com/AVS1508" target="_blank"><i class="fab fa-facebook-square"></i></a>
-            &nbsp;&nbsp;&nbsp;&nbsp;
+            &emsp;
+            <!--Instagram Link-->
             <a class="social-icon-2" href="https://www.instagram.com/a_m_v_ery_s_leepy/" target="_blank"><i class="fab fa-instagram"></i></a>
-            &nbsp;&nbsp;&nbsp;&nbsp;
+            &emsp;
+            <!--Snapchat Link-->
             <a class="social-icon-2" href="https://www.snapchat.com/add/avsingh134" target="_blank"><i class="fab fa-snapchat-square"></i></a>
         </div>
     </div>
@@ -147,64 +124,61 @@
     <!-- EDUCATION SECTION -->
     <div id="education" class="container desc navsection">
         <div class="row">
-
             <div class="col-lg-2 col-lg-offset-1">
+                <!--Education Heading-->
                 <h5 class="subheading">EDUCATION</h5>
             </div>
-            <!-- EDIT: education line 1 -->
+            <!--Education #1-->
             <div class="col-lg-6">
                 <p>
-                    <t>Bachelor of Science</t><br />
+                    <t>Bachelor of Science</t><br/>
                     University of Massachusetts Amherst
-                    <!--<br/><i>Extra info here</i>-->
                 </p>
             </div>
             <div class="col-lg-3">
                 <p>
-                    <sm>Class of 2023</sm><br />
+                    <sm>Class of 2023</sm><br/>
                     <imp>
                         <sm>Intended Major: Computer Science</sm>
-                    </imp><br />
+                    </imp><br/>
                     <em>
                         <sm>GPA: In Progress</sm>
                     </em>
                 </p>
             </div>
 
-            <!-- EDIT: education line 2 -->
+            <!--Education #2-->
             <div class="col-lg-6 col-lg-offset-3">
                 <p>
-                    <t>High School Diploma</t><br />
+                    <t>High School Diploma</t><br/>
                     Delhi Public School, R. K. Puram
-                    <!--<br/><i>Extra info here</i>-->
                 </p>
             </div>
             <div class="col-lg-3">
                 <p>
-                    <sm>Class of 2019</sm><br />
+                    <sm>Class of 2019</sm><br/>
                     <imp>
                         <sm>Science with Computer Science</sm>
-                    </imp><br />
+                    </imp><br/>
                     <em>
                         <sm>Class 12: 96.0% • Class 10: 10.0 CGPA</sm>
                     </em>
                 </p>
             </div>
 
-            <!-- EDIT: education line 3 -->
+            <!--Education #3-->
             <div class="col-lg-6 col-lg-offset-3">
                 <p>
-                    <t>Primary School</t><br />
+                    <t>Primary School</t><br/>
                     Banyan Tree School, Lodi Road
-                    <!--<br/><i>Extra info here</i>-->
                 </p>
             </div>
             <div class="col-lg-3">
                 <p>
-                    <sm>Class of 2012</sm><br />
+                    <sm>Class of 2012</sm><br/>
                     <imp>
                         <sm>Primary Education</sm>
-                    </imp><br />
+                    </imp><br/>
                     <em>
                         <sm>Non-evaluative</sm>
                     </em>
@@ -212,24 +186,23 @@
             </div>
 
         </div>
-        <!--/.row -->
-        <br>
+        <br/>
         <hr>
     </div>
-    <!--/.container -->
 
     <!-- LEADERSHIP SECTION -->
     <div id="leadership" class="container desc navsection">
         <div class="row">
-
             <div class="col-lg-2 col-lg-offset-1">
+                <!-- Leadership Heading -->
                 <h5 class="subheading">LEADERSHIP EXPERIENCE</h5>
             </div>
-            <!-- EDIT: leadership line 1 -->
+            
+            <!-- Leadership Role #1 -->
             <div class="col-lg-6">
                 <p class="tight">
-                    <t>President</t><br />
-                    Student Council, Delhi Public School, R. K. Puram <br />
+                    <t>President</t><br/>
+                    Student Council, Delhi Public School, R. K. Puram <br/>
                 </p>
                 <p>
                     <more>Oversaw student discipline, represented the students’ interests, liaised between students, faculty, and administration, supervised the student-run events.</more>
@@ -237,16 +210,16 @@
             </div>
             <div class="col-lg-3">
                 <p>
-                    <sm>April 2018 - April 2019 <br />
+                    <sm>April 2018 - April 2019 <br/>
                         New Delhi, India</sm>
                 </p>
             </div>
 
-            <!-- EDIT: leadership line 2-->
+            <!-- Leadership Role #2 -->
             <div class="col-lg-6 col-lg-offset-3">
                 <p class="tight">
-                    <t>Lead Designer</t><br />
-                    TEDxYouth@DPSRKPuram<br />
+                    <t>Lead Designer</t><br/>
+                    TEDxYouth@DPSRKPuram<br/>
                 </p>
                 <p>
                     <more>Led the design initiative in creating posters, banners, prospectus, ID cards, and certificates; coordinated with other departments of the organizing committee.</more>
@@ -254,29 +227,27 @@
             </div>
             <div class="col-lg-3">
                 <p>
-                    <sm>November 2018 - April 2019 <br />
+                    <sm>November 2018 - April 2019 <br/>
                         New Delhi, India</sm>
                 </p>
             </div>
         </div>
-        <!--/.row -->
-        <br>
+        <br/>
         <hr>
     </div>
-    <!--/.container -->
 
     <!-- WORK EXPERIENCE SECTION -->
     <div id="workexperience" class="container desc navsection">
         <div class="row">
-
             <div class="col-lg-2 col-lg-offset-1">
+                <!-- Work Experience Heading-->
                 <h5 class="subheading">WORK EXPERIENCE</h5>
             </div>
-            <!-- EDIT: work line 1 -->
+            <!-- Work Experience #1 -->
             <div class="col-lg-6">
                 <p class="tight">
-                    <t>Honorary Advisor</t><br />
-                    Aerospace Society, Delhi Public School, R. K. Puram <br />
+                    <t>Honorary Advisor</t><br/>
+                    Aerospace Society, Delhi Public School, R. K. Puram <br/>
                 </p>
                 <p>
                     <more>Mentored junior teams for aerospace competitions and took part in promoting space exploration.</more>
@@ -284,16 +255,16 @@
             </div>
             <div class="col-lg-3">
                 <p>
-                    <sm>May 2018 - April 2019 <br />
+                    <sm>May 2018 - April 2019 <br/>
                         New Delhi, India</sm>
                 </p>
             </div>
 
-            <!-- EDIT: work line 2-->
+            <!-- Work Experience #2-->
             <div class="col-lg-6 col-lg-offset-3">
                 <p class="tight">
-                    <t>Designer</t><br />
-                    TEDxYouth@DPSRKPuram<br />
+                    <t>Designer</t><br/>
+                    TEDxYouth@DPSRKPuram<br/>
                 </p>
                 <p>
                     <more>Prepared posters and graphics to improve audience engagement and to appeal for speaker applications.</more>
@@ -301,16 +272,16 @@
             </div>
             <div class="col-lg-3">
                 <p>
-                    <sm>May 2018 - November 2018 <br />
+                    <sm>May 2018 - November 2018 <br/>
                         New Delhi, India</sm>
                 </p>
             </div>
 
-            <!-- EDIT: work line 3-->
+            <!-- Work Experience #3-->
             <div class="col-lg-6 col-lg-offset-3">
                 <p class="tight">
-                    <t>Designer</t><br />
-                    Mathematics Society, Delhi Public School, R. K. Puram<br />
+                    <t>Designer</t><br/>
+                    Mathematics Society, Delhi Public School, R. K. Puram<br/>
                 </p>
                 <p>
                     <more>Designed the annual Mathematics school magazine “MATHYARD” 2017-18 edition, DPS R. K. Puram.</more>
@@ -318,16 +289,16 @@
             </div>
             <div class="col-lg-3">
                 <p>
-                    <sm>November 2017 - December 2017 <br />
+                    <sm>November 2017 - December 2017 <br/>
                         New Delhi, India</sm>
                 </p>
             </div>
 
-            <!-- EDIT: work line 4-->
+            <!-- Work Experience #4-->
             <div class="col-lg-6 col-lg-offset-3">
                 <p class="tight">
-                    <t>Member</t><br />
-                    Aerospace Society, Delhi Public School, R. K. Puram<br />
+                    <t>Member</t><br/>
+                    Aerospace Society, Delhi Public School, R. K. Puram<br/>
                 </p>
                 <p>
                     <more>Served as a Structural Design engineer for projects. Held discussions at the Aerospace Society’s annual orientation, May 2018. Helped design and conduct its recruitment event in May 2018 and May 2017.</more>
@@ -335,55 +306,36 @@
             </div>
             <div class="col-lg-3">
                 <p>
-                    <sm> May 2016 - April 2018 <br />
+                    <sm> May 2016 - April 2018 <br/>
                         New Delhi, India</sm>
                 </p>
             </div>
         </div>
-        <!--/.row -->
-        <br>
+        <br/>
         <hr>
     </div>
-    <!--/.container -->
 
     <!-- SKILLS SECTION -->
     <div id="skills" class="container desc navsection">
         <div class="row">
             <div class="col-lg-2 col-lg-offset-1">
+                <!-- Skills Heading-->
                 <h5 class="subheading">SKILLS & PROFICIENCIES</h5>
             </div>
+            <!-- Skillset Tabs -->
             <div class="tab">
-                <script>
-                    function openSkill(evt, skillName) {
-                        var i, tabcontent, tablinks;
-
-                        tabcontent = document.getElementsByClassName("tabcontent");
-                        for (i = 0; i < tabcontent.length; i++) {
-                            tabcontent[i].style.display = "none";
-                        }
-
-                        tablinks = document.getElementsByClassName("tablinks");
-                        for (i = 0; i < tablinks.length; i++) {
-                            tablinks[i].className = tablinks[i].className.replace(" active", "");
-                        }
-
-                        document.getElementById(skillName).style.display = "block";
-                        evt.currentTarget.className += " active";
-                    }
-
-                </script>
                 <button class="tablinks" onclick="openSkill(event, 'Prog')">General Programming</button>
                 <button class="tablinks" onclick="openSkill(event, 'WebDev')">Web Development & Design</button>
                 <button class="tablinks" onclick="openSkill(event, 'GD&3D')">Graphic Design & 3D Modelling</button>
                 <button class="tablinks" onclick="openSkill(event, 'Lang')">Languages</button>
             </div>
 
-            <!-- EDIT: skill 1 -->
+            <!-- Skillset #1 -->
             <div id="Prog" class="col-lg-9 col-lg-offset-3 tabcontent">
                 <p>
                     <t>General Programming</t>
-                    <span class="closeSkill" onclick="this.parentElement.parentElement.style.display='none'"><i class="fa fa-window-close"></i></span>
-                    <br />
+                    <span class="closeSkill" onclick="this.parentElement.parentElement.style.display='none'"><i class="fas fa-times-circle"></i></span>
+                    <br/>
                     <div>
                         <div class="skill">
                             <sm>C++</sm>
@@ -410,12 +362,12 @@
                 </p>
             </div>
 
-            <!-- EDIT: skill 2 -->
+            <!-- Skillset #2 -->
             <div id="WebDev" class="col-lg-6 col-lg-offset-3 tabcontent">
                 <p>
                     <t>Web Development & Design</t>
-                    <span class="closeSkill" onclick="this.parentElement.parentElement.style.display='none'"><i class="fa fa-window-close"></i></span>
-                    <br />
+                    <span class="closeSkill" onclick="this.parentElement.parentElement.style.display='none'"><i class="fas fa-times-circle"></i></span>
+                    <br/>
                     <div>
                         <div class="skill">
                             <sm>HTML</sm>
@@ -437,12 +389,12 @@
             </div>
 
 
-            <!-- EDIT: skill 3 -->
+            <!-- Skillset #3 -->
             <div id="GD&3D" class="col-lg-6 col-lg-offset-3 tabcontent">
                 <p>
                     <t>Graphic Design & 3D Modelling</t>
-                    <span class="closeSkill" onclick="this.parentElement.parentElement.style.display='none'"><i class="fa fa-window-close"></i></span>
-                    <br />
+                    <span class="closeSkill" onclick="this.parentElement.parentElement.style.display='none'"><i class="fas fa-times-circle"></i></span>
+                    <br/>
                     <div>
                         <div class="skill">
                             <sm>Adobe Illustrator</sm>
@@ -457,12 +409,12 @@
                 </p>
             </div>
 
-            <!-- EDIT: skill 4 -->
+            <!-- Skillset #4 -->
             <div id="Lang" class="col-lg-6 col-lg-offset-3 tabcontent">
                 <p>
                     <t>Languages</t>
-                    <span class="closeSkill" onclick="this.parentElement.parentElement.style.display='none'"><i class="fa fa-window-close"></i></span>
-                    <br />
+                    <span class="closeSkill" onclick="this.parentElement.parentElement.style.display='none'"><i class="fas fa-times-circle"></i></span>
+                    <br/>
                     <div>
                         <div class="skill">
                             <sm>English</sm>
@@ -480,27 +432,25 @@
                 </p>
             </div>
 
-
         </div>
-        <!--/.row -->
-        <br>
+        <br/>
         <hr>
     </div>
-    <!--/.container -->
 
-    <!-- APPLICATION PROJECTS SECTION -->
+    <!-- APPLICATION DEVELOPMENT PROJECTS SECTION -->
     <div id="projects" class="container desc navsection">
         <div class="row">
             <div class="col-lg-2 col-lg-offset-1">
-                <h5 class="subheading">APP DEV PROJECTS</h5>
+                <!-- Application Development Projects Heading-->
+                <h5 class="subheading">APPLICATION DEVELOPMENT PROJECTS</h5>
             </div>
 
-            <!-- EDIT: project line 1-->
+            <!-- Application Development Project #1-->
             <div class="col-lg-6">
                 <p class="tight">
                     <t><a target="_blank" href="https://github.com/AVS1508/Account-Management-System">
                             Valuto
-                        </a></t><br />
+                        </a></t><br/>
                     Account Management System
                 </p>
                 <p>
@@ -513,10 +463,10 @@
                 </p>
             </div>
 
-            <!-- EDIT: project line 2-->
+            <!-- Application Development Project #2-->
             <div class="col-lg-6 col-lg-offset-3">
                 <p class="tight">
-                    <t><a target="_blank" href="https://github.com/AVS1508/HOLLYWOOD">HOLLYWOOD</a></t><br />
+                    <t><a target="_blank" href="https://github.com/AVS1508/HOLLYWOOD">HOLLYWOOD</a></t><br/>
                     Movie Guessing Game
                 </p>
                 <p>
@@ -528,26 +478,26 @@
                     <sm>January 2018 - March 2018</sm>
                 </p>
             </div>
+            
         </div>
-        <!--/.row -->
-        <br>
+        <br/>
         <hr>
     </div>
-    <!--/.container -->
 
-    <!-- AEROSPACE PROJECTS SECTION -->
+    <!-- AEROSPACE DESIGN PROJECTS SECTION -->
     <div class="container desc">
         <div class="row">
             <div class="col-lg-2 col-lg-offset-1">
+                <!-- Aerospace Design Projects Heading -->
                 <h5 class="subheading">AEROSPACE PROJECTS</h5>
             </div>
 
-            <!-- EDIT: project line 1-->
+            <!-- Aerospace Design Project #1 -->
             <div class="col-lg-6">
                 <p class="tight">
                     <t><a target="_blank" href="https://www.youtube.com/watch?v=i4blSQgCmWY">
                             ARES
-                        </a></t><br />
+                        </a></t><br/>
                     Space Colonization and Habitation System
                 </p>
                 <p>
@@ -560,10 +510,10 @@
                 </p>
             </div>
 
-            <!-- EDIT: project line 2-->
+            <!-- Aerospace Design Project #2 -->
             <div class="col-lg-6 col-lg-offset-3">
                 <p class="tight">
-                    <t><a target="_blank" href="https://drive.google.com/open?id=1Nr8T8kXFvM5neYVv8Z_VjxIKVjERAUfX">Avanoa</a></t><br />
+                    <t><a target="_blank" href="https://drive.google.com/open?id=1Nr8T8kXFvM5neYVv8Z_VjxIKVjERAUfX">Avanoa</a></t><br/>
                     Self-sustainable Space Colony
                 </p>
                 <p>
@@ -582,25 +532,25 @@
                     <sm>January 2017 - March 2017</sm>
                 </p>
             </div>
+            
         </div>
-        <!--/.row -->
-        <br>
+        <br/>
         <hr>
     </div>
-    <!--/.container -->
 
     <!-- HONORS & AWARDS SECTION -->
     <div id="awards" class="container desc navsection">
         <div class="row">
             <div class="col-lg-2 col-lg-offset-1">
+                <!-- Honors & Awards Heading -->
                 <h5 class="subheading">HONORS & AWARDS</h5>
             </div>
 
-            <!-- EDIT: awards line 1-->
+            <!-- Honors & Awards #1 -->
             <div class="col-lg-6">
                 <p class="tight">
-                    <t>Gold Medal</t><br />
-                    Delhi Public School, R. K. Puram <br />
+                    <t>Gold Medal</t><br/>
+                    Delhi Public School, R. K. Puram <br/>
                 </p>
                 <p>
                     <more>For 7 consecutive years of academic excellence.</more>
@@ -612,10 +562,10 @@
                 </p>
             </div>
 
-            <!-- EDIT: awards line 2-->
+            <!-- Honors & Awards #2 -->
             <div class="col-lg-6 col-lg-offset-3">
                 <p class="tight">
-                    <t>Gold Medal</t><br />
+                    <t>Gold Medal</t><br/>
                     Delhi Public School, R. K. Puram
                 </p>
                 <p>
@@ -628,10 +578,10 @@
                 </p>
             </div>
 
-            <!-- EDIT: awards line 3-->
+            <!-- Honors & Awards #3 -->
             <div class="col-lg-6 col-lg-offset-3">
                 <p class="tight">
-                    <t>Red Blazer</t><br />
+                    <t>Red Blazer</t><br/>
                     Delhi Public School, R. K. Puram
                 </p>
                 <p>
@@ -644,10 +594,10 @@
                 </p>
             </div>
 
-            <!-- EDIT: awards line 4-->
+            <!-- Honors & Awards #4 -->
             <div class="col-lg-6 col-lg-offset-3">
                 <p class="tight">
-                    <t>Winner</t><br />
+                    <t>Winner</t><br/>
                     International Space Settlement Design Competition
                 </p>
                 <p>
@@ -660,10 +610,10 @@
                 </p>
             </div>
 
-            <!-- EDIT: awards line 5-->
+            <!-- Honors & Awards #5 -->
             <div class="col-lg-6 col-lg-offset-3">
                 <p class="tight">
-                    <t>First Prize</t><br />
+                    <t>First Prize</t><br/>
                     NASA Ames Space Settlement Design Contest
                 </p>
                 <p>
@@ -676,10 +626,10 @@
                 </p>
             </div>
 
-            <!-- EDIT: awards line 6-->
+            <!-- Honors & Awards #6 -->
             <div class="col-lg-6 col-lg-offset-3">
                 <p class="tight">
-                    <t>Alternate Finalist</t><br />
+                    <t>Alternate Finalist</t><br/>
                     Conrad Spirit of Innovation Challenge 2018
                 </p>
                 <p>
@@ -693,97 +643,110 @@
             </div>
 
         </div>
-        <!--/.row -->
-        <br>
+        <br/>
     </div>
-    <!--/.container -->
 
     <!--CONTACT SECTION-->
     <section id="contact" name="contact" class="navsection"></section>
 
-    <!-- FOOTER DESCRIPTION -->
+    <!-- FOOTER SECTION -->
     <div id="footwrap" class="footer">
         <div class="container">
             <div class="row">
 
                 <div class="col-lg-2 col-lg-offset-1" style="text-align: center">
+                    <!-- Contact Heading-->
                     <h5 class="subheading">CONTACT ME</h5>
-                    <img class="img-1" src="images/me-3.png">
+                    <img class="footer-img" src="assets/casual-me.jpg">
                 </div>
-                <!-- EDIT: email -->
+                
                 <div class="col-lg-6">
                     <p>
+                        <!-- Email Contact -->
                         <t>Email</t>
                         <table>
                             <tr>
                                 <td>
+                                    <!-- Personal Email -->
                                     <a href="mailto:aditya.11.present@gmail.com" target="_blank" class="mail">aditya.11.present@gmail.com</a>
                                 </td>
                                 <td>
-                                    <a href="mailto:avsingh@umass.edu" target="_blank" class="mail">avsingh@umass.edu</a> <br />
+                                    <!-- Professional Email -->
+                                    <a href="mailto:avsingh@umass.edu" target="_blank" class="mail">avsingh@umass.edu</a> <br/>
                                 </td>
                             </tr>
                         </table>
                     </p>
-                    <!-- EDIT: address -->
                     <p>
+                        <!-- Address Contact -->
                         <t>Address</t>
                         <table>
                             <tr>
                                 <td>
-                                    D-17, Type VB Quarters<br />
-                                    Hudco Place Extn., Andrews Ganj<br />
-                                    New Delhi, Delhi 110049 <br />
-                                    India <br />
+                                    <!-- Indian Residential Address -->
+                                    D-17, Type VB Quarters<br/>
+                                    Hudco Place Extn., Andrews Ganj<br/>
+                                    New Delhi, Delhi 110049 <br/>
+                                    India <br/>
                                 </td>
                                 <td>
-                                    17 Eastman Lane <br />
-                                    Crabtree Hall, Room No. 308<br />
-                                    Amherst, MA 01003-9226<br />
-                                    United States <br />
+                                    <!-- US Residential Address -->
+                                    17 Eastman Lane <br/>
+                                    Crabtree Hall, Room No. 308<br/>
+                                    Amherst, MA 01003-9226<br/>
+                                    United States <br/>
                                 </td>
                             </tr>
                         </table>
                     </p>
-                    <!-- EDIT: phone number -->
                     <p>
-                        <t>Phone</t><br />
+                        <!-- Phone Contact -->
+                        <t>Phone</t><br/>
                         <table>
                             <tr>
                                 <td>
-                                    <a href="tel:917042444664" class="tel">(+91) 7042444664</a> <br />
+                                    <!-- Indian Phone Number -->
+                                    <a href="tel:917042444664" class="tel">(+91) 7042444664</a> <br/>
                                 </td>
                                 <td>
-                                    <a href="tel:14134091784" class="tel">(+1) 413-409-1784</a> <br />
+                                    <!-- US Phone Number -->
+                                    <a href="tel:14134091784" class="tel">(+1) 413-409-1784</a> <br/>
                                 </td>
                             </tr>
                         </table>
-
                     </p>
                 </div>
+
                 <div class="col-lg-3">
                     <p style="text-align: center">
+                        <!-- Social Contact -->
                         <t>Social Links</t>
                     </p>
                     <p style="text-align: center">
+                        <!--Github Link-->
                         <a class="social-icon" href="https://github.com/AVS1508" target="_blank"><i class="fab fa-github-square"></i></a>
-                        &nbsp; &nbsp;
+                        &ensp;
+                        <!--Behance Link-->
                         <a class="social-icon" href="https://www.behance.net/AVS1508" target="_blank"><i class="fab fa-behance-square"></i></a>
-                        &nbsp; &nbsp;
-                        <a class="social-icon" href="https://www.linkedin.com/in/avs1508" target="_blank"><i class="fab fa-linkedin-square"></i></a><br /><br />
+                        &ensp;
+                        <!--LinkedIn Link-->
+                        <a class="social-icon" href="https://www.linkedin.com/in/avs1508" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <br/><br/>
+                        <!--Facebook Link-->
                         <a class="social-icon" href="https://www.facebook.com/AVS1508" target="_blank"><i class="fab fa-facebook-square"></i></a>
-                        &nbsp; &nbsp;
+                        &ensp;
+                        <!--Instagram Link-->
                         <a class="social-icon" href="https://www.instagram.com/a_m_v_ery_s_leepy/" target="_blank"><i class="fab fa-instagram"></i></a>
-                        &nbsp; &nbsp;
+                        &ensp;
+                        <!--Snapchat Link-->
                         <a class="social-icon" href="https://www.snapchat.com/add/avsingh134" target="_blank"><i class="fab fa-snapchat-square"></i></a>
                     </p>
                 </div>
             </div>
-            <!--/.row -->
         </div>
-        <!--/.container -->
+
     </div>
-    <!--/ #footer -->
+
 </body>
 
 </html>
