@@ -1,8 +1,10 @@
+// Display of loading screen and adjustment of body elements with respect to navigation bar, while loading the page in browser.
 $(window).load(function () {
     $(".se-pre-con").fadeOut(600);
     $('body').css('padding-top', $('#navbar').height() - 53);
 });
 
+// Selection of active navlink in navigation bar, while scrolling through the webpage.
 $(window).scroll(function () {
     var scrollDistance = $(window).scrollTop();
     $('.navsection').each(function (i) {
@@ -13,10 +15,12 @@ $(window).scroll(function () {
     });
 }).scroll();
 
+// Adjustment of body elements with respect to navigation bar, while resizing browser window.
 $(window).resize(function () {
     $('body').css('padding-top', $('#navbar').height() - 53);
 });
 
+// Opening (and activating) of the relevant Skillset tab and closing all other Skillset tabs.
 function openSkill(evt, skillName) {
     var i, tabcontent, tablinks;
 
