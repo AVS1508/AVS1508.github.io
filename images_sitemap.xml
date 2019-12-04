@@ -14,10 +14,4 @@
         <image:title></image:title>
       </image:image>
   </url>
-  <url>
-    <loc>https://www.adityavsingh.com/assets/my-resume.pdf</loc>
-    <lastmod>2019-12-03</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
 </urlset>

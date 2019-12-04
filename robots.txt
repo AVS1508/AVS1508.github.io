@@ -2,3 +2,4 @@ User-agent: *
 Disallow: /deprecated
 Disallow: /CNAME
 Sitemap: https://www.adityavsingh.com/sitemap.xml
+Sitemap: https://www.adityavsingh.com/images_sitemap.xml
