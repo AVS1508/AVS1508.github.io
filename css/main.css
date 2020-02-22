@@ -409,5 +409,6 @@ sm {
 /* CSS3 animation for body: */
 body {
     /* Addresses a small issue in webkit: https://bit.ly/NEdoDq */
+    backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
 }
