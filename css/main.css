@@ -4,10 +4,10 @@ html {
 
 body {
   background-color: #f2f2f2;
-  font-family: "Rubik";
+  font-family: "DM Sans";
   font-weight: 400;
   font-size: 16px;
-  color: #555;
+  color: #333;
   align-items: right;
   font-display: swap;
 
@@ -41,7 +41,7 @@ p {
 
 /* Links */
 a {
-  color: #1cbcad;
+  color: #4EA5D9;
   word-wrap: break-word;
 
   -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -53,7 +53,7 @@ a {
 
 a:hover,
 a:focus {
-  color: #7b7b7b;
+  color: #D90368;
   text-decoration: none;
   outline: 0;
 }
@@ -71,7 +71,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #CCC;
   margin: 1em 0;
   padding: 0;
 }
@@ -115,9 +115,12 @@ SECTION WRAPS
 
 /* Navigation Menu Wrap */
 #navbar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
   list-style-type: none;
   padding: 0;
-  background-color: #2c3e50;
+  background-color: #0D2149;
   position: fixed;
   top: 0;
   width: 100%;
@@ -140,11 +143,11 @@ SECTION WRAPS
 
 .navlink a:hover {
   background-color: white;
-  color: #1cbcad;
+  color: #4EA5D9;
 }
 
 .active {
-  background-color: #1cbcad;
+  background-color: #4EA5D9;
   color: white;
 }
 
@@ -153,6 +156,7 @@ SECTION WRAPS
   background: url(../assets/cocoa-beach-me.jpg) no-repeat center top;
   padding-top: 140px;
   text-align: center;
+  background-color: rgba(13, 33, 73, 1) !important;
   background-attachment: relative;
   background-position: center center;
   min-height: 500px;
@@ -187,6 +191,7 @@ SECTION WRAPS
 #heading-name {
   font-size: 105px;
   text-shadow: 2px 2px #000000;
+  border-radius: 20px;
 }
 
 #heading-desc {
@@ -208,7 +213,7 @@ SECTION WRAPS
   bottom: -60px !important;
   left: 50%;
   width: 360px;
-  background: #2c3e50;
+  background: #0D2149;
   padding: 5px;
   text-align: center;
   z-index: +4;
@@ -243,7 +248,7 @@ SECTION WRAPS
 }
 
 .tab button {
-  background-color: #2c3e50;
+  background-color: #0D2149;
   float: center;
   border: solid;
   outline: none;
@@ -254,7 +259,7 @@ SECTION WRAPS
 
 .tab button:hover {
   background-color: white;
-  color: #1cbcad;
+  color: #4EA5D9;
 }
 
 .tabcontent {
@@ -270,7 +275,7 @@ SECTION WRAPS
 }
 
 .skill {
-  border: 2px solid #2c3e50;
+  border: 2px solid #0D2149;
   background: white;
   padding: 20px;
   display: inline-block;
@@ -318,7 +323,7 @@ SECTION WRAPS
 
 /* About Wrap */
 .about {
-  background: #2c3e50;
+  background: #0D2149;
   padding-top: 25px;
   padding-bottom: 25px;
   color: white;
@@ -346,7 +351,9 @@ td {
 }
 
 .footer {
-  background: #2f2f2f;
+  background: #0D2149
+    /**/
+  ;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -376,18 +383,18 @@ td {
 }
 
 .desc p {
-  color: #2f2f2f;
+  color: #333;
 }
 
 .desc t {
-  color: #34495e;
+  color: #0D2149;
   font-weight: 700;
 }
 
 .desc imp {
   padding: 6px;
   color: white;
-  background: #34495e;
+  background: #0D2149;
 }
 
 .desc more {
