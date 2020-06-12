@@ -119,10 +119,9 @@ SECTION WRAPS
   flex-flow: row wrap;
   justify-content: space-around;
   list-style-type: none;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
   background-color: #0D2149;
   position: fixed;
+  padding: 0px !important;
   top: 0;
   width: 100%;
   text-align: center;
@@ -134,7 +133,6 @@ SECTION WRAPS
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   flex-direction: column;
-  padding-left: 0;
   margin-bottom: 0;
   list-style: none;
   text-align: center;
@@ -143,13 +141,12 @@ SECTION WRAPS
 #navicon {
   width: 2em;
   border-radius: 50%;
-  margin-right: 0.5rem;
 }
 
 .navbar-toggler {
   display: inline-block;
-  padding-top: .3125rem;
-  padding-bottom: .3125rem;
+  margin-top: .3125rem;
+  margin-bottom: .3125rem;
   margin-left: 0.5rem;
   font-size: 1.25rem;
   line-height: inherit;
@@ -158,8 +155,6 @@ SECTION WRAPS
 
 .navbar-brand {
   display: inline-block;
-  padding-top: .3125rem;
-  padding-bottom: .3125rem;
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
@@ -187,12 +182,13 @@ SECTION WRAPS
 /* Header Wrap */
 .header {
   background: url(../assets/cocoa-beach-me.jpg) no-repeat center top;
-  padding-top: 140px;
+  padding-top: 10vw;
+  padding-bottom: 10vw;
   text-align: center;
   background-color: rgba(13, 33, 73, 1) !important;
   background-attachment: relative;
   background-position: center center;
-  min-height: 500px;
+  min-height: 20vw;
   width: 100%;
 
   -webkit-background-size: 100%;
