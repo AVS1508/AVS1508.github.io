@@ -114,12 +114,13 @@ SECTION WRAPS
 }
 
 /* Navigation Menu Wrap */
-#navbar {
+#navmenu {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   list-style-type: none;
-  padding: 0;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
   background-color: #0D2149;
   position: fixed;
   top: 0;
@@ -128,22 +129,54 @@ SECTION WRAPS
   z-index: 99999;
 }
 
-.navlink {
-  display: inline-block;
+.navbar-nav {
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  text-align: center;
 }
 
-.navlink a {
+#navicon {
+  width: 2em;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.navbar-toggler {
+  display: inline-block;
+  padding-top: .3125rem;
+  padding-bottom: .3125rem;
+  margin-left: 0.5rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+}
+
+.navbar-brand {
+  display: inline-block;
+  padding-top: .3125rem;
+  padding-bottom: .3125rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+}
+
+.nav-link {
   font-size: 18px;
   display: block;
-  color: white;
+  color: white !important;
   text-align: center;
-  padding: 14px 16px;
+  padding: 0.5rem 1rem;
   text-decoration: none;
 }
 
-.navlink a:hover {
+.nav-link:hover {
   background-color: white;
-  color: #4EA5D9;
+  color: #4EA5D9 !important;
 }
 
 .active {

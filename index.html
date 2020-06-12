@@ -35,7 +35,6 @@
         <title>Aditya Vikram Singh</title>
 
         <!-- Bootstrap Core CSS -->
-        <link href="css/bootstrap.css" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <!-- Google Fonts CSS -->
         <!-- Rubik Font-->
@@ -46,7 +45,7 @@
 
         
         <!--jQuery JS-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <!--Popper JS-->
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -61,20 +60,29 @@
 
     <body>
         <!--NAVIGATION MENU-->
-        <div>
-            <ul id="navbar" class="navbar-inverse navbar-static-top">
-                <li class="navlink"><a class="active" href="#home">Home</a></li>
-                <li class="navlink"><a href=#about>About</a></li>
-                <li class="navlink"><a href=#education>Education</a></li>
-                <li class="navlink"><a href=#leadership>Leadership Experience</a></li>
-                <li class="navlink"><a href=#workexperience>Work Experience</a></li>
-                <li class="navlink"><a href=#courses>Relevant Coursework</a></li>
-                <li class="navlink"><a href=#skills>Skills</a></li>
-                <li class="navlink"><a href=#projects>Projects</a></li>
-                <li class="navlink"><a href=#awards>Honors & Awards</a></li>
-                <li class="navlink"><a href=#contact>Contact Me</a></li>
-            </ul><br /><br />
-        </div>
+        <nav id="navmenu" class="navbar navbar-dark static-top navbar-expand-lg">
+            <div class="container col-lg-12">
+                <div class="collapse navbar-collapse" id="outerNavbar">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item active"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#leadership">Leadership Experience</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#workexperience">Work Experience</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#courses">Relevant Coursework</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#awards">Honors & Awards</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
+                    </ul>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#outerNavbar" aria-controls="outerNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <a class="navbar-brand" href=""><img id="navicon" src="/assets/casual-me.jpg"/></a>
+            </div>
+        </nav>
 
         <!--HEADER SECTION-->
         <div id="home" class="header navsection">
@@ -176,7 +184,7 @@
         <!-- EDUCATION SECTION -->
         <div id="education" class="container desc navsection">
             <div class="row">
-                <div class="col-lg-2 col-lg-offset-1">
+                <div class="col-lg-2 offset-lg-1">
                     <!--Education Heading-->
                     <h5 class="subheading">EDUCATION</h5>
                 </div>
@@ -203,7 +211,7 @@
                 </div>
 
                 <!--Education #2-->
-                <div class="col-lg-6 col-lg-offset-3">
+                <div class="col-lg-6 offset-lg-3">
                     <p>
                         <t>High School Diploma</t>
                         <br />
@@ -233,7 +241,7 @@
         <!-- LEADERSHIP SECTION -->
         <div id="leadership" class="container desc navsection">
             <div class="row">
-                <div class="col-lg-2 col-lg-offset-1">
+                <div class="col-lg-2 offset-lg-1">
                     <!-- Leadership Heading -->
                     <h5 class="subheading">LEADERSHIP EXPERIENCE</h5>
                 </div>
@@ -259,7 +267,7 @@
                 </div>
 
                 <!-- Leadership Role #2 -->
-                <div class="col-lg-6 col-lg-offset-3">
+                <div class="col-lg-6 offset-lg-3">
                     <p class="tight">
                         <t>Lead Designer</t><br />
                         TEDxYouth@DPSRKPuram<br />
@@ -285,7 +293,7 @@
         <!-- WORK EXPERIENCE SECTION -->
         <div id="workexperience" class="container desc navsection">
             <div class="row">
-                <div class="col-lg-2 col-lg-offset-1">
+                <div class="col-lg-2 offset-lg-1">
                     <!-- Work Experience Heading-->
                     <h5 class="subheading">WORK EXPERIENCE</h5>
                 </div>
@@ -312,7 +320,7 @@
                 </div>
 
                 <!-- Work Experience #2-->
-                <div class="col-lg-6 col-lg-offset-3">
+                <div class="col-lg-6 offset-lg-3">
                     <p class="tight">
                         <t>Honorary Advisor</t><br />
                         Aerospace Society, Delhi Public School, R. K. Puram <br
@@ -332,7 +340,7 @@
                 </div>
 
                 <!-- Work Experience #3-->
-                <div class="col-lg-6 col-lg-offset-3">
+                <div class="col-lg-6 offset-lg-3">
                     <p class="tight">
                         <t>Designer</t><br />
                         TEDxYouth@DPSRKPuram<br />
@@ -351,7 +359,7 @@
                 </div>
 
                 <!-- Work Experience #4-->
-                <div class="col-lg-6 col-lg-offset-3">
+                <div class="col-lg-6 offset-lg-3">
                     <p class="tight">
                         <t>Designer</t><br />
                         Mathematics Society, Delhi Public School, R. K. Puram<br
@@ -371,7 +379,7 @@
                 </div>
 
                 <!-- Work Experience #5-->
-                <div class="col-lg-6 col-lg-offset-3">
+                <div class="col-lg-6 offset-lg-3">
                     <p class="tight">
                         <t>Member</t><br />
                         Aerospace Society, Delhi Public School, R. K. Puram<br
@@ -399,7 +407,7 @@
         <!-- COURSES SECTION -->
         <div id="courses" class="container desc navsection">
             <div class="row">
-                <div class="col-lg-2 col-lg-offset-1">
+                <div class="col-lg-2 offset-lg-1">
                     <!-- Courses Heading-->
                     <h5 class="subheading">RELEVANT COURSEWORK</h5>
                 </div>
@@ -425,7 +433,7 @@
                     </p>
                 </div>
                 <!-- Course #2 -->
-                <div class="col-lg-6 col-lg-offset-3">
+                <div class="col-lg-6 offset-lg-3">
                     <p class="tight">
                         <t>Programming Methodology</t><br />
                         COMPSCI 220 <br />
@@ -445,7 +453,7 @@
                     </p>
                 </div>
                 <!-- Course #3 -->
-                <div class="col-lg-6 col-lg-offset-3">
+                <div class="col-lg-6 offset-lg-3">
                     <p class="tight">
                         <t>Introduction to Linear Algebra</t><br />
                         MATH 235 <br />
@@ -464,7 +472,7 @@
                     </p>
                 </div>
                 <!-- Course #4 -->
-                <div class="col-lg-6 col-lg-offset-3">
+                <div class="col-lg-6 offset-lg-3">
                     <p class="tight">
                         <t>Introduction to Data Analysis in R</t><br />
                         CICS 197R <br />
@@ -483,7 +491,7 @@
                     </p>
                 </div>
                 <!-- Course #5 -->
-                <div class="col-lg-6 col-lg-offset-3">
+                <div class="col-lg-6 offset-lg-3">
                     <p class="tight">
                         <t>Programming with Data Structures</t><br />
                         COMPSCI 187 <br />
@@ -504,7 +512,7 @@
                     </p>
                 </div>
                 <!-- Course #6 -->
-                <div class="col-lg-6 col-lg-offset-3">
+                <div class="col-lg-6 offset-lg-3">
                     <p class="tight">
                         <t>Multivariate Calculus</t><br />
                         MATH 233 <br />
@@ -533,7 +541,7 @@
         <!-- SKILLS SECTION -->
         <div id="skills" class="container desc navsection">
             <div class="row">
-                <div class="col-lg-2 col-lg-offset-1">
+                <div class="col-lg-2 offset-lg-1">
                     <!-- Skills Heading-->
                     <h5 class="subheading">SKILLS & PROFICIENCIES</h5>
                 </div>
@@ -549,7 +557,7 @@
                 </div>
 
                 <!-- Skillset #1 -->
-                <div id="Prog" class="col-lg-9 col-lg-offset-3 tabcontent">
+                <div id="Prog" class="col-lg-9 offset-lg-3 tabcontent">
                     <p>
                         <t>General Programming</t>
                         <span class="closeSkill"
@@ -589,7 +597,7 @@
                 </div>
 
                 <!-- Skillset #2 -->
-                <div id="WebDev" class="col-lg-9 col-lg-offset-3 tabcontent">
+                <div id="WebDev" class="col-lg-9 offset-lg-3 tabcontent">
                     <p>
                         <t>Web Development & Design</t>
                         <span class="closeSkill"
@@ -617,7 +625,7 @@
                 </div>
 
                 <!-- Skillset #3 -->
-                <div id="GD&3D" class="col-lg-9 col-lg-offset-3 tabcontent">
+                <div id="GD&3D" class="col-lg-9 offset-lg-3 tabcontent">
                     <p>
                         <t>Graphic Design & 3D Modelling</t>
                         <span class="closeSkill"
@@ -642,7 +650,7 @@
                 </div>
 
                 <!-- Skillset #4 -->
-                <div id="Lang" class="col-lg-9 col-lg-offset-3 tabcontent">
+                <div id="Lang" class="col-lg-9 offset-lg-3 tabcontent">
                     <p>
                         <t>Languages</t>
                         <span class="closeSkill"
@@ -674,7 +682,7 @@
         <!-- APPLICATION DEVELOPMENT PROJECTS SECTION -->
         <div id="projects" class="container desc navsection">
             <div class="row">
-                <div class="col-lg-2 col-lg-offset-1">
+                <div class="col-lg-2 offset-lg-1">
                     <!-- Application Development Projects Heading-->
                     <h5 class="subheading">APPLICATION DEVELOPMENT PROJECTS</h5>
                 </div>
@@ -703,7 +711,7 @@
                 </div>
 
                 <!-- Application Development Project #2-->
-                <div class="col-lg-6 col-lg-offset-3">
+                <div class="col-lg-6 offset-lg-3">
                     <p class="tight">
                         <t><a target="_blank"
                                 href="https://github.com/AVS1508/Valuto-Account-Management-System">
@@ -726,7 +734,7 @@
                 </div>
 
                 <!-- Application Development Project #3-->
-                <div class="col-lg-6 col-lg-offset-3">
+                <div class="col-lg-6 offset-lg-3">
                     <p class="tight">
                         <t><a target="_blank"
                                 href="https://github.com/AVS1508/HOLLYWOOD">HOLLYWOOD</a></t><br
@@ -753,7 +761,7 @@
         <!-- AEROSPACE DESIGN PROJECTS SECTION -->
         <div class="container desc">
             <div class="row">
-                <div class="col-lg-2 col-lg-offset-1">
+                <div class="col-lg-2 offset-lg-1">
                     <!-- Aerospace Design Projects Heading -->
                     <h5 class="subheading">AEROSPACE PROJECTS</h5>
                 </div>
@@ -787,7 +795,7 @@
                 </div>
 
                 <!-- Aerospace Design Project #2 -->
-                <div class="col-lg-6 col-lg-offset-3">
+                <div class="col-lg-6 offset-lg-3">
                     <p class="tight">
                         <t><a target="_blank"
                                 href="https://www.youtube.com/watch?v=i4blSQgCmWY">
@@ -811,7 +819,7 @@
                 </div>
 
                 <!-- Aerospace Design Project #3 -->
-                <div class="col-lg-6 col-lg-offset-3">
+                <div class="col-lg-6 offset-lg-3">
                     <p class="tight">
                         <t><a target="_blank"
                                 href="https://drive.google.com/file/d/1Nr8T8kXFvM5neYVv8Z_VjxIKVjERAUfX/view">Avanoa</a></t>
@@ -850,7 +858,7 @@
         <!-- HONORS & AWARDS SECTION -->
         <div id="awards" class="container desc navsection">
             <div class="row">
-                <div class="col-lg-2 col-lg-offset-1">
+                <div class="col-lg-2 offset-lg-1">
                     <!-- Honors & Awards Heading -->
                     <h5 class="subheading">HONORS & AWARDS</h5>
                 </div>
@@ -874,7 +882,7 @@
                 </div>
 
                 <!-- Honors & Awards #2 -->
-                <div class="col-lg-6 col-lg-offset-3">
+                <div class="col-lg-6 offset-lg-3">
                     <p class="tight">
                         <t>Gold Medal</t><br />
                         Delhi Public School, R. K. Puram <br />
@@ -890,7 +898,7 @@
                 </div>
 
                 <!-- Honors & Awards #3 -->
-                <div class="col-lg-6 col-lg-offset-3">
+                <div class="col-lg-6 offset-lg-3">
                     <p class="tight">
                         <t>Gold Medal</t><br />
                         Delhi Public School, R. K. Puram
@@ -906,7 +914,7 @@
                 </div>
 
                 <!-- Honors & Awards #4 -->
-                <div class="col-lg-6 col-lg-offset-3">
+                <div class="col-lg-6 offset-lg-3">
                     <p class="tight">
                         <t>Red Blazer</t><br />
                         Delhi Public School, R. K. Puram
@@ -922,7 +930,7 @@
                 </div>
 
                 <!-- Honors & Awards #5 -->
-                <div class="col-lg-6 col-lg-offset-3">
+                <div class="col-lg-6 offset-lg-3">
                     <p class="tight">
                         <t>Winner</t><br />
                         International Space Settlement Design Competition
@@ -939,7 +947,7 @@
                 </div>
 
                 <!-- Honors & Awards #6 -->
-                <div class="col-lg-6 col-lg-offset-3">
+                <div class="col-lg-6 offset-lg-3">
                     <p class="tight">
                         <t>First Prize</t><br />
                         NASA Ames Space Settlement Design Contest
@@ -955,7 +963,7 @@
                 </div>
 
                 <!-- Honors & Awards #7 -->
-                <div class="col-lg-6 col-lg-offset-3">
+                <div class="col-lg-6 offset-lg-3">
                     <p class="tight">
                         <t>Alternate Finalist</t><br />
                         Conrad Spirit of Innovation Challenge 2018
@@ -984,7 +992,7 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="col-lg-2 col-lg-offset-1" style="text-align:
+                    <div class="col-lg-2 offset-lg-1" style="text-align:
                         center">
                         <!-- Contact Heading-->
                         <h5 class="subheading">CONTACT ME</h5>
