@@ -41,7 +41,7 @@ p {
 
 /* Links */
 a {
-  color: #4EA5D9;
+  color: #4ea5d9;
   word-wrap: break-word;
 
   -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -53,7 +53,7 @@ a {
 
 a:hover,
 a:focus {
-  color: #D90368;
+  color: #d90368;
   text-decoration: none;
   outline: 0;
 }
@@ -68,11 +68,11 @@ a:after {
 }
 
 hr {
-  display: block;
+  display: flex;
   height: 1px;
   border: 0;
-  border-top: 1px solid #CCC;
-  margin: 1em 0;
+  border-top: 1px solid #ccc;
+  margin: 1rem 0;
   padding: 0;
 }
 
@@ -119,7 +119,7 @@ SECTION WRAPS
   flex-flow: row wrap;
   justify-content: space-around;
   list-style-type: none;
-  background-color: #0D2149;
+  background-color: #0d2149;
   position: fixed;
   padding: 0px !important;
   top: 0;
@@ -145,8 +145,8 @@ SECTION WRAPS
 
 .navbar-toggler {
   display: inline-block;
-  margin-top: .3125rem;
-  margin-bottom: .3125rem;
+  margin-top: 0.3125rem;
+  margin-bottom: 0.3125rem;
   margin-left: 0.5rem;
   font-size: 1.25rem;
   line-height: inherit;
@@ -171,11 +171,11 @@ SECTION WRAPS
 
 .nav-link:hover {
   background-color: white;
-  color: #4EA5D9 !important;
+  color: #4ea5d9 !important;
 }
 
 .active {
-  background-color: #4EA5D9;
+  background-color: #4ea5d9;
   color: white;
 }
 
@@ -242,7 +242,7 @@ SECTION WRAPS
   bottom: -60px !important;
   left: 50%;
   width: 360px;
-  background: #0D2149;
+  background: #0d2149;
   padding: 5px;
   text-align: center;
   z-index: +4;
@@ -277,7 +277,7 @@ SECTION WRAPS
 }
 
 .tab button {
-  background-color: #0D2149;
+  background-color: #0d2149;
   float: center;
   border: solid;
   outline: none;
@@ -288,7 +288,7 @@ SECTION WRAPS
 
 .tab button:hover {
   background-color: white;
-  color: #4EA5D9;
+  color: #4ea5d9;
 }
 
 .tabcontent {
@@ -304,7 +304,7 @@ SECTION WRAPS
 }
 
 .skill {
-  border: 2px solid #0D2149;
+  border: 2px solid #0d2149;
   background: white;
   padding: 20px;
   display: inline-block;
@@ -352,7 +352,7 @@ SECTION WRAPS
 
 /* About Wrap */
 .about {
-  background: #0D2149;
+  background: #0d2149;
   padding-top: 25px;
   padding-bottom: 25px;
   color: white;
@@ -380,9 +380,7 @@ td {
 }
 
 .footer {
-  background: #0D2149
-    /**/
-  ;
+  background: #0d2149 /**/;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -416,14 +414,14 @@ td {
 }
 
 .desc t {
-  color: #0D2149;
+  color: #0d2149;
   font-weight: 700;
 }
 
 .desc imp {
   padding: 6px;
   color: white;
-  background: #0D2149;
+  background: #0d2149;
 }
 
 .desc more {
