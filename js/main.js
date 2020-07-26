@@ -47,3 +47,5 @@ function openSkill(evt, skillName) {
   document.getElementById(skillName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+openSkill(event, 'Prog');
