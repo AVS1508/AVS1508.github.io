@@ -13,6 +13,10 @@ body {
 
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
+
+  /* Addresses a small issue in webkit: https://bit.ly/NEdoDq */
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 /* Titles */
@@ -190,11 +194,6 @@ SECTION WRAPS
   background-position: center center;
   min-height: 20vw;
   width: 100%;
-
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -380,7 +379,9 @@ td {
 }
 
 .footer {
-  background: #0d2149 /**/;
+  background: #0d2149
+    /**/
+  ;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -438,11 +439,4 @@ sm {
 
 .container .row p.tight {
   margin-bottom: 10px;
-}
-
-/* CSS3 animation for body: */
-body {
-  /* Addresses a small issue in webkit: https://bit.ly/NEdoDq */
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
 }
