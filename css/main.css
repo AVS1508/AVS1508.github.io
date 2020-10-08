@@ -123,7 +123,7 @@ SECTION WRAPS
   flex-flow: row wrap;
   justify-content: space-around;
   list-style-type: none;
-  background-color: #0d2149;
+  background-color: #222222;
   position: fixed;
   padding: 0 !important;
   top: 0;
@@ -189,7 +189,7 @@ SECTION WRAPS
   padding-top: 10vw;
   padding-bottom: 10vw;
   text-align: center;
-  background-color: rgba(13, 33, 73, 1) !important;
+  background-color: #222222 !important;
   background-attachment: relative;
   background-position: center center;
   min-height: 20vw;
@@ -217,7 +217,7 @@ SECTION WRAPS
 }
 
 #heading-name {
-  font-size: 105px;
+  font-size: 100px;
   text-shadow: 2px 2px #000000;
   border-radius: 20px;
 }
@@ -241,7 +241,7 @@ SECTION WRAPS
   bottom: -60px !important;
   left: 50%;
   width: 360px;
-  background: #0d2149;
+  background: #222222;
   padding: 5px;
   text-align: center;
   z-index: +4;
@@ -276,7 +276,7 @@ SECTION WRAPS
 }
 
 .tab button {
-  background-color: #0d2149;
+  background-color: #222222;
   float: center;
   border: solid;
   outline: none;
@@ -303,7 +303,7 @@ SECTION WRAPS
 }
 
 .skill {
-  border: 2px solid #0d2149;
+  border: 2px solid #222222;
   background: white;
   padding: 20px;
   display: inline-block;
@@ -351,7 +351,7 @@ SECTION WRAPS
 
 /* About Wrap */
 .about {
-  background: #0d2149;
+  background: #222222;
   padding-top: 25px;
   padding-bottom: 25px;
   color: white;
@@ -379,9 +379,7 @@ td {
 }
 
 .footer {
-  background: #0d2149
-    /**/
-  ;
+  background: #222222;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -415,14 +413,14 @@ td {
 }
 
 .desc t {
-  color: #0d2149;
+  color: #222222;
   font-weight: 700;
 }
 
 .desc imp {
   padding: 6px;
   color: white;
-  background: #0d2149;
+  background: #222222;
 }
 
 .desc more {
@@ -439,4 +437,8 @@ sm {
 
 .container .row p.tight {
   margin-bottom: 10px;
+}
+
+#resume {
+  font-size: 120px;
 }
