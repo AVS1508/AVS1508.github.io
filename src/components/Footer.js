@@ -63,8 +63,8 @@ class Footer extends React.Component {
       : ["Email", "Phone", "Github", "Behance", "LinkedIn", "Facebook", "Instagram", "Youtube"];
     return (
       <Navbar
+        className="dark-bar"
         style={{
-          background: "linear-gradient(45deg, rgba(17, 35, 50, 1) 0%, rgba(7, 37, 62, 1) 100%)",
           position: "sticky",
           bottom: 0,
           zIndex: 2000,

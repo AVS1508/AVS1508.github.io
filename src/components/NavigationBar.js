@@ -4,8 +4,8 @@ import { Nav, Navbar, NavLink } from "react-bootstrap";
 const NavigationBar = () => {
   return (
     <Navbar
+      className="dark-bar"
       style={{
-        background: "linear-gradient(45deg, rgba(17, 35, 50, 1) 0%, rgba(7, 37, 62, 1) 100%)",
         position: "sticky",
         top: 0,
         zIndex: 2001,
@@ -22,7 +22,7 @@ const NavigationBar = () => {
           <NavLink href="/experience">Experience</NavLink>
           <NavLink href="/projects">Projects</NavLink>
           <NavLink href="/skills">Skills</NavLink>
-          <NavLink href="/honors">Honors & Awards</NavLink>
+          <NavLink href="/achievements">Achievements</NavLink>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

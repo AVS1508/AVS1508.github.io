@@ -13,13 +13,24 @@ class About extends React.Component {
     return (
       <div className="primary center-structure" style={{ display: "flex", flexDirection: "column" }}>
         <TitleBar title="About Me" />
-        <Container fluid style={{ padding: "2.5em" }}>
+        <Container fluid style={{ padding: "1em" }}>
           <Row className="justify-content-center" style={{ alignItems: "center" }}>
             <Col lg="4" style={{ textAlign: "center" }}>
               <img className="header-img" src={ProfessionalHeadshot} alt="header" fluid />
             </Col>
+          </Row>
+          <Row className="justify-content-center" style={{ alignItems: "center" }}>
             <Col lg="8">
-              <p id="about" style={{ padding: "25px 10px", textAlign: "justify", color: "#eeeeee", margin: "0w" }}>
+              <p
+                id="about"
+                style={{
+                  fontFamily: "Nunito Sans",
+                  padding: "25px 10px",
+                  textAlign: "justify",
+                  color: "#111111",
+                  margin: "0w",
+                }}
+              >
                 I am a rising junior at the University of Massachusetts Amherst, double majoring in Computer Science and
                 Mathematics with a concentration in Statistics and Data Science. Currently, I'm involved as a Software
                 Developer for BUILD UMass, where I use my software engineering skills for pro-bono app/web development

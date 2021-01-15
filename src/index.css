@@ -1,9 +1,15 @@
 #root {
-  background-color: #222222;
+  /* Color/gradient variables defined*/
+  --dark-gradient: linear-gradient(45deg, rgba(17, 35, 50, 1) 0%, rgba(7, 37, 62, 1) 100%);
+  --bg-color: #eee;
+  --bg-gradient-alternate: linear-gradient(45deg, #0f0c29 0%, #302b63 100%);
+  --light-gradient: linear-gradient(90deg, #396afc 0%, #2948ff 100%);
+  /*CSS Properties begin*/
+  background-color: var(--bg-color);
   font-family: "Inter";
   font-weight: 500;
   font-size: 18px;
-  color: #222222;
+  color: #000;
   align-items: right;
   font-display: swap;
   margin: 0;
@@ -20,11 +26,11 @@ sm {
 }
 
 .header {
+  background-color: var(--bg-color);
   background: url(./assets/cocoa-beach-me.jpg) no-repeat center top;
   padding-top: 10vw;
   padding-bottom: 10vw;
   text-align: center;
-  background-color: #222222 !important;
   background-attachment: relative;
   background-position: center center;
   min-height: calc(100vh - 118px);
@@ -39,7 +45,7 @@ sm {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: calc(100vh - 118px);
+  min-height: calc(100vh - 264px);
 }
 
 .header h1 {
@@ -92,6 +98,10 @@ sm {
     border-radius: 50%;
     position: static;
   }
+
+  .flip-card {
+    min-height: 22.5em;
+  }
 }
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
@@ -100,11 +110,12 @@ sm {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  max-width: 90vw;
   width: 450px;
   height: 300px;
   font-size: 16px;
-  padding: 1rem;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  padding: 0.75rem;
+  perspective: 1000px; /*Remove this if you don't want the 3D effect*/
 }
 
 /* This container is needed to position the front and back side */
@@ -142,8 +153,8 @@ sm {
   color: #eeeeee;
 }
 .primary .flip-card-front {
-  background-color: #222222;
-  box-shadow: 2px 2px 5px 2px #222222;
+  background: var(--light-gradient);
+  box-shadow: 2px 2px 5px 2px #000000;
 }
 
 /* Style the back side */
@@ -157,8 +168,8 @@ sm {
   color: #eeeeee;
 }
 .primary .flip-card-back {
-  background-color: #222222;
-  box-shadow: 2px 2px 5px 2px #222222;
+  background: var(--light-gradient);
+  box-shadow: 2px 2px 5px 2px #000000;
 }
 
 .flip-card-img {
@@ -176,7 +187,7 @@ sm {
 .primary imp {
   padding: 6px;
   color: white;
-  background: #222222;
+  background: var(--light-gradient);
 }
 
 .primary more {
@@ -184,9 +195,13 @@ sm {
 }
 
 .title-bar {
-  background-color: #222222;
+  background: var(--light-gradient);
   color: white;
-  padding: 5%;
   margin: 0;
-  width: 100vw;
+  padding: 2.5em 0;
+  width: 100%;
+}
+
+.dark-bar {
+  background: var(--dark-gradient);
 }
