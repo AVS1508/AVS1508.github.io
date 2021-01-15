@@ -1,0 +1,192 @@
+#root {
+  background-color: #222222;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 18px;
+  color: #222222;
+  align-items: right;
+  font-display: swap;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+
+  /* Addresses a small issue in webkit: https://bit.ly/NEdoDq */
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+sm {
+  font-size: 12px;
+}
+
+.header {
+  background: url(./assets/cocoa-beach-me.jpg) no-repeat center top;
+  padding-top: 10vw;
+  padding-bottom: 10vw;
+  text-align: center;
+  background-color: #222222 !important;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: calc(100vh - 118px);
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.center-structure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 118px);
+}
+
+.header h1 {
+  font-size: 80px;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.header h3 {
+  font-size: 20px;
+  color: white;
+}
+
+@media (min-aspect-ratio: 4/3) {
+  #heading-name {
+    font-size: 100px;
+    text-shadow: 2px 2px #000000;
+    border-radius: 20px;
+  }
+
+  #heading-desc {
+    font-size: 48px;
+    text-shadow: 2px 2px #000000;
+  }
+
+  .header-img {
+    max-width: 55%;
+    height: auto;
+    border-radius: 50%;
+    position: static;
+  }
+}
+
+@media (max-aspect-ratio: 4/3) {
+  #heading-name {
+    font-size: 40px;
+    text-shadow: 2px 2px #000000;
+    border-radius: 10px;
+  }
+
+  #heading-desc {
+    font-size: 24px;
+    text-shadow: 2px 2px #000000;
+  }
+
+  .header-img {
+    max-width: 55%;
+    height: auto;
+    padding: 15px;
+    border-radius: 50%;
+    position: static;
+  }
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 450px;
+  height: 300px;
+  font-size: 16px;
+  padding: 1rem;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  color: #eeeeee;
+}
+.primary .flip-card-front {
+  background-color: #222222;
+  box-shadow: 2px 2px 5px 2px #222222;
+}
+
+/* Style the back side */
+.flip-card-back {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  transform: rotateY(180deg);
+  color: #eeeeee;
+}
+.primary .flip-card-back {
+  background-color: #222222;
+  box-shadow: 2px 2px 5px 2px #222222;
+}
+
+.flip-card-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 1rem;
+}
+
+.primary t {
+  color: #eeeeee;
+  font-weight: 700;
+}
+
+.primary imp {
+  padding: 6px;
+  color: white;
+  background: #222222;
+}
+
+.primary more {
+  color: #616669;
+}
+
+.title-bar {
+  background-color: #222222;
+  color: white;
+  padding: 5%;
+  margin: 0;
+  width: 100vw;
+}
