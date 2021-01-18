@@ -6,9 +6,15 @@ import TitleBar from "../components/TitleBar";
 class Achievements extends React.Component {
   render() {
     return (
-      <div className="primary center-structure" style={{ display: "flex", flexDirection: "column" }}>
+      <div className="primary outer-structure" style={{ display: "flex", flexDirection: "column" }}>
         <TitleBar title="Achievements & Awards" />
-        Work-in-Progress
+        <div className="center inner-structure">
+          <Container fluid>
+            <Row className="justify-content-center" style={{ alignItems: "center" }}>
+              <h1>Work-in-Progress</h1>
+            </Row>
+          </Container>
+        </div>
       </div>
     );
   }

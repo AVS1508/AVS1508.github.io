@@ -1,8 +1,7 @@
 #root {
   /* Color/gradient variables defined*/
   --dark-gradient: linear-gradient(45deg, rgba(17, 35, 50, 1) 0%, rgba(7, 37, 62, 1) 100%);
-  --bg-color: #eee;
-  --bg-gradient-alternate: linear-gradient(45deg, #0f0c29 0%, #302b63 100%);
+  --bg-color: white;
   --light-gradient: linear-gradient(90deg, #396afc 0%, #2948ff 100%);
   /*CSS Properties begin*/
   background-color: var(--bg-color);
@@ -41,11 +40,20 @@ sm {
   background-size: cover;
 }
 
-.center-structure {
+.outer-structure {
+  display: flex;
+  min-height: calc(100vh - 118px);
+}
+
+.inner-structure {
+  display: flex;
+  min-height: calc(100vh - 264px);
+}
+
+.center {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: calc(100vh - 264px);
 }
 
 .header h1 {
@@ -59,40 +67,43 @@ sm {
   color: white;
 }
 
-@media (min-aspect-ratio: 4/3) {
+@media (min-aspect-ratio: 1/2) {
   #heading-name {
-    font-size: 100px;
+    font-size: 6.5vw;
     text-shadow: 2px 2px #000000;
     border-radius: 20px;
   }
 
   #heading-desc {
-    font-size: 48px;
+    font-size: 3.5vw;
     text-shadow: 2px 2px #000000;
   }
 
   .header-img {
-    max-width: 55%;
+    min-width: 10em;
+    width: 10em;
     height: auto;
     border-radius: 50%;
     position: static;
   }
 }
 
-@media (max-aspect-ratio: 4/3) {
+@media (max-aspect-ratio: 1/2) {
   #heading-name {
-    font-size: 40px;
-    text-shadow: 2px 2px #000000;
+    font-size: 1.75em;
+    text-shadow: 0.75px 0.75px #000000;
     border-radius: 10px;
   }
 
   #heading-desc {
-    font-size: 24px;
-    text-shadow: 2px 2px #000000;
+    font-size: 18px;
+    text-shadow: 0.75px 0.75px #000000;
   }
 
   .header-img {
     max-width: 55%;
+    min-width: 10em;
+    width: 10em;
     height: auto;
     padding: 15px;
     border-radius: 50%;
@@ -111,6 +122,7 @@ sm {
   margin-left: auto;
   margin-right: auto;
   max-width: 90vw;
+  min-width: 25vw;
   width: 450px;
   height: 300px;
   font-size: 16px;
@@ -187,7 +199,7 @@ sm {
 .primary imp {
   padding: 6px;
   color: white;
-  background: var(--light-gradient);
+  background: transparent;
 }
 
 .primary more {
@@ -204,4 +216,9 @@ sm {
 
 .dark-bar {
   background: var(--dark-gradient);
+}
+
+#basic-navbar-nav > * > * {
+  margin-left: auto;
+  margin-right: auto;
 }

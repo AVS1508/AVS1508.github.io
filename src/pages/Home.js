@@ -25,9 +25,9 @@ class Introduction extends React.Component {
   }
   render() {
     return (
-      <div className="header center-structure">
+      <div className="header center outer-structure">
         <Container fluid>
-          <Row className="justify-content-md-center">
+          <Row className="justify-content-center">
             <Col lg="10">
               <h1 id="heading-name">ADITYA VIKRAM SINGH</h1>
               <h3 id="heading-desc">

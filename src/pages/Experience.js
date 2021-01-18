@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component, Fragment } from "react";
 import { Container, Row } from "react-bootstrap";
 
 import ExperienceCard from "../components/ExperienceCard";
@@ -11,12 +11,12 @@ import BUILDLogo from "../assets/build-logo.jpg";
 import AerossLogo from "../assets/aeross-logo.jpg";
 import VirtuBoxLogo from "../assets/virtubox-logo.jpg";
 
-class Experience extends React.Component {
+class Experience extends Component {
   render() {
     return (
-      <React.Fragment>
+      <div className="primary outer-structure" style={{ display: "flex", flexDirection: "column" }}>
         <TitleBar title="My Experiences" />
-        <div className="primary center-structure" style={{ display: "flex", flexDirection: "column" }}>
+        <div className="inner-structure center">
           <Container fluid>
             <Row>
               <ExperienceCard
@@ -70,8 +70,6 @@ class Experience extends React.Component {
                   </>
                 }
               />
-              {/*</Row>
-          <Row>*/}
               <ExperienceCard
                 image={DPSRKPLogo}
                 title="President"
@@ -129,7 +127,7 @@ class Experience extends React.Component {
             </Row>
           </Container>
         </div>
-      </React.Fragment>
+      </div>
     );
   }
 }
