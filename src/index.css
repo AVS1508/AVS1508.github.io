@@ -1,8 +1,10 @@
 #root {
   /* Color/gradient variables defined*/
-  --dark-gradient: linear-gradient(45deg, rgba(17, 35, 50, 1) 0%, rgba(7, 37, 62, 1) 100%);
+  --dark-gradient: linear-gradient(45deg, rgba(17, 35, 50, 1), rgba(7, 37, 62, 1));
   --bg-color: white;
-  --light-gradient: linear-gradient(90deg, #396afc 0%, #2948ff 100%);
+  --light-gradient: linear-gradient(90deg, #ff5f6d, #ffc371);
+  /*linear-gradient(90deg, #396afc, #2948ff);*/
+  --gray-gradient: linear-gradient(45deg, #0f2027, #203a43);
   /*CSS Properties begin*/
   background-color: var(--bg-color);
   font-family: "Inter";
@@ -18,6 +20,10 @@
   /* Addresses a small issue in webkit: https://bit.ly/NEdoDq */
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+}
+
+p {
+  margin-bottom: 0 !important;
 }
 
 sm {
@@ -58,13 +64,13 @@ sm {
 
 .header h1 {
   font-size: 80px;
-  color: white;
+  color: var(--bg-color);
   background: rgba(0, 0, 0, 0.5);
 }
 
 .header h3 {
   font-size: 20px;
-  color: white;
+  color: var(--bg-color);
 }
 
 @media (min-aspect-ratio: 1/2) {
@@ -122,9 +128,9 @@ sm {
   margin-left: auto;
   margin-right: auto;
   max-width: 90vw;
-  min-width: 25vw;
+  min-width: 30vw;
   width: 450px;
-  height: 300px;
+  height: 350px;
   font-size: 16px;
   padding: 0.75rem;
   perspective: 1000px; /*Remove this if you don't want the 3D effect*/
@@ -162,10 +168,10 @@ sm {
   justify-content: center;
   align-items: center;
   border-radius: 0.5rem;
-  color: #eeeeee;
+  color: var(--bg-color);
 }
 .primary .flip-card-front {
-  background: var(--light-gradient);
+  background: var(--gray-gradient);
   box-shadow: 2px 2px 5px 2px #000000;
 }
 
@@ -177,10 +183,10 @@ sm {
   align-items: center;
   border-radius: 0.5rem;
   transform: rotateY(180deg);
-  color: #eeeeee;
+  color: var(--bg-color);
 }
 .primary .flip-card-back {
-  background: var(--light-gradient);
+  background: var(--gray-gradient);
   box-shadow: 2px 2px 5px 2px #000000;
 }
 
@@ -192,13 +198,13 @@ sm {
 }
 
 .primary t {
-  color: #eeeeee;
+  color: var(--bg-color);
   font-weight: 700;
 }
 
 .primary imp {
   padding: 6px;
-  color: white;
+  color: var(--bg-color);
   background: transparent;
 }
 
@@ -208,9 +214,9 @@ sm {
 
 .title-bar {
   background: var(--light-gradient);
-  color: white;
+  color: var(--bg-color);
   margin: 0;
-  padding: 2.5em 0;
+  padding: 1.5em 0;
   width: 100%;
 }
 
@@ -221,4 +227,18 @@ sm {
 #basic-navbar-nav > * > * {
   margin-left: auto;
   margin-right: auto;
+}
+
+.resume-btn {
+  background: #0f2027 !important;
+  color: white !important;
+  border: 0.15em solid #0f2027 !important;
+  border-radius: 10px !important;
+  padding: 15px 30px !important;
+  margin: 1em;
+}
+
+.resume-btn:hover {
+  background: white !important;
+  color: #0f2027 !important;
 }

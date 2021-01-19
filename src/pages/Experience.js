@@ -17,8 +17,8 @@ class Experience extends Component {
       <div className="primary outer-structure" style={{ display: "flex", flexDirection: "column" }}>
         <TitleBar title="My Experiences" />
         <div className="inner-structure center">
-          <Container fluid>
-            <Row>
+          <Container fluid style={{ textAlign: "center" }}>
+            <Row style={{ display: "inline-flex" }}>
               <ExperienceCard
                 image={BUILDLogo}
                 title="Software Developer"
