@@ -17,13 +17,13 @@ const NavigationBar = () => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto nav-menu">
-          <NavLink href="/">Home</NavLink>
-          <NavLink href="/about">About</NavLink>
-          <NavLink href="/education">Education</NavLink>
-          <NavLink href="/experience">Experience</NavLink>
-          <NavLink href="/projects">Projects</NavLink>
-          <NavLink href="/skills">Skills</NavLink>
-          <NavLink href="/achievements">Achievements</NavLink>
+          <NavLink href="/#/">Home</NavLink>
+          <NavLink href="/#/about">About</NavLink>
+          <NavLink href="/#/education">Education</NavLink>
+          <NavLink href="/#/experience">Experience</NavLink>
+          <NavLink href="/#/projects">Projects</NavLink>
+          <NavLink href="/#/skills">Skills</NavLink>
+          <NavLink href="/#/achievements">Achievements</NavLink>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
