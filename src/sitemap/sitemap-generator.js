@@ -12,6 +12,6 @@ require.extensions[".pdf"] = () => {};
 const router = require("./sitemap-routes").default;
 const Sitemap = require("react-router-sitemap").default;
 
-const generateSitemap = () => new Sitemap(router).build("https://www.adityavsingh.com").save("./sitemap.xml");
+const generateSitemap = () => new Sitemap(router).build("https://www.adityavsingh.com").save("./public/sitemap.xml");
 
 generateSitemap();
