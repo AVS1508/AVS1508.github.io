@@ -3,8 +3,8 @@ import { Navbar, Nav } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithubSquare,
-  faLinkedin,
   faBehanceSquare,
+  faLinkedin,
   faFacebookSquare,
   faInstagram,
   faYoutube,

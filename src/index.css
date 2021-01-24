@@ -235,7 +235,7 @@ sm {
   border: 0.15em solid #0f2027 !important;
   border-radius: 10px !important;
   padding: 15px 30px !important;
-  margin: 1em;
+  margin: 0.5em;
 }
 
 .resume-btn:hover {

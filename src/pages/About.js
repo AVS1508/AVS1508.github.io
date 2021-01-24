@@ -1,8 +1,8 @@
 import React from "react";
 import { Button, Container, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFileAlt } from "@fortawesome/free-solid-svg-icons";
-import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faFileAlt, faGlobe } from "@fortawesome/free-solid-svg-icons";
+import { faBehanceSquare } from "@fortawesome/free-brands-svg-icons";
 
 import TitleBar from "../components/TitleBar";
 import ProfessionalHeadshot from "../assets/professional-me.jpg";
@@ -40,14 +40,16 @@ class About extends React.Component {
               </Col>
             </Row>
             <Row className="justify-content-center">
-              <Button className="resume-btn" href="https://github.com/AVS1508" target="_blank" size="lg">
-                <FontAwesomeIcon icon={faGithubSquare} /> GitHub
-              </Button>
-              <Button className="resume-btn" href="https://www.linkedin.com/in/avs1508" target="_blank" size="lg">
-                <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
-              </Button>
               <Button className="resume-btn" href="/resume.pdf" target="_blank" size="lg">
                 <FontAwesomeIcon icon={faFileAlt} /> Résumé
+              </Button>
+              <Button
+                className="resume-btn"
+                href="https://www.adityavsingh.com/old-personal-website"
+                target="_blank"
+                size="lg"
+              >
+                <FontAwesomeIcon icon={faGlobe} /> Old Website
               </Button>
             </Row>
           </Container>
