@@ -27,13 +27,13 @@ class Experience extends Component {
                 alternateTitle="Software Developer, BUILD UMass"
                 duration="September 2020 - Present"
                 details={
-                  <>
+                  <React.Fragment>
                     • Developing a modern website for UMass Entrepreneurship Club
                     <br />
                     • Part of 4-member development team responsible for the same
                     <br />
                     • Engineering front-end with React, SCSS, and Bootstrap
-                  </>
+                  </React.Fragment>
                 }
               />
               <ExperienceCard
@@ -44,13 +44,13 @@ class Experience extends Component {
                 alternateTitle="Business Development, VirtuBox Infotech"
                 duration="July 2020 - August 2020"
                 details={
-                  <>
+                  <React.Fragment>
                     • Planned the transition from Vue.js to React framework for web CMS
                     <br />
                     • Worked on competitor analysis and app-store search optimization
                     <br />
                     • Produced 10+ video tutorials about the company’s CMS dashboard
-                  </>
+                  </React.Fragment>
                 }
               />
               <ExperienceCard
@@ -61,13 +61,13 @@ class Experience extends Component {
                 alternateTitle="CS Peer Tutor, UMass CICS"
                 duration="January 2020 - May 2020"
                 details={
-                  <>
+                  <React.Fragment>
                     • Held one-on-one tutoring sessions for two introductory CS courses
                     <br />
                     • Conducted weekly meetings to discuss assignments and homework
                     <br />
                     • Explained various implementations of essential data structures
-                  </>
+                  </React.Fragment>
                 }
               />
               <ExperienceCard
@@ -78,14 +78,14 @@ class Experience extends Component {
                 alternateTitle="President, Student Council"
                 duration="April 2018 - April 2019"
                 details={
-                  <>
+                  <React.Fragment>
                     • Oversaw student discipline and adherence to code of conduct
                     <br />
                     • Represented the students’ interests in administrative meetings
                     <br />
                     • Liaised between students, faculty, and administration
                     <br />• Supervised the student-run events in lieu of school coordinator
-                  </>
+                  </React.Fragment>
                 }
               />
               <ExperienceCard
@@ -96,7 +96,7 @@ class Experience extends Component {
                 alternateTitle="Lead Designer, TEDxYouth@DPSRKPuram"
                 duration="November 2018 - April 2019"
                 details={
-                  <>
+                  <React.Fragment>
                     • Led the organization's design initiative for annual event
                     <br />
                     • Created posters, banners, & prospectus for November event
@@ -104,7 +104,7 @@ class Experience extends Component {
                     • Designed ID cards & certificates for speakers and volunteers
                     <br />
                     • Coordinated with other departments of the Organizing Committee
-                  </>
+                  </React.Fragment>
                 }
               />
               <ExperienceCard
@@ -115,13 +115,13 @@ class Experience extends Component {
                 alternateTitle="Honorary Advisor, Aerospace Society"
                 duration="May 2018 - April 2019"
                 details={
-                  <>
+                  <React.Fragment>
                     • Mentored junior teams for aerospace competitions and summits
                     <br />
                     • Took part in promoting space exploration and colonization to peers
                     <br />
                     • Advised the executive team regarding new focuses for the club
-                  </>
+                  </React.Fragment>
                 }
               />
             </Row>

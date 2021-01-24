@@ -1,3 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Disallow: /CNAME
+Sitemap: https://www.adityavsingh.com/sitemap.xml

@@ -26,7 +26,7 @@ class Education extends React.Component {
                 duration="August 2019 - May 2023"
                 grade="4.00 GPA"
                 details={
-                  <>
+                  <React.Fragment>
                     • Major: Computer Science & Mathematics (Statistics & Data Science)
                     <br />
                     • Dean's List (all semesters)
@@ -37,7 +37,7 @@ class Education extends React.Component {
                     <br />
                     • Member, UMass ACM (Sep 2019 - Present) <br />
                     • Designer, HackUMass Organizing Team (Mar 2020 - Present)
-                  </>
+                  </React.Fragment>
                 }
               />
               <EducationCard
@@ -49,12 +49,12 @@ class Education extends React.Component {
                 class="Class of 2019"
                 duration="July 2012 - May 2019"
                 grade={
-                  <>
+                  <React.Fragment>
                     96.0% (Grade 12) <br /> 10.0 CGPA (Grade 10)
-                  </>
+                  </React.Fragment>
                 }
                 details={
-                  <>
+                  <React.Fragment>
                     • President, Student Council (Apr 2018 - Apr 2019)
                     <br />
                     • Lead Designer, TEDxYouth@DPSRKPuram (Nov 2018 - Apr 2019)
@@ -63,7 +63,7 @@ class Education extends React.Component {
                     <br />
                     • Honorary Advisor, Aerospace Society (May 2018 - Apr 2019)
                     <br />• Structural Engineer, Aerospace Society (May 2016 - Apr 2018)
-                  </>
+                  </React.Fragment>
                 }
               />
             </Row>
@@ -75,28 +75,28 @@ class Education extends React.Component {
                 shortcode="COMPSCI 311"
                 term="Spring 2021"
                 institution="University of Massachusetts Amherst"
-                details={<>WORK-IN-PROGRESS</>}
+                details={<React.Fragment>WORK-IN-PROGRESS</React.Fragment>}
               />
               <CourseworkCard
                 title="Artificial Intelligence"
                 shortcode="COMPSCI 383"
                 term="Spring 2021"
                 institution="University of Massachusetts Amherst"
-                details={<>WORK-IN-PROGRESS</>}
+                details={<React.Fragment>WORK-IN-PROGRESS</React.Fragment>}
               />
               <CourseworkCard
                 title="Statistics I"
                 shortcode="STAT 515"
                 term="Spring 2021"
                 institution="University of Massachusetts Amherst"
-                details={<>WORK-IN-PROGRESS</>}
+                details={<React.Fragment>WORK-IN-PROGRESS</React.Fragment>}
               />
               <CourseworkCard
                 title="Advanced Multivariate Calculus"
                 shortcode="MATH 425"
                 term="Spring 2021"
                 institution="University of Massachusetts Amherst"
-                details={<>WORK-IN-PROGRESS</>}
+                details={<React.Fragment>WORK-IN-PROGRESS</React.Fragment>}
               />
               <CourseworkCard
                 title="Computer Systems Principles"
@@ -104,11 +104,11 @@ class Education extends React.Component {
                 term="Fall 2020"
                 institution="University of Massachusetts Amherst"
                 details={
-                  <>
+                  <React.Fragment>
                     Study of principles behind high-performance scalable systems, using C language, such as features of
                     modern architectures, assembly languages, and operating system services such as I/O and
                     synchronization.
-                  </>
+                  </React.Fragment>
                 }
               />
               <CourseworkCard
@@ -117,10 +117,10 @@ class Education extends React.Component {
                 term="Fall 2020"
                 institution="University of Massachusetts Amherst"
                 details={
-                  <>
+                  <React.Fragment>
                     Study of mathematical uncertainties, using laws of counting and probability, statistical bounds,
                     random variables, Central Limit Theorem, Game Theory, Markov Chains, and Bayesian Networks.
-                  </>
+                  </React.Fragment>
                 }
               />
               <CourseworkCard
@@ -129,11 +129,11 @@ class Education extends React.Component {
                 term="Fall 2020"
                 institution="University of Massachusetts Amherst"
                 details={
-                  <>
+                  <React.Fragment>
                     Introduction to ordinary differential equations, with 1st and 2nd order linear differential
                     equations, systems of linear differential equations, Laplace transforms, numerical methods, and
                     applications.
-                  </>
+                  </React.Fragment>
                 }
               />
               <CourseworkCard
@@ -142,10 +142,10 @@ class Education extends React.Component {
                 term="Spring 2020"
                 institution="University of Massachusetts Amherst"
                 details={
-                  <>
+                  <React.Fragment>
                     Study of discrete mathematics involving logic, elementary number theory, mathematical induction,
                     tree recursion, search algorithms, regular expressions, finite state machines, and computability.
-                  </>
+                  </React.Fragment>
                 }
               />
               <CourseworkCard
@@ -154,10 +154,10 @@ class Education extends React.Component {
                 term="Spring 2020"
                 institution="University of Massachusetts Amherst"
                 details={
-                  <>
+                  <React.Fragment>
                     Study of modern programming methodologies emphasizing on good software engineering skills, including
                     programming abstractions, testing, debugging, and design patterns.
-                  </>
+                  </React.Fragment>
                 }
               />
               <CourseworkCard
@@ -166,10 +166,10 @@ class Education extends React.Component {
                 term="Spring 2020"
                 institution="University of Massachusetts Amherst"
                 details={
-                  <>
+                  <React.Fragment>
                     Introductory linear algebra with matrices, determinants, systems of linear equations, vector spaces,
                     linear transformations, and eigenvalues.
-                  </>
+                  </React.Fragment>
                 }
               />
               <CourseworkCard
@@ -178,10 +178,10 @@ class Education extends React.Component {
                 term="Spring 2020"
                 institution="University of Massachusetts Amherst"
                 details={
-                  <>
+                  <React.Fragment>
                     Study of data analysis involving data wrangling, summary statistics, modeling, and visualization
                     using R with Tidyverse packages.
-                  </>
+                  </React.Fragment>
                 }
               />
               <CourseworkCard
@@ -190,11 +190,11 @@ class Education extends React.Component {
                 term="Fall 2019"
                 institution="University of Massachusetts Amherst"
                 details={
-                  <>
+                  <React.Fragment>
                     Introduction to building and encapsulating data objects and their associated operations through
                     linked structures, recursive structures, trees, heaps, graphs, hash tables, and search-sort
                     algorithms.
-                  </>
+                  </React.Fragment>
                 }
               />
               <CourseworkCard
@@ -203,11 +203,11 @@ class Education extends React.Component {
                 term="Fall 2019"
                 institution="University of Massachusetts Amherst"
                 details={
-                  <>
+                  <React.Fragment>
                     Extension of single-variable calculus to functions of several variables, covering vectors in two-
                     and three-dimensional space, partial derivatives, double and triple integrals, line integrals,
                     surface integrals, Green’s theorem, Stokes’s theorem, and Divergence theorem.
-                  </>
+                  </React.Fragment>
                 }
               />
               <CourseworkCard
@@ -215,35 +215,35 @@ class Education extends React.Component {
                 shortcode="AP Physics C: Electricity & Magnetism"
                 term="May 2019"
                 institution="CollegeBoard Advanced Placement Exams"
-                details={<>WORK-IN-PROGRESS</>}
+                details={<React.Fragment>WORK-IN-PROGRESS</React.Fragment>}
               />
               <CourseworkCard
                 title="Physics I"
                 shortcode="AP Physics C: Mechanics"
                 term="May 2019"
                 institution="CollegeBoard Advanced Placement Exams"
-                details={<>WORK-IN-PROGRESS</>}
+                details={<React.Fragment>WORK-IN-PROGRESS</React.Fragment>}
               />
               <CourseworkCard
                 title="Introductory Computer Science"
                 shortcode="AP Computer Science A"
                 term="May 2019"
                 institution="CollegeBoard Advanced Placement Exams"
-                details={<>WORK-IN-PROGRESS</>}
+                details={<React.Fragment>WORK-IN-PROGRESS</React.Fragment>}
               />
               <CourseworkCard
                 title="Introduction to Statistics"
                 shortcode="AP Statistics"
                 term="May 2019"
                 institution="CollegeBoard Advanced Placement Exams"
-                details={<>WORK-IN-PROGRESS</>}
+                details={<React.Fragment>WORK-IN-PROGRESS</React.Fragment>}
               />
               <CourseworkCard
                 title="Calculus I & II"
                 shortcode="AP Calculus BC"
                 term="May 2019"
                 institution="CollegeBoard Advanced Placement Exams"
-                details={<>WORK-IN-PROGRESS</>}
+                details={<React.Fragment>WORK-IN-PROGRESS</React.Fragment>}
               />
             </Row>
           </Container>
