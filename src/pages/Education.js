@@ -5,8 +5,10 @@ import EducationCard from "../components/EducationCard";
 import CourseworkCard from "../components/CourseworkCard";
 import TitleBar from "../components/TitleBar";
 
-import UMassLogo from "../assets/umass-logo.jpg";
-import DPSRKPLogo from "../assets/dpsrkp-logo.jpg";
+import UMassLogo from "../assets/webp/umass-logo.webp";
+import UMassFallbackLogo from "../assets/jpg/umass-logo.jpg";
+import DPSRKPLogo from "../assets/webp/dpsrkp-logo.webp";
+import DPSRKPFallbackLogo from "../assets/jpg/dpsrkp-logo.jpg";
 
 class Education extends React.Component {
   render() {
@@ -18,6 +20,7 @@ class Education extends React.Component {
             <Row style={{ display: "inline-flex" }}>
               <EducationCard
                 image={UMassLogo}
+                fallback_image={UMassFallbackLogo}
                 title="University of Massachusetts"
                 address="Amherst, MA, USA"
                 degree="Bachelor in Science (Honors)"
@@ -42,6 +45,7 @@ class Education extends React.Component {
               />
               <EducationCard
                 image={DPSRKPLogo}
+                fallback_image={DPSRKPFallbackLogo}
                 title="Delhi Public School"
                 address="R. K. Puram, New Delhi, India"
                 degree="High School Diploma"

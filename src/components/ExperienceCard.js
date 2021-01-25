@@ -7,7 +7,10 @@ const ExperienceCard = (props) => {
       <div class="flip-card">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img class="flip-card-img" src={props.image} alt="Avatar" />
+            <picture>
+              <source className="flip-card-img" type="image/webp" srcset={props.image} />
+              <img className="flip-card-img" src={props.fallback_image} alt="Avatar" />
+            </picture>
             <t>{props.title}</t>
             {props.organization}
             <sm>{props.address}</sm>

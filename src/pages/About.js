@@ -2,10 +2,10 @@ import React from "react";
 import { Button, Container, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFileAlt, faGlobe } from "@fortawesome/free-solid-svg-icons";
-import { faBehanceSquare } from "@fortawesome/free-brands-svg-icons";
 
 import TitleBar from "../components/TitleBar";
-import ProfessionalHeadshot from "../assets/professional-me.jpg";
+import ProfessionalHeadshot from "../assets/webp/professional-me.webp";
+import FallbackProfessionalHeadshot from "../assets/jpg/professional-me.jpg";
 
 class About extends React.Component {
   render() {
@@ -16,7 +16,10 @@ class About extends React.Component {
           <Container fluid style={{ padding: "1.5em" }}>
             <Row className="justify-content-center" style={{ alignItems: "center" }}>
               <Col style={{ textAlign: "center" }}>
-                <img className="header-img" src={ProfessionalHeadshot} alt="header" fluid />
+                <picture>
+                  <source cclassName="header-img" type="image/webp" srcset={ProfessionalHeadshot} />
+                  <img className="header-img" src={FallbackProfessionalHeadshot} alt="header" fluid />
+                </picture>
               </Col>
             </Row>
             <Row className="justify-content-center" style={{ alignItems: "center" }}>

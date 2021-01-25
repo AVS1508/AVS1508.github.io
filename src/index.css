@@ -3,7 +3,6 @@
   --dark-gradient: linear-gradient(45deg, rgba(17, 35, 50, 1), rgba(7, 37, 62, 1));
   --bg-color: white;
   --light-gradient: linear-gradient(90deg, #ff5f6d, #ffc371);
-  /*linear-gradient(90deg, #396afc, #2948ff);*/
   --gray-gradient: linear-gradient(45deg, #0f2027, #203a43);
   /*CSS Properties begin*/
   background-color: var(--bg-color);
@@ -31,15 +30,37 @@ sm {
 }
 
 .header {
-  background-color: var(--bg-color);
-  background: url(./assets/cocoa-beach-me.jpg) no-repeat center top;
+  background: var(--gray-gradient);
   padding-top: 10vw;
   padding-bottom: 10vw;
   text-align: center;
-  background-attachment: relative;
-  background-position: center center;
   min-height: calc(100vh - 118px);
   width: 100%;
+}
+
+.no-js .header {
+  background: url(./assets/jpg/cocoa-beach-me.jpg) no-repeat center top;
+  background-attachment: relative;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.webp .header {
+  background: url(./assets/webp/cocoa-beach-me.webp) no-repeat center top;
+  background-attachment: relative;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.no-webp .header {
+  background: url(./assets/jpg/cocoa-beach-me.jpg) no-repeat center top;
+  background-attachment: relative;
+  background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

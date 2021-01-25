@@ -4,12 +4,19 @@ import { Container, Row } from "react-bootstrap";
 import ExperienceCard from "../components/ExperienceCard";
 import TitleBar from "../components/TitleBar";
 
-import UMassLogo from "../assets/umass-logo.jpg";
-import DPSRKPLogo from "../assets/dpsrkp-logo.jpg";
-import TEDxRKPLogo from "../assets/tedxyouth-logo.jpg";
-import BUILDLogo from "../assets/build-logo.jpg";
-import AerossLogo from "../assets/aeross-logo.jpg";
-import VirtuBoxLogo from "../assets/virtubox-logo.jpg";
+import UMassLogo from "../assets/webp/umass-logo.webp";
+import DPSRKPLogo from "../assets/webp/dpsrkp-logo.webp";
+import TEDxRKPLogo from "../assets/webp/tedxyouth-logo.webp";
+import BUILDLogo from "../assets/webp/build-logo.webp";
+import AerossLogo from "../assets/webp/aeross-logo.webp";
+import VirtuBoxLogo from "../assets/webp/virtubox-logo.webp";
+
+import UMassFallbackLogo from "../assets/jpg/umass-logo.jpg";
+import DPSRKPFallbackLogo from "../assets/jpg/dpsrkp-logo.jpg";
+import TEDxRKPFallbackLogo from "../assets/jpg/tedxyouth-logo.jpg";
+import BUILDFallbackLogo from "../assets/jpg/build-logo.jpg";
+import AerossFallbackLogo from "../assets/jpg/aeross-logo.jpg";
+import VirtuBoxFallbackLogo from "../assets/jpg/virtubox-logo.jpg";
 
 class Experience extends Component {
   render() {
@@ -21,6 +28,7 @@ class Experience extends Component {
             <Row style={{ display: "inline-flex" }}>
               <ExperienceCard
                 image={BUILDLogo}
+                fallback_image={BUILDFallbackLogo}
                 title="Software Developer"
                 organization="BUILD UMass"
                 address="Amherst, MA, USA"
@@ -38,6 +46,7 @@ class Experience extends Component {
               />
               <ExperienceCard
                 image={VirtuBoxLogo}
+                fallback_image={VirtuBoxFallbackLogo}
                 title="Business Development Associate"
                 organization="VirtuBox Infotech Pvt. Ltd."
                 address="Noida, India"
@@ -55,6 +64,7 @@ class Experience extends Component {
               />
               <ExperienceCard
                 image={UMassLogo}
+                fallback_image={UMassFallbackLogo}
                 title="Computer Science Peer Tutor"
                 organization="College of Information and Computer Science"
                 address="Amherst, MA, USA"
@@ -72,6 +82,7 @@ class Experience extends Component {
               />
               <ExperienceCard
                 image={DPSRKPLogo}
+                fallback_image={DPSRKPFallbackLogo}
                 title="President"
                 organization="Student Council, Delhi Public School"
                 address="R. K. Puram, New Delhi, India"
@@ -90,6 +101,7 @@ class Experience extends Component {
               />
               <ExperienceCard
                 image={TEDxRKPLogo}
+                fallback_image={TEDxRKPFallbackLogo}
                 title="Lead Designer"
                 organization="TEDxYouth@DPSRKPuram"
                 address="R. K. Puram, New Delhi, India"
@@ -109,6 +121,7 @@ class Experience extends Component {
               />
               <ExperienceCard
                 image={AerossLogo}
+                fallback_image={AerossFallbackLogo}
                 title="Honorary Advisor"
                 organization="Aerospace Society, Delhi Public School"
                 address="R. K. Puram, New Delhi, India"

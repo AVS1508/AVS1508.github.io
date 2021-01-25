@@ -7,7 +7,10 @@ const EducationCard = (props) => {
       <div className="flip-card">
         <div className="flip-card-inner">
           <div className="flip-card-front">
-            <img className="flip-card-img" src={props.image} alt="Avatar" />
+            <picture>
+              <source className="flip-card-img" type="image/webp" srcset={props.image} />
+              <img className="flip-card-img" src={props.fallback_image} alt="Avatar" />
+            </picture>
             <t>{props.title}</t>
             <sm>{props.address}</sm>
             <br />
