@@ -4,7 +4,7 @@ require("babel-register")({
 
 require.extensions[".jpg"] = () => {};
 require.extensions[".jpeg"] = () => {};
-require.extensions[".gif"] = () => {};
+require.extensions[".webp"] = () => {};
 require.extensions[".png"] = () => {};
 require.extensions[".svg"] = () => {};
 require.extensions[".pdf"] = () => {};

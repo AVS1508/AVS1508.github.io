@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Inter");
+
 #root {
   /* Color/gradient variables defined*/
   --dark-gradient: linear-gradient(45deg, rgba(17, 35, 50, 1), rgba(7, 37, 62, 1));
