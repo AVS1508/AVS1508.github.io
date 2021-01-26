@@ -18,16 +18,20 @@
     "react-router-dom": "^5.2.0",
     "react-router-sitemap": "^1.2.0",
     "react-scripts": "^4.0.1",
+    "react-slick": "^0.28.0",
+    "slick-carousel": "^1.8.1",
     "typed.js": "^2.0.11"
   },
   "scripts": {
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build",
+    "direct-deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "sitemap": "node ./src/sitemap/sitemap-generator.js"
+    "sitemap": "node ./src/sitemap/sitemap-generator.js",
+    "purge": "purgecss --css ./build/static/css/*.css --content ./build/index.html build/static/js/*.js --output ./dist/"
   },
   "eslintConfig": {
     "extends": [

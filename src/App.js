@@ -1,5 +1,6 @@
 import React, { Suspense, lazy } from "react";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import { Spinner } from "react-bootstrap";
 
 import NavigationBar from "./components/NavigationBar";
 import Footer from "./components/Footer";
@@ -16,7 +17,7 @@ const Error_404 = lazy(() => import("./pages/Error_404"));
 const Loading = () => {
   return (
     <div className="center outer-structure" style={{ display: "flex", flexDirection: "column" }}>
-      <h1>Loading...</h1>
+      <Spinner animation="border" variant="dark" />
     </div>
   );
 };
