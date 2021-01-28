@@ -1,4 +1,4 @@
-# <a href="https://www.adityavsingh.com" target="_blank">My Personal Résumé Website</a>
+# <a href="https://www.adityavsingh.com" target="_blank">My Personal Website</a>
 
 [![Repository Status](https://img.shields.io/badge/Repository%20Status-Maintained-dark%20green.svg)](https://github.com/AVS1508/AVS1508.github.io/)
 [![Website Status](https://img.shields.io/badge/Website%20Status-Online-green)](https://www.adityavsingh.com)
