@@ -11,8 +11,8 @@ class About extends React.Component {
   render() {
     return (
       <div className="primary outer-structure" style={{ display: "flex", flexDirection: "column" }}>
-        <TitleBar title="About Me" />
         <div className="inner-structure center" style={{ flexDirection: "column" }}>
+          <TitleBar title="About Me" />
           <Container fluid style={{ padding: "1.5em" }}>
             <Row className="justify-content-center" style={{ alignItems: "center" }}>
               <Col style={{ textAlign: "center" }}>
@@ -26,6 +26,7 @@ class About extends React.Component {
               <Col lg="10">
                 <p
                   id="about"
+                  className="secondary-text"
                   style={{
                     padding: "25px 10px",
                     textAlign: "justify",

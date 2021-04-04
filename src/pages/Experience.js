@@ -22,8 +22,8 @@ class Experience extends Component {
   render() {
     return (
       <div className="primary outer-structure" style={{ display: "flex", flexDirection: "column" }}>
-        <TitleBar title="My Experiences" />
-        <div className="inner-structure center">
+        <div className="inner-structure center" style={{ flexDirection: "column" }}>
+          <TitleBar title="Experience" />
           <Container fluid style={{ textAlign: "center" }}>
             <Row style={{ display: "inline-flex" }}>
               <ExperienceCard

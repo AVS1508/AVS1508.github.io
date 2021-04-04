@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Lexend:wght@500;700&display=swap");
 
 #root {
   /* Color/gradient variables defined*/
@@ -6,6 +6,7 @@
   --bg-color: white;
   --light-gradient: linear-gradient(90deg, #ff5f6d, #ffc371);
   --gray-gradient: linear-gradient(45deg, #0f2027, #203a43);
+  --gray-base: #203a43;
   /*CSS Properties begin*/
   background-color: var(--bg-color);
   font-family: "Inter";
@@ -87,13 +88,13 @@ sm {
 
 .header h1 {
   font-size: 80px;
-  color: var(--bg-color);
+  color: white;
   background: rgba(0, 0, 0, 0.5);
 }
 
 .header h3 {
   font-size: 20px;
-  color: var(--bg-color);
+  color: white;
 }
 
 @media (min-aspect-ratio: 1/2) {
@@ -113,6 +114,7 @@ sm {
     width: 10em;
     height: auto;
     border-radius: 50%;
+    border: 5px solid rgba(17, 35, 50, 1);
     position: static;
   }
 }
@@ -136,6 +138,7 @@ sm {
     height: auto;
     padding: 15px;
     border-radius: 50%;
+    border: 5px solid rgba(17, 35, 50, 1);
     position: static;
   }
 
@@ -191,7 +194,7 @@ sm {
   justify-content: center;
   align-items: center;
   border-radius: 0.5rem;
-  color: var(--bg-color);
+  color: white;
 }
 .primary .flip-card-front {
   background: var(--gray-gradient);
@@ -206,7 +209,7 @@ sm {
   align-items: center;
   border-radius: 0.5rem;
   transform: rotateY(180deg);
-  color: var(--bg-color);
+  color: white;
 }
 .primary .flip-card-back {
   background: var(--gray-gradient);
@@ -221,13 +224,13 @@ sm {
 }
 
 .primary t {
-  color: var(--bg-color);
+  /* color: white; */
   font-weight: 700;
 }
 
 .primary imp {
   padding: 6px;
-  color: var(--bg-color);
+  color: white;
   background: transparent;
 }
 
@@ -236,11 +239,15 @@ sm {
 }
 
 .title-bar {
-  background: var(--light-gradient);
-  color: var(--bg-color);
+  font-family: "Lexend";
+  color: white;
   margin: 0;
   padding: 1.5em 0;
   width: 100%;
+}
+
+.secondary-text {
+  font-family: "Lexend";
 }
 
 .dark-bar {
@@ -253,17 +260,17 @@ sm {
 }
 
 .resume-btn {
-  background: #0f2027 !important;
+  background: var(--gray-base) !important;
   color: white !important;
-  border: 0.15em solid #0f2027 !important;
-  border-radius: 10px !important;
+  border: 0.15em solid var(--gray-base) !important;
+  border-radius: 20px !important;
   padding: 15px 30px !important;
   margin: 0.5em;
 }
 
 .resume-btn:hover {
-  background: white !important;
-  color: #0f2027 !important;
+  background: var(--bg-color) !important;
+  color: var(--gray-base) !important;
 }
 
 .gradient-text {

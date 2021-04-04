@@ -60,7 +60,7 @@ class Footer extends React.Component {
   render() {
     const smallViewArray = this.state.isMobileView
       ? ["", "", "", "", "", ""]
-      : ["Email", "Phone", "Github", "Behance", "LinkedIn", "Facebook", "Instagram", "Youtube"];
+      : ["Email", "Phone", "GitHub", "Behance", "LinkedIn", "Facebook", "Instagram", "Youtube"];
     return (
       <Navbar
         className="dark-bar"

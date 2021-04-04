@@ -1,12 +1,22 @@
 import React from "react";
-import { Row } from "react-bootstrap";
+import { Row, Button } from "react-bootstrap";
 
 const TitleBar = (props) => {
   return (
-    <div className="title-bar">
-      <Row className="justify-content-center" style={{ alignItems: "center", textAlign: "center", margin: 0 }}>
+    <div className="title-bar justify-content-center" style={{ alignItems: "center", textAlign: "center" }}>
+      <div
+        style={{
+          alignItems: "center",
+          textAlign: "center",
+          margin: 0,
+          padding: "1em 2em",
+          borderRadius: "25px",
+          background: "var(--light-gradient)",
+          display: "inline-block",
+        }}
+      >
         <h1>{props.title}</h1>
-      </Row>
+      </div>
     </div>
   );
 };

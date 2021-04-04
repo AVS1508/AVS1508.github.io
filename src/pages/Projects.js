@@ -7,8 +7,8 @@ class Projects extends React.Component {
   render() {
     return (
       <div className="primary outer-structure" style={{ display: "flex", flexDirection: "column" }}>
-        <TitleBar title="My Projects" />
-        <div className="center inner-structure">
+        <div className="center inner-structure" style={{ flexDirection: "column" }}>
+          <TitleBar title="Projects" />
           <Container fluid>
             <Row className="justify-content-center" style={{ alignItems: "center" }}>
               <h1>Work-in-Progress</h1>

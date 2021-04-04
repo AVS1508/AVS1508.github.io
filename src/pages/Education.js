@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row } from "react-bootstrap";
 
 import EducationCard from "../components/EducationCard";
-import CourseworkCard from "../components/CourseworkCard";
+import CourseworkButton from "../components/CourseworkButton";
 import TitleBar from "../components/TitleBar";
 
 import UMassLogo from "../assets/webp/umass-logo.webp";
@@ -14,8 +14,8 @@ class Education extends React.Component {
   render() {
     return (
       <div className="primary outer-structure" style={{ display: "flex", flexDirection: "column" }}>
-        <TitleBar title="Education & Coursework" />
         <div className="inner-structure center" style={{ flexDirection: "column" }}>
+          <TitleBar title="Education" />
           <Container fluid style={{ textAlign: "center" }}>
             <Row style={{ display: "inline-flex" }}>
               <EducationCard
@@ -72,35 +72,187 @@ class Education extends React.Component {
               />
             </Row>
           </Container>
-          <Container fluid style={{ textAlign: "center" }}>
+          <TitleBar title="Coursework" />
+          <Container fluid style={{ maxWidth: "95vw", textAlign: "center" }}>
+            <Row style={{ alignItems: "center", display: "inline-flex", justifyContent: "center" }}>
+              <CourseworkButton
+                title="Introduction to Algorithms"
+                shortcode="COMPSCI 311"
+                term="Spring 2021"
+                institution="University of Massachusetts Amherst"
+                link="https://www.cics.umass.edu/content/spring-21-course-descriptions"
+              />
+              <CourseworkButton
+                title="Artificial Intelligence"
+                shortcode="COMPSCI 383"
+                term="Spring 2021"
+                institution="University of Massachusetts Amherst"
+                link="https://www.cics.umass.edu/content/spring-21-course-descriptions"
+              />
+              <CourseworkButton
+                title="Statistics I"
+                shortcode="STATISTC 515"
+                term="Spring 2021"
+                institution="University of Massachusetts Amherst"
+                link="https://www.cics.umass.edu/content/spring-21-course-descriptions"
+              />
+              <CourseworkButton
+                title="Advanced Multivariate Calculus"
+                shortcode="MATH 425"
+                term="Spring 2021"
+                institution="University of Massachusetts Amherst"
+                link="https://www.cics.umass.edu/content/spring-21-course-descriptions"
+              />
+              <CourseworkButton
+                title="Computer Systems Principles"
+                shortcode="COMPSCI 230"
+                term="Fall 2020"
+                institution="University of Massachusetts Amherst"
+                link="https://www.cics.umass.edu/content/fall-20-course-descriptions"
+              />
+              <CourseworkButton
+                title="Reasoning Under Uncertainty"
+                shortcode="COMPSCI 240"
+                term="Fall 2020"
+                institution="University of Massachusetts Amherst"
+                link="https://www.cics.umass.edu/content/fall-20-course-descriptions"
+              />
+              <CourseworkButton
+                title="Ordinary Differential Equations"
+                shortcode="MATH 331"
+                term="Fall 2020"
+                institution="University of Massachusetts Amherst"
+                link="https://www.cics.umass.edu/content/fall-20-course-descriptions"
+              />
+              <CourseworkButton
+                title="Introduction to Computation"
+                shortcode="COMPSCI 250"
+                term="Spring 2020"
+                institution="University of Massachusetts Amherst"
+                link="https://www.cics.umass.edu/content/spring-20-course-descriptions"
+              />
+              <CourseworkButton
+                title="Programming Methodology"
+                shortcode="COMPSCI 220"
+                term="Spring 2020"
+                institution="University of Massachusetts Amherst"
+                link="https://www.cics.umass.edu/content/spring-20-course-descriptions"
+              />
+              <CourseworkButton
+                title="Introduction to Linear Algebra"
+                shortcode="MATH 235"
+                term="Spring 2020"
+                institution="University of Massachusetts Amherst"
+                link="https://www.cics.umass.edu/content/spring-20-course-descriptions"
+              />
+              <CourseworkButton
+                title="Introduction to Data Analysis in R"
+                shortcode="CICS 197R"
+                term="Spring 2020"
+                institution="University of Massachusetts Amherst"
+                link="https://www.cics.umass.edu/content/spring-20-course-descriptions"
+              />
+              <CourseworkButton
+                title="Programming with Data Structures"
+                shortcode="COMPSCI 187"
+                term="Fall 2019"
+                institution="University of Massachusetts Amherst"
+                link="https://www.cics.umass.edu/content/fall-19-course-descriptions"
+              />
+              <CourseworkButton
+                title="Multivariate Calculus"
+                shortcode="MATH 233"
+                term="Fall 2019"
+                institution="University of Massachusetts Amherst"
+                link="https://www.cics.umass.edu/content/fall-19-course-descriptions"
+              />
+              {/* <CourseworkButton
+                title="Physics II"
+                shortcode="AP Physics C: Electricity & Magnetism"
+                term="May 2019"
+                institution="CollegeBoard Advanced Placement Exams"
+              />
+              <CourseworkButton
+                title="Physics I"
+                shortcode="AP Physics C: Mechanics"
+                term="May 2019"
+                institution="CollegeBoard Advanced Placement Exams"
+              />
+              <CourseworkButton
+                title="Introductory Computer Science"
+                shortcode="AP Computer Science A"
+                term="May 2019"
+                institution="CollegeBoard Advanced Placement Exams"
+              />
+              <CourseworkButton
+                title="Introduction to Statistics"
+                shortcode="AP Statistics"
+                term="May 2019"
+                institution="CollegeBoard Advanced Placement Exams"
+              />
+              <CourseworkButton
+                title="Calculus I & II"
+                shortcode="AP Calculus BC"
+                term="May 2019"
+                institution="CollegeBoard Advanced Placement Exams"
+              /> */}
+            </Row>
+          </Container>
+          {/* <Container fluid style={{ textAlign: "center" }}>
+            <h1>Coursework</h1>
             <Row style={{ display: "inline-flex" }}>
               <CourseworkCard
                 title="Introduction to Algorithms"
                 shortcode="COMPSCI 311"
                 term="Spring 2021"
                 institution="University of Massachusetts Amherst"
-                details={<React.Fragment>WORK-IN-PROGRESS</React.Fragment>}
+                details={
+                  <React.Fragment>
+                    Introduction to algorithms for graph and network problems, scheduling, searching, sorting, greedy
+                    paradigm, divide-and-conquer, dynamic programming, and network flows, combined with study of
+                    efficiency, NP-completeness, intractability, approximations and randomized algorithms.
+                  </React.Fragment>
+                }
               />
               <CourseworkCard
                 title="Artificial Intelligence"
                 shortcode="COMPSCI 383"
                 term="Spring 2021"
                 institution="University of Massachusetts Amherst"
-                details={<React.Fragment>WORK-IN-PROGRESS</React.Fragment>}
+                details={
+                  <React.Fragment>
+                    Study of core concepts and algorithms in AI, involving search, knowledge representation, machine
+                    learning, and formal logic, with topics like Graph, Local and Adversarial Search, CSPs, MDPs,
+                    Reinforcement Learning, Unsupervised Learning, Naive Bayes, Perceptrons, and Artificial Neural
+                    Networks.
+                  </React.Fragment>
+                }
               />
               <CourseworkCard
                 title="Statistics I"
                 shortcode="STAT 515"
                 term="Spring 2021"
                 institution="University of Massachusetts Amherst"
-                details={<React.Fragment>WORK-IN-PROGRESS</React.Fragment>}
+                details={
+                  <React.Fragment>
+                    Introduction to calculus-based probability, involving basic axioms of probability, counting,
+                    conditional probability, independence, random variables, discrete and continuous distributions,
+                    expectation, variance, covariance and correlation, central limit theorem, and Poisson approximation.
+                  </React.Fragment>
+                }
               />
               <CourseworkCard
                 title="Advanced Multivariate Calculus"
                 shortcode="MATH 425"
                 term="Spring 2021"
                 institution="University of Massachusetts Amherst"
-                details={<React.Fragment>WORK-IN-PROGRESS</React.Fragment>}
+                details={
+                  <React.Fragment>
+                    Study of advanced differential and integral calculus in many variables, including directional and
+                    partial derivatives, gradient, extrema, Lagrange-multipliers, Hessian, vector fields, divergence,
+                    curl and exterior derivatives, line and surface-integrals, and the fundamental theorems of calculus.
+                  </React.Fragment>
+                }
               />
               <CourseworkCard
                 title="Computer Systems Principles"
@@ -250,7 +402,7 @@ class Education extends React.Component {
                 details={<React.Fragment>WORK-IN-PROGRESS</React.Fragment>}
               />
             </Row>
-          </Container>
+          </Container> */}
         </div>
       </div>
     );

@@ -8,8 +8,8 @@ class Achievements extends React.Component {
   render() {
     return (
       <div className="primary outer-structure" style={{ display: "flex", flexDirection: "column" }}>
-        <TitleBar title="Achievements & Awards" />
-        <div className="center inner-structure">
+        <div className="center inner-structure" style={{ flexDirection: "column" }}>
+          <TitleBar title="Achievements & Awards" />
           <Container fluid>
             <Row className="justify-content-center" style={{ alignItems: "center" }}>
               <AchievementsCard
