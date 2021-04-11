@@ -22,7 +22,7 @@ import {
   Hackerrank,
   Coursera,
 } from "@icons-pack/react-simple-icons";
-import { Row, Col, Button } from "react-bootstrap";
+import { Row, Button } from "react-bootstrap";
 
 const logoDictionary = {
   python: Python,

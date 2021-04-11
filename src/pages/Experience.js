@@ -10,6 +10,7 @@ import TEDxRKPLogo from "../assets/webp/tedxyouth-logo.webp";
 import BUILDLogo from "../assets/webp/build-logo.webp";
 import AerossLogo from "../assets/webp/aeross-logo.webp";
 import VirtuBoxLogo from "../assets/webp/virtubox-logo.webp";
+import HackUMassLogo from "../assets/webp/hackumass-logo.webp";
 
 import UMassFallbackLogo from "../assets/jpg/umass-logo.jpg";
 import DPSRKPFallbackLogo from "../assets/jpg/dpsrkp-logo.jpg";
@@ -17,6 +18,7 @@ import TEDxRKPFallbackLogo from "../assets/jpg/tedxyouth-logo.jpg";
 import BUILDFallbackLogo from "../assets/jpg/build-logo.jpg";
 import AerossFallbackLogo from "../assets/jpg/aeross-logo.jpg";
 import VirtuBoxFallbackLogo from "../assets/jpg/virtubox-logo.jpg";
+import HackUMassFallbackLogo from "../assets/jpg/hackumass-logo.jpg";
 
 class Experience extends Component {
   render() {
@@ -45,11 +47,29 @@ class Experience extends Component {
                 }
               />
               <ExperienceCard
+                image={HackUMassLogo}
+                fallback_image={HackUMassFallbackLogo}
+                title="Graphic Designer"
+                organization="HackUMass Organizing Team"
+                address="Amherst, MA, USA"
+                alternateTitle="Graphic Designer, HackUMass"
+                duration="March 2020 - Present"
+                details={
+                  <React.Fragment>
+                    • Designed logos, icons, and branding materials for HackUMass VIII
+                    <br />
+                    • Developed the design and layout for the sponsorship prospectus
+                    <br />
+                    • Engaged in planning HackUMass IX as a member of organizing team
+                  </React.Fragment>
+                }
+              />
+              <ExperienceCard
                 image={VirtuBoxLogo}
                 fallback_image={VirtuBoxFallbackLogo}
                 title="Business Development Associate"
                 organization="VirtuBox Infotech Pvt. Ltd."
-                address="Noida, India"
+                address="Remote"
                 alternateTitle="Business Development, VirtuBox Infotech"
                 duration="July 2020 - August 2020"
                 details={

@@ -1,5 +1,4 @@
 import React from "react";
-import { Row, Button } from "react-bootstrap";
 
 const TitleBar = (props) => {
   return (
