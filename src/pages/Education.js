@@ -26,7 +26,7 @@ class Education extends React.Component {
                 degree="Bachelor in Science (Honors)"
                 major="Computer Science and Mathematics"
                 class="Class of 2023"
-                duration="August 2019 - May 2023"
+                duration="August 2019 - December 2022"
                 grade="4.00 GPA"
                 details={
                   <React.Fragment>
