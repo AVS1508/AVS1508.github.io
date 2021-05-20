@@ -34,12 +34,12 @@ class About extends React.Component {
                     margin: "0w",
                   }}
                 >
-                  I am a sophomore at the University of Massachusetts Amherst, double majoring in Computer Science and
-                  Mathematics with a concentration in Statistics and Data Science. Currently, I'm involved as a Software
-                  Developer for BUILD UMass, where I use my software engineering skills for pro-bono app/web development
-                  and tech consulting for the Amherst community. I also serve as a Designer for the HackUMass Organizing
-                  Team, responsible for graphics design and production for the annual hackathon. I'm actively searching
-                  for Software Engineering and/or Web Development internships for Summer 2021!
+                  I am a rising junior at the University of Massachusetts Amherst, double majoring in Computer Science
+                  and Mathematics with a concentration in Statistics and Data Science. Currently, I'm involved as a
+                  Software Developer for BUILD UMass, where I use my software engineering skills for pro-bono app/web
+                  development and tech consulting for the Amherst community. I also serve as a Designer for the
+                  HackUMass Organizing Team, responsible for graphics design and production for the annual hackathon.
+                  I'm actively searching for Software Engineering and/or Web Development internships for Summer 2021!
                 </p>
               </Col>
             </Row>
