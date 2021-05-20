@@ -1,8 +1,9 @@
 import React, { Suspense, lazy } from "react";
-import { HashRouter as Router, Switch, Route } from "react-router-dom";
-import { Spinner } from "react-bootstrap";
+// import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Nav, Tabs, Tab, Navbar, NavLink, Spinner } from "react-bootstrap";
 
-import NavigationBar from "./components/NavigationBar";
+import NavigationTabBar from "./components/NavigationTabBar";
+import NavigationTab from "./components/NavigationTab";
 import Footer from "./components/Footer";
 
 const Home = lazy(() => import("./pages/Home"));
@@ -22,27 +23,49 @@ const Loading = () => {
   );
 };
 
-const App = () => {
-  return (
-    <Router basename={process.env.PUBLIC_URL}>
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      currentTab: "home",
+    };
+    this.componentList = ["home", "about", "education", "experience", "projects", "skills", "achievements"];
+  }
+
+  setTab = (newTab) => {
+    this.setState({ currentTab: newTab });
+  };
+
+  renderSwitch(currentTab) {
+    switch (currentTab) {
+      case "home":
+        return <Home />;
+      case "about":
+        return <About />;
+      case "education":
+        return <Education />;
+      case "experience":
+        return <Experience />;
+      case "projects":
+        return <Projects />;
+      case "skills":
+        return <Skills />;
+      case "achievements":
+        return <Achievements />;
+      default:
+        return <Error_404 />;
+    }
+  }
+
+  render() {
+    return (
       <div>
-        <NavigationBar />
-        <Suspense fallback={Loading()}>
-          <Switch>
-            <Route exact path={process.env.PUBLIC_URL + "/"} component={Home} />
-            <Route exact path={process.env.PUBLIC_URL + "/about"} component={About} />
-            <Route exact path={process.env.PUBLIC_URL + "/education"} component={Education} />
-            <Route exact path={process.env.PUBLIC_URL + "/experience"} component={Experience} />
-            <Route exact path={process.env.PUBLIC_URL + "/projects"} component={Projects} />
-            <Route exact path={process.env.PUBLIC_URL + "/skills"} component={Skills} />
-            <Route exact path={process.env.PUBLIC_URL + "/achievements"} component={Achievements} />
-            <Route component={Error_404} />
-          </Switch>
-        </Suspense>
+        <NavigationTabBar tabs={this.componentList} currentTab={this.state.currentTab} setTab={this.setTab} />
+        <Suspense fallback={Loading()}>{this.renderSwitch(this.state.currentTab)}</Suspense>
         <Footer style={{ zIndex: -2 }} />
       </div>
-    </Router>
-  );
-};
+    );
+  }
+}
 
 export default App;

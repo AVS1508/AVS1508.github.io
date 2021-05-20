@@ -9,7 +9,7 @@ class Introduction extends React.Component {
         "Software Developer @ BUILD UMass",
         "Rising Junior @ UMass Amherst",
         "Full-Stack Web Developer",
-        "Graphic Designer",
+        "Graphic Designer @ HackUMass",
       ],
       typeSpeed: 40,
       backSpeed: 40,
