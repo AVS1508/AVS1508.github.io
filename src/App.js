@@ -1,9 +1,7 @@
 import React, { Suspense, lazy } from "react";
-// import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Nav, Tabs, Tab, Navbar, NavLink, Spinner } from "react-bootstrap";
+import { Spinner } from "react-bootstrap";
 
 import NavigationTabBar from "./components/NavigationTabBar";
-import NavigationTab from "./components/NavigationTab";
 import Footer from "./components/Footer";
 
 const Home = lazy(() => import("./pages/Home"));
@@ -13,7 +11,7 @@ const Experience = lazy(() => import("./pages/Experience"));
 const Projects = lazy(() => import("./pages/Projects"));
 const Skills = lazy(() => import("./pages/Skills"));
 const Achievements = lazy(() => import("./pages/Achievements"));
-const Error_404 = lazy(() => import("./pages/Error_404"));
+const Error404 = lazy(() => import("./pages/Error404"));
 
 const Loading = () => {
   return (
@@ -53,7 +51,7 @@ class App extends React.Component {
       case "achievements":
         return <Achievements />;
       default:
-        return <Error_404 />;
+        return <Error404 />;
     }
   }
 

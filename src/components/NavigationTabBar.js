@@ -1,5 +1,5 @@
-import React, { Suspense } from "react";
-import { Nav, Tabs, Tab, Navbar, NavLink, Spinner } from "react-bootstrap";
+import React from "react";
+import { Nav, Navbar, NavLink } from "react-bootstrap";
 
 const NavigationTabBar = (props) => {
   return (

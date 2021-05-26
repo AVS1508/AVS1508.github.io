@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
 
-const Error_404 = () => {
+const Error404 = () => {
   return (
     <Container className="center outer-structure">
       <Row>
@@ -11,4 +11,4 @@ const Error_404 = () => {
   );
 };
 
-export default Error_404;
+export default Error404;
