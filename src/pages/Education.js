@@ -72,9 +72,30 @@ class Education extends React.Component {
               />
             </Row>
           </Container>
-          <TitleBar title="Coursework" />
+          <TitleBar title="Computer Science Coursework" />
           <Container fluid style={{ maxWidth: "95vw", textAlign: "center" }}>
             <Row style={{ alignItems: "center", display: "inline-flex", justifyContent: "center" }}>
+              <CourseworkButton
+                title="Search Engines"
+                shortcode="COMPSCI 446"
+                term="Fall 2021"
+                institution="University of Massachusetts Amherst"
+                link="https://www.cics.umass.edu/content/fall-21-course-descriptions"
+              />
+              <CourseworkButton
+                title="Software Engineering"
+                shortcode="COMPSCI 320"
+                term="Fall 2021"
+                institution="University of Massachusetts Amherst"
+                link="https://www.cics.umass.edu/content/fall-21-course-descriptions"
+              />
+              <CourseworkButton
+                title="Data Management Practices"
+                shortcode="COMPSCI 345"
+                term="Fall 2021"
+                institution="University of Massachusetts Amherst"
+                link="https://www.cics.umass.edu/content/fall-21-course-descriptions"
+              />
               <CourseworkButton
                 title="Introduction to Algorithms"
                 shortcode="COMPSCI 311"
@@ -85,20 +106,6 @@ class Education extends React.Component {
               <CourseworkButton
                 title="Artificial Intelligence"
                 shortcode="COMPSCI 383"
-                term="Spring 2021"
-                institution="University of Massachusetts Amherst"
-                link="https://www.cics.umass.edu/content/spring-21-course-descriptions"
-              />
-              <CourseworkButton
-                title="Statistics I"
-                shortcode="STATISTC 515"
-                term="Spring 2021"
-                institution="University of Massachusetts Amherst"
-                link="https://www.cics.umass.edu/content/spring-21-course-descriptions"
-              />
-              <CourseworkButton
-                title="Advanced Multivariate Calculus"
-                shortcode="MATH 425"
                 term="Spring 2021"
                 institution="University of Massachusetts Amherst"
                 link="https://www.cics.umass.edu/content/spring-21-course-descriptions"
@@ -118,13 +125,6 @@ class Education extends React.Component {
                 link="https://www.cics.umass.edu/content/fall-20-course-descriptions"
               />
               <CourseworkButton
-                title="Ordinary Differential Equations"
-                shortcode="MATH 331"
-                term="Fall 2020"
-                institution="University of Massachusetts Amherst"
-                link="https://www.cics.umass.edu/content/fall-20-course-descriptions"
-              />
-              <CourseworkButton
                 title="Introduction to Computation"
                 shortcode="COMPSCI 250"
                 term="Spring 2020"
@@ -139,13 +139,6 @@ class Education extends React.Component {
                 link="https://www.cics.umass.edu/content/spring-20-course-descriptions"
               />
               <CourseworkButton
-                title="Introduction to Linear Algebra"
-                shortcode="MATH 235"
-                term="Spring 2020"
-                institution="University of Massachusetts Amherst"
-                link="https://www.cics.umass.edu/content/spring-20-course-descriptions"
-              />
-              <CourseworkButton
                 title="Introduction to Data Analysis in R"
                 shortcode="CICS 197R"
                 term="Spring 2020"
@@ -155,13 +148,6 @@ class Education extends React.Component {
               <CourseworkButton
                 title="Programming with Data Structures"
                 shortcode="COMPSCI 187"
-                term="Fall 2019"
-                institution="University of Massachusetts Amherst"
-                link="https://www.cics.umass.edu/content/fall-19-course-descriptions"
-              />
-              <CourseworkButton
-                title="Multivariate Calculus"
-                shortcode="MATH 233"
                 term="Fall 2019"
                 institution="University of Massachusetts Amherst"
                 link="https://www.cics.umass.edu/content/fall-19-course-descriptions"
@@ -196,6 +182,53 @@ class Education extends React.Component {
                 term="May 2019"
                 institution="CollegeBoard Advanced Placement Exams"
               /> */}
+            </Row>
+          </Container>
+          <TitleBar title="Mathematics & Statistics Coursework" />
+          <Container fluid style={{ maxWidth: "95vw", textAlign: "center" }}>
+            <Row style={{ alignItems: "center", display: "inline-flex", justifyContent: "center" }}>
+              <CourseworkButton
+                title="Statistics II"
+                shortcode="STATISTC 516"
+                term="Fall 2021"
+                institution="University of Massachusetts Amherst"
+                link="https://www.cics.umass.edu/content/spring-21-course-descriptions"
+              />
+              <CourseworkButton
+                title="Statistics I"
+                shortcode="STATISTC 515"
+                term="Spring 2021"
+                institution="University of Massachusetts Amherst"
+                link="https://www.cics.umass.edu/content/spring-21-course-descriptions"
+              />
+              <CourseworkButton
+                title="Advanced Multivariate Calculus"
+                shortcode="MATH 425"
+                term="Spring 2021"
+                institution="University of Massachusetts Amherst"
+                link="https://www.cics.umass.edu/content/spring-21-course-descriptions"
+              />
+              <CourseworkButton
+                title="Ordinary Differential Equations"
+                shortcode="MATH 331"
+                term="Fall 2020"
+                institution="University of Massachusetts Amherst"
+                link="https://www.cics.umass.edu/content/fall-20-course-descriptions"
+              />
+              <CourseworkButton
+                title="Introduction to Linear Algebra"
+                shortcode="MATH 235"
+                term="Spring 2020"
+                institution="University of Massachusetts Amherst"
+                link="https://www.cics.umass.edu/content/spring-20-course-descriptions"
+              />
+              <CourseworkButton
+                title="Multivariate Calculus"
+                shortcode="MATH 233"
+                term="Fall 2019"
+                institution="University of Massachusetts Amherst"
+                link="https://www.cics.umass.edu/content/fall-19-course-descriptions"
+              />
             </Row>
           </Container>
           {/* <Container fluid style={{ textAlign: "center" }}>

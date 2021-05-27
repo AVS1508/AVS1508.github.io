@@ -29,6 +29,24 @@ class Experience extends Component {
           <Container fluid style={{ textAlign: "center" }}>
             <Row style={{ display: "inline-flex" }}>
               <ExperienceCard
+                image={UMassLogo}
+                fallback_image={UMassFallbackLogo}
+                title="Undergraduate Course Assistant"
+                organization="College of Information and Computer Sciences"
+                address="Amherst, MA, USA"
+                alternateTitle="COMPSCI 240 UCA, UMass CICS"
+                duration="August 2021 - Present"
+                details={
+                  <React.Fragment>
+                    • Developing a modern website for UMass Entrepreneurship Club
+                    <br />
+                    • Part of 4-member development team responsible for the same
+                    <br />
+                    • Engineering front-end with React, SCSS, and Bootstrap
+                  </React.Fragment>
+                }
+              />
+              <ExperienceCard
                 image={BUILDLogo}
                 fallback_image={BUILDFallbackLogo}
                 title="Software Developer"
@@ -86,7 +104,7 @@ class Experience extends Component {
                 image={UMassLogo}
                 fallback_image={UMassFallbackLogo}
                 title="Computer Science Peer Tutor"
-                organization="College of Information and Computer Science"
+                organization="College of Information and Computer Sciences"
                 address="Amherst, MA, USA"
                 alternateTitle="CS Peer Tutor, UMass CICS"
                 duration="January 2020 - May 2020"

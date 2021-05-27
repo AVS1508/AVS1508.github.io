@@ -6,6 +6,7 @@
   --bg-color: white;
   --light-gradient: linear-gradient(90deg, #ff5f6d, #ffc371);
   --gray-gradient: linear-gradient(45deg, #0f2027, #203a43);
+  --fluid-gray-gradient: linear-gradient(-45deg, #0f2027, #19313b, #234452, #2c5364);
   --gray-base: #203a43;
   /*CSS Properties begin*/
   background-color: var(--bg-color);
@@ -260,12 +261,18 @@ sm {
 }
 
 .resume-btn {
-  background: var(--gray-base) !important;
+  background: var(--fluid-gray-gradient);
+  background-size: 400% 400%;
   color: white !important;
   border: 0.15em solid var(--gray-base) !important;
   border-radius: 20px !important;
   padding: 15px 30px !important;
   margin: 0.5em;
+  animation: gradient 3s ease infinite;
+}
+
+.resume-btn.modified {
+  padding: 10px 10px !important;
 }
 
 .resume-btn:hover {
@@ -275,10 +282,22 @@ sm {
 
 .gradient-text {
   background-color: #ff5f6d;
-  background: var(--light-gradient) repeat;
-  background-size: 100% !important;
+  background: var(--light-gradient);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
