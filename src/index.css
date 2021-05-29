@@ -3,13 +3,14 @@
 #root {
   /* Color/gradient variables defined*/
   --dark-gradient: linear-gradient(45deg, rgba(17, 35, 50, 1), rgba(7, 37, 62, 1));
-  --bg-color: white;
+  --bg-color: #112332;
+  --fluid-white-gradient: linear-gradient(-45deg, #f1f4fd, #e2ebf0);
   --light-gradient: linear-gradient(90deg, #ff5f6d, #ffc371);
   --gray-gradient: linear-gradient(45deg, #0f2027, #203a43);
   --fluid-gray-gradient: linear-gradient(-45deg, #0f2027, #19313b, #234452, #2c5364);
-  --gray-base: #203a43;
+  --gray-base: #234452;
   /*CSS Properties begin*/
-  background-color: var(--bg-color);
+  background: var(--fluid-white-gradient);
   font-family: "Inter";
   font-weight: 500;
   font-size: 18px;
@@ -198,7 +199,9 @@ sm {
   color: white;
 }
 .primary .flip-card-front {
-  background: var(--gray-gradient);
+  background: var(--fluid-gray-gradient);
+  background-size: 400% 400%;
+  animation: gradient 3s ease infinite;
   box-shadow: 2px 2px 5px 2px #000000;
 }
 
@@ -213,7 +216,9 @@ sm {
   color: white;
 }
 .primary .flip-card-back {
-  background: var(--gray-gradient);
+  background: var(--fluid-gray-gradient);
+  background-size: 400% 400%;
+  animation: gradient 3s ease infinite;
   box-shadow: 2px 2px 5px 2px #000000;
 }
 
@@ -276,7 +281,7 @@ sm {
 }
 
 .resume-btn:hover {
-  background: var(--bg-color) !important;
+  background: transparent !important;
   color: var(--gray-base) !important;
 }
 
