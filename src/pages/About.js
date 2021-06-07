@@ -39,7 +39,6 @@ class About extends React.Component {
                   Software Developer for BUILD UMass, where I use my software engineering skills for pro-bono app/web
                   development and tech consulting for the Amherst community. I also serve as a Designer for the
                   HackUMass Organizing Team, responsible for graphics design and production for the annual hackathon.
-                  I'm actively searching for Software Engineering and/or Web Development internships for Summer 2021!
                 </p>
               </Col>
             </Row>

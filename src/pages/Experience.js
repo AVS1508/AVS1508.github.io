@@ -5,44 +5,46 @@ import ExperienceCard from "../components/ExperienceCard";
 import TitleBar from "../components/TitleBar";
 
 import UMassLogo from "../assets/webp/umass-logo.webp";
+import BUILDLogo from "../assets/webp/build-logo.webp";
+import HackUMassLogo from "../assets/webp/hackumass-logo.webp";
+import InnovationMLogo from "../assets/webp/innovationm-logo.webp";
+import VirtuBoxLogo from "../assets/webp/virtubox-logo.webp";
 import DPSRKPLogo from "../assets/webp/dpsrkp-logo.webp";
 import TEDxRKPLogo from "../assets/webp/tedxyouth-logo.webp";
-import BUILDLogo from "../assets/webp/build-logo.webp";
 import AerossLogo from "../assets/webp/aeross-logo.webp";
-import VirtuBoxLogo from "../assets/webp/virtubox-logo.webp";
-import HackUMassLogo from "../assets/webp/hackumass-logo.webp";
 
 import UMassFallbackLogo from "../assets/jpg/umass-logo.jpg";
+import BUILDFallbackLogo from "../assets/jpg/build-logo.jpg";
+import HackUMassFallbackLogo from "../assets/jpg/hackumass-logo.jpg";
+import InnovationMFallbackLogo from "../assets/jpg/innovationm-logo.jpg";
+import VirtuBoxFallbackLogo from "../assets/jpg/virtubox-logo.jpg";
 import DPSRKPFallbackLogo from "../assets/jpg/dpsrkp-logo.jpg";
 import TEDxRKPFallbackLogo from "../assets/jpg/tedxyouth-logo.jpg";
-import BUILDFallbackLogo from "../assets/jpg/build-logo.jpg";
 import AerossFallbackLogo from "../assets/jpg/aeross-logo.jpg";
-import VirtuBoxFallbackLogo from "../assets/jpg/virtubox-logo.jpg";
-import HackUMassFallbackLogo from "../assets/jpg/hackumass-logo.jpg";
 
 class Experience extends Component {
   render() {
     return (
       <div className="primary outer-structure" style={{ display: "flex", flexDirection: "column" }}>
         <div className="inner-structure center" style={{ flexDirection: "column" }}>
-          <TitleBar title="Experience" />
+          <TitleBar title="Current Involvements" />
           <Container fluid style={{ textAlign: "center" }}>
             <Row style={{ display: "inline-flex" }}>
               <ExperienceCard
-                image={UMassLogo}
-                fallback_image={UMassFallbackLogo}
-                title="Undergraduate Course Assistant"
-                organization="College of Information and Computer Sciences"
-                address="Amherst, MA, USA"
-                alternateTitle="COMPSCI 240 UCA, UMass CICS"
-                duration="August 2021 - Present"
+                image={InnovationMLogo}
+                fallback_image={InnovationMFallbackLogo}
+                title="Software Development Intern"
+                organization="InnovationM Mobile & Web Technologies"
+                address="Remote"
+                alternateTitle="Software Development Intern, InnovationM"
+                duration="June 2021 - Present"
                 details={
                   <React.Fragment>
-                    • Developing a modern website for UMass Entrepreneurship Club
+                    • Developing a company-wide microservice for grievance redressal
                     <br />
-                    • Part of 4-member development team responsible for the same
+                    • Sole intern in a 4-member development team responsible for the same
                     <br />
-                    • Engineering front-end with React, SCSS, and Bootstrap
+                    • Engineering application using Node.js, MongoDB, and React
                   </React.Fragment>
                 }
               />
@@ -79,6 +81,29 @@ class Experience extends Component {
                     • Developed the design and layout for the sponsorship prospectus
                     <br />
                     • Engaged in planning HackUMass IX as a member of organizing team
+                  </React.Fragment>
+                }
+              />
+            </Row>
+          </Container>
+          <TitleBar title="Upcoming and Past Experience" />
+          <Container fluid style={{ textAlign: "center" }}>
+            <Row style={{ display: "inline-flex" }}>
+              <ExperienceCard
+                image={UMassLogo}
+                fallback_image={UMassFallbackLogo}
+                title="Incoming Undergraduate Course Assistant"
+                organization="College of Information and Computer Sciences"
+                address="Amherst, MA, USA"
+                alternateTitle="COMPSCI 240 UCA, UMass CICS"
+                duration="August 2021 - Present"
+                details={
+                  <React.Fragment>
+                    • Developing a modern website for UMass Entrepreneurship Club
+                    <br />
+                    • Part of 4-member development team responsible for the same
+                    <br />
+                    • Engineering front-end with React, SCSS, and Bootstrap
                   </React.Fragment>
                 }
               />
