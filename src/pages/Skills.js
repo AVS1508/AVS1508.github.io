@@ -20,12 +20,16 @@ class Skills extends React.Component {
               <SkillCard title="R" logo="r" color="#276DC3" />
               <SkillCard title="React" logo="react" color="#61DAFB" />
               <SkillCard title="Node.js" logo="node" color="#339933" />
+              <SkillCard title="MongoDB" logo="mongodb" color="#47A248" />
+              <SkillCard title="PostgreSQL" logo="postgresql" color="#4169E1" />
+              <SkillCard title="Express" logo="express" color="#000000" />
               <SkillCard title="Django" logo="django" color="#092E20" />
               <SkillCard title="Flask" logo="flask" color="#000000" />
               <SkillCard title="Bootstrap" logo="bootstrap" color="#7952B3" />
               <SkillCard title="HTML" logo="html5" color="#E34F26" />
               <SkillCard title="CSS" logo="css3" color="#1572B6" />
               <SkillCard title="Git" logo="git" color="#F05032" />
+              <SkillCard title="Postman" logo="postman" color="#FF6C37" />
               <SkillCard title="Markdown" logo="markdown" color="#000000" />
               <SkillCard title="Illustrator" logo="illustrator" color="#FF9A00" />
               <SkillCard title="Photoshop" logo="photoshop" color="#31A8FF" />
