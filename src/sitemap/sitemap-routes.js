@@ -14,18 +14,18 @@ import Achievements from "../pages/Achievements";
 import Error_404 from "../pages/Error_404";
 
 export default (
-  <Router basename={process.env.PUBLIC_URL}>
-    <NavigationBar />
-    <Switch>
-      <Route exact path={process.env.PUBLIC_URL + "/"} component={Home} />
-      <Route exact path={process.env.PUBLIC_URL + "/about"} component={About} />
-      <Route exact path={process.env.PUBLIC_URL + "/education"} component={Education} />
-      <Route exact path={process.env.PUBLIC_URL + "/experience"} component={Experience} />
-      <Route exact path={process.env.PUBLIC_URL + "/projects"} component={Projects} />
-      <Route exact path={process.env.PUBLIC_URL + "/skills"} component={Skills} />
-      <Route exact path={process.env.PUBLIC_URL + "/achievements"} component={Achievements} />
-      <Route component={Error_404} />
-    </Switch>
-    <Footer style={{ zIndex: -2 }} />
-  </Router>
+    <Router basename={process.env.PUBLIC_URL}>
+        <NavigationBar />
+        <Switch>
+            <Route exact path={process.env.PUBLIC_URL + "/"} component={Home} />
+            <Route exact path={process.env.PUBLIC_URL + "/about"} component={About} />
+            <Route exact path={process.env.PUBLIC_URL + "/education"} component={Education} />
+            <Route exact path={process.env.PUBLIC_URL + "/experience"} component={Experience} />
+            <Route exact path={process.env.PUBLIC_URL + "/projects"} component={Projects} />
+            <Route exact path={process.env.PUBLIC_URL + "/skills"} component={Skills} />
+            <Route exact path={process.env.PUBLIC_URL + "/achievements"} component={Achievements} />
+            <Route component={Error_404} />
+        </Switch>
+        <Footer style={{ zIndex: -2 }} />
+    </Router>
 );
