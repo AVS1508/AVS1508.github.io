@@ -11,148 +11,148 @@ import DPSRKPLogo from "../assets/webp/dpsrkp-logo.webp";
 import DPSRKPFallbackLogo from "../assets/jpg/dpsrkp-logo.jpg";
 
 class Education extends React.Component {
-  render() {
-    return (
-      <div className="primary outer-structure" style={{ display: "flex", flexDirection: "column" }}>
-        <div className="inner-structure center" style={{ flexDirection: "column" }}>
-          <TitleBar title="Education" />
-          <Container fluid style={{ textAlign: "center" }}>
-            <Row style={{ display: "inline-flex" }}>
-              <EducationCard
-                image={UMassLogo}
-                fallback_image={UMassFallbackLogo}
-                title="University of Massachusetts"
-                address="Amherst, MA, USA"
-                degree="Bachelor in Science (Honors)"
-                major="Computer Science and Mathematics"
-                class="Class of 2023"
-                duration="August 2019 - December 2022"
-                grade="4.00 GPA"
-                details={
-                  <React.Fragment>
-                    • Major: Computer Science & Mathematics (Statistics & Data Science)
-                    <br />
-                    • Dean's List (all semesters)
-                    <br />
-                    • Member, Commonwealth Honors College (Jun 2020 - Present)
-                    <br />
-                    • Software Developer, BUILD UMass (Sep 2020 - Present)
-                    <br />
-                    • Member, UMass ACM (Sep 2019 - Present) <br />
-                    • Designer, HackUMass Organizing Team (Mar 2020 - Present)
-                  </React.Fragment>
-                }
-              />
-              <EducationCard
-                image={DPSRKPLogo}
-                fallback_image={DPSRKPFallbackLogo}
-                title="Delhi Public School"
-                address="R. K. Puram, New Delhi, India"
-                degree="High School Diploma"
-                major="Science with Computer Science"
-                class="Class of 2019"
-                duration="July 2012 - May 2019"
-                grade={
-                  <React.Fragment>
-                    96.0% (Grade 12) <br /> 10.0 CGPA (Grade 10)
-                  </React.Fragment>
-                }
-                details={
-                  <React.Fragment>
-                    • President, Student Council (Apr 2018 - Apr 2019)
-                    <br />
-                    • Lead Designer, TEDxYouth@DPSRKPuram (Nov 2018 - Apr 2019)
-                    <br />
-                    • Designer, TEDxYouth@DPSRKPuram (May 2018 - Nov 2018)
-                    <br />
-                    • Honorary Advisor, Aerospace Society (May 2018 - Apr 2019)
-                    <br />• Structural Engineer, Aerospace Society (May 2016 - Apr 2018)
-                  </React.Fragment>
-                }
-              />
-            </Row>
-          </Container>
-          <TitleBar title="Computer Science Coursework" />
-          <Container fluid style={{ maxWidth: "95vw", textAlign: "center" }}>
-            <Row style={{ alignItems: "center", display: "inline-flex", justifyContent: "center" }}>
-              <CourseworkButton
-                title="Search Engines"
-                shortcode="COMPSCI 446"
-                term="Fall 2021"
-                institution="University of Massachusetts Amherst"
-                link="https://www.cics.umass.edu/content/fall-21-course-descriptions"
-              />
-              <CourseworkButton
-                title="Software Engineering"
-                shortcode="COMPSCI 320"
-                term="Fall 2021"
-                institution="University of Massachusetts Amherst"
-                link="https://www.cics.umass.edu/content/fall-21-course-descriptions"
-              />
-              <CourseworkButton
-                title="Data Management Practices"
-                shortcode="COMPSCI 345"
-                term="Fall 2021"
-                institution="University of Massachusetts Amherst"
-                link="https://www.cics.umass.edu/content/fall-21-course-descriptions"
-              />
-              <CourseworkButton
-                title="Introduction to Algorithms"
-                shortcode="COMPSCI 311"
-                term="Spring 2021"
-                institution="University of Massachusetts Amherst"
-                link="https://www.cics.umass.edu/content/spring-21-course-descriptions"
-              />
-              <CourseworkButton
-                title="Artificial Intelligence"
-                shortcode="COMPSCI 383"
-                term="Spring 2021"
-                institution="University of Massachusetts Amherst"
-                link="https://www.cics.umass.edu/content/spring-21-course-descriptions"
-              />
-              <CourseworkButton
-                title="Computer Systems Principles"
-                shortcode="COMPSCI 230"
-                term="Fall 2020"
-                institution="University of Massachusetts Amherst"
-                link="https://www.cics.umass.edu/content/fall-20-course-descriptions"
-              />
-              <CourseworkButton
-                title="Reasoning Under Uncertainty"
-                shortcode="COMPSCI 240"
-                term="Fall 2020"
-                institution="University of Massachusetts Amherst"
-                link="https://www.cics.umass.edu/content/fall-20-course-descriptions"
-              />
-              <CourseworkButton
-                title="Introduction to Computation"
-                shortcode="COMPSCI 250"
-                term="Spring 2020"
-                institution="University of Massachusetts Amherst"
-                link="https://www.cics.umass.edu/content/spring-20-course-descriptions"
-              />
-              <CourseworkButton
-                title="Programming Methodology"
-                shortcode="COMPSCI 220"
-                term="Spring 2020"
-                institution="University of Massachusetts Amherst"
-                link="https://www.cics.umass.edu/content/spring-20-course-descriptions"
-              />
-              <CourseworkButton
-                title="Introduction to Data Analysis in R"
-                shortcode="CICS 197R"
-                term="Spring 2020"
-                institution="University of Massachusetts Amherst"
-                link="https://www.cics.umass.edu/content/spring-20-course-descriptions"
-              />
-              <CourseworkButton
-                title="Programming with Data Structures"
-                shortcode="COMPSCI 187"
-                term="Fall 2019"
-                institution="University of Massachusetts Amherst"
-                link="https://www.cics.umass.edu/content/fall-19-course-descriptions"
-              />
-              {/* <CourseworkButton
+    render() {
+        return (
+            <div className="primary outer-structure" style={{ display: "flex", flexDirection: "column" }}>
+                <div className="inner-structure center" style={{ flexDirection: "column" }}>
+                    <TitleBar title="Education" />
+                    <Container fluid style={{ textAlign: "center" }}>
+                        <Row style={{ display: "inline-flex" }}>
+                            <EducationCard
+                                image={UMassLogo}
+                                fallback_image={UMassFallbackLogo}
+                                title="University of Massachusetts"
+                                address="Amherst, MA, USA"
+                                degree="Bachelor in Science (Honors)"
+                                major="Computer Science and Mathematics"
+                                class="Class of 2023"
+                                duration="August 2019 - December 2022"
+                                grade="4.00 GPA"
+                                details={
+                                    <React.Fragment>
+                                        • Major: Computer Science & Mathematics (Statistics & Data Science)
+                                        <br />
+                                        • Dean's List (all semesters)
+                                        <br />
+                                        • Member, Commonwealth Honors College (Jun 2020 - Present)
+                                        <br />
+                                        • Software Developer, BUILD UMass (Sep 2020 - Present)
+                                        <br />
+                                        • Member, UMass ACM (Sep 2019 - Present) <br />
+                                        • Designer, HackUMass Organizing Team (Mar 2020 - Present)
+                                    </React.Fragment>
+                                }
+                            />
+                            <EducationCard
+                                image={DPSRKPLogo}
+                                fallback_image={DPSRKPFallbackLogo}
+                                title="Delhi Public School"
+                                address="R. K. Puram, New Delhi, India"
+                                degree="High School Diploma"
+                                major="Science with Computer Science"
+                                class="Class of 2019"
+                                duration="July 2012 - May 2019"
+                                grade={
+                                    <React.Fragment>
+                                        96.0% (Grade 12) <br /> 10.0 CGPA (Grade 10)
+                                    </React.Fragment>
+                                }
+                                details={
+                                    <React.Fragment>
+                                        • President, Student Council (Apr 2018 - Apr 2019)
+                                        <br />
+                                        • Lead Designer, TEDxYouth@DPSRKPuram (Nov 2018 - Apr 2019)
+                                        <br />
+                                        • Designer, TEDxYouth@DPSRKPuram (May 2018 - Nov 2018)
+                                        <br />
+                                        • Honorary Advisor, Aerospace Society (May 2018 - Apr 2019)
+                                        <br />• Structural Engineer, Aerospace Society (May 2016 - Apr 2018)
+                                    </React.Fragment>
+                                }
+                            />
+                        </Row>
+                    </Container>
+                    <TitleBar title="Computer Science Coursework" />
+                    <Container fluid style={{ maxWidth: "95vw", textAlign: "center" }}>
+                        <Row style={{ alignItems: "center", display: "inline-flex", justifyContent: "center" }}>
+                            <CourseworkButton
+                                title="Search Engines"
+                                shortcode="COMPSCI 446"
+                                term="Fall 2021"
+                                institution="University of Massachusetts Amherst"
+                                link="https://www.cics.umass.edu/content/fall-21-course-descriptions"
+                            />
+                            <CourseworkButton
+                                title="Software Engineering"
+                                shortcode="COMPSCI 320"
+                                term="Fall 2021"
+                                institution="University of Massachusetts Amherst"
+                                link="https://www.cics.umass.edu/content/fall-21-course-descriptions"
+                            />
+                            <CourseworkButton
+                                title="Data Management Practices"
+                                shortcode="COMPSCI 345"
+                                term="Fall 2021"
+                                institution="University of Massachusetts Amherst"
+                                link="https://www.cics.umass.edu/content/fall-21-course-descriptions"
+                            />
+                            <CourseworkButton
+                                title="Introduction to Algorithms"
+                                shortcode="COMPSCI 311"
+                                term="Spring 2021"
+                                institution="University of Massachusetts Amherst"
+                                link="https://www.cics.umass.edu/content/spring-21-course-descriptions"
+                            />
+                            <CourseworkButton
+                                title="Artificial Intelligence"
+                                shortcode="COMPSCI 383"
+                                term="Spring 2021"
+                                institution="University of Massachusetts Amherst"
+                                link="https://www.cics.umass.edu/content/spring-21-course-descriptions"
+                            />
+                            <CourseworkButton
+                                title="Computer Systems Principles"
+                                shortcode="COMPSCI 230"
+                                term="Fall 2020"
+                                institution="University of Massachusetts Amherst"
+                                link="https://www.cics.umass.edu/content/fall-20-course-descriptions"
+                            />
+                            <CourseworkButton
+                                title="Reasoning Under Uncertainty"
+                                shortcode="COMPSCI 240"
+                                term="Fall 2020"
+                                institution="University of Massachusetts Amherst"
+                                link="https://www.cics.umass.edu/content/fall-20-course-descriptions"
+                            />
+                            <CourseworkButton
+                                title="Introduction to Computation"
+                                shortcode="COMPSCI 250"
+                                term="Spring 2020"
+                                institution="University of Massachusetts Amherst"
+                                link="https://www.cics.umass.edu/content/spring-20-course-descriptions"
+                            />
+                            <CourseworkButton
+                                title="Programming Methodology"
+                                shortcode="COMPSCI 220"
+                                term="Spring 2020"
+                                institution="University of Massachusetts Amherst"
+                                link="https://www.cics.umass.edu/content/spring-20-course-descriptions"
+                            />
+                            <CourseworkButton
+                                title="Introduction to Data Analysis in R"
+                                shortcode="CICS 197R"
+                                term="Spring 2020"
+                                institution="University of Massachusetts Amherst"
+                                link="https://www.cics.umass.edu/content/spring-20-course-descriptions"
+                            />
+                            <CourseworkButton
+                                title="Programming with Data Structures"
+                                shortcode="COMPSCI 187"
+                                term="Fall 2019"
+                                institution="University of Massachusetts Amherst"
+                                link="https://www.cics.umass.edu/content/fall-19-course-descriptions"
+                            />
+                            {/* <CourseworkButton
                 title="Physics II"
                 shortcode="AP Physics C: Electricity & Magnetism"
                 term="May 2019"
@@ -182,56 +182,56 @@ class Education extends React.Component {
                 term="May 2019"
                 institution="CollegeBoard Advanced Placement Exams"
               /> */}
-            </Row>
-          </Container>
-          <TitleBar title="Mathematics & Statistics Coursework" />
-          <Container fluid style={{ maxWidth: "95vw", textAlign: "center" }}>
-            <Row style={{ alignItems: "center", display: "inline-flex", justifyContent: "center" }}>
-              <CourseworkButton
-                title="Statistics II"
-                shortcode="STATISTC 516"
-                term="Fall 2021"
-                institution="University of Massachusetts Amherst"
-                link="https://www.cics.umass.edu/content/spring-21-course-descriptions"
-              />
-              <CourseworkButton
-                title="Statistics I"
-                shortcode="STATISTC 515"
-                term="Spring 2021"
-                institution="University of Massachusetts Amherst"
-                link="https://www.cics.umass.edu/content/spring-21-course-descriptions"
-              />
-              <CourseworkButton
-                title="Advanced Multivariate Calculus"
-                shortcode="MATH 425"
-                term="Spring 2021"
-                institution="University of Massachusetts Amherst"
-                link="https://www.cics.umass.edu/content/spring-21-course-descriptions"
-              />
-              <CourseworkButton
-                title="Ordinary Differential Equations"
-                shortcode="MATH 331"
-                term="Fall 2020"
-                institution="University of Massachusetts Amherst"
-                link="https://www.cics.umass.edu/content/fall-20-course-descriptions"
-              />
-              <CourseworkButton
-                title="Introduction to Linear Algebra"
-                shortcode="MATH 235"
-                term="Spring 2020"
-                institution="University of Massachusetts Amherst"
-                link="https://www.cics.umass.edu/content/spring-20-course-descriptions"
-              />
-              <CourseworkButton
-                title="Multivariate Calculus"
-                shortcode="MATH 233"
-                term="Fall 2019"
-                institution="University of Massachusetts Amherst"
-                link="https://www.cics.umass.edu/content/fall-19-course-descriptions"
-              />
-            </Row>
-          </Container>
-          {/* <Container fluid style={{ textAlign: "center" }}>
+                        </Row>
+                    </Container>
+                    <TitleBar title="Mathematics & Statistics Coursework" />
+                    <Container fluid style={{ maxWidth: "95vw", textAlign: "center" }}>
+                        <Row style={{ alignItems: "center", display: "inline-flex", justifyContent: "center" }}>
+                            <CourseworkButton
+                                title="Statistics II"
+                                shortcode="STATISTC 516"
+                                term="Fall 2021"
+                                institution="University of Massachusetts Amherst"
+                                link="https://www.cics.umass.edu/content/spring-21-course-descriptions"
+                            />
+                            <CourseworkButton
+                                title="Statistics I"
+                                shortcode="STATISTC 515"
+                                term="Spring 2021"
+                                institution="University of Massachusetts Amherst"
+                                link="https://www.cics.umass.edu/content/spring-21-course-descriptions"
+                            />
+                            <CourseworkButton
+                                title="Advanced Multivariate Calculus"
+                                shortcode="MATH 425"
+                                term="Spring 2021"
+                                institution="University of Massachusetts Amherst"
+                                link="https://www.cics.umass.edu/content/spring-21-course-descriptions"
+                            />
+                            <CourseworkButton
+                                title="Ordinary Differential Equations"
+                                shortcode="MATH 331"
+                                term="Fall 2020"
+                                institution="University of Massachusetts Amherst"
+                                link="https://www.cics.umass.edu/content/fall-20-course-descriptions"
+                            />
+                            <CourseworkButton
+                                title="Introduction to Linear Algebra"
+                                shortcode="MATH 235"
+                                term="Spring 2020"
+                                institution="University of Massachusetts Amherst"
+                                link="https://www.cics.umass.edu/content/spring-20-course-descriptions"
+                            />
+                            <CourseworkButton
+                                title="Multivariate Calculus"
+                                shortcode="MATH 233"
+                                term="Fall 2019"
+                                institution="University of Massachusetts Amherst"
+                                link="https://www.cics.umass.edu/content/fall-19-course-descriptions"
+                            />
+                        </Row>
+                    </Container>
+                    {/* <Container fluid style={{ textAlign: "center" }}>
             <h1>Coursework</h1>
             <Row style={{ display: "inline-flex" }}>
               <CourseworkCard
@@ -436,10 +436,10 @@ class Education extends React.Component {
               />
             </Row>
           </Container> */}
-        </div>
-      </div>
-    );
-  }
+                </div>
+            </div>
+        );
+    }
 }
 
 export default Education;
