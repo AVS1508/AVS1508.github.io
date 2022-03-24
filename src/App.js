@@ -1,69 +1,48 @@
-import React, { Suspense, lazy } from "react";
-import { Spinner } from "react-bootstrap";
+import React, { useState, Suspense, lazy } from 'react';
+import { NavigationBar } from "./components";
+import { Spinner } from 'react-bootstrap';
 
-import NavigationTabBar from "./components/NavigationTabBar";
-import Footer from "./components/Footer";
-
-const Home = lazy(() => import("./pages/Home"));
-const About = lazy(() => import("./pages/About"));
-const Education = lazy(() => import("./pages/Education"));
-const Experience = lazy(() => import("./pages/Experience"));
-const Projects = lazy(() => import("./pages/Projects"));
-const Skills = lazy(() => import("./pages/Skills"));
-const Achievements = lazy(() => import("./pages/Achievements"));
-const Error404 = lazy(() => import("./pages/Error404"));
+const Home = lazy(() => import("./pages/Home/Home"));
+const Projects = lazy(() => import("./pages/Projects/Projects"));
+const Experience = lazy(() => import("./pages/Experience/Experience"));
+const Involvements = lazy(() => import("./pages/Involvements/Involvements"));
+const Achievements = lazy(() => import("./pages/Achievements/Achievements"));
+const NotFound = lazy(() => import("./pages/NotFound/NotFound"));
 
 const Loading = () => {
-    return (
-        <div className="center outer-structure" style={{ display: "flex", flexDirection: "column" }}>
-            <Spinner animation="border" variant="dark" />
-        </div>
-    );
+  return (
+    <div className="center outer-structure" style={{ display: "flex", flexDirection: "column" }}>
+      <Spinner animation="border" variant="dark" />
+    </div>
+  );
 };
 
-class App extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            currentTab: "home",
-        };
-        this.componentList = ["home", "about", "education", "experience", "projects", "skills", "achievements"];
-    }
+const App = () => {
+  const [currentTab, setCurrentTab] = useState("home");
 
-    setTab = (newTab) => {
-        this.setState({ currentTab: newTab });
-    };
-
-    renderSwitch(currentTab) {
-        switch (currentTab) {
-            case "home":
-                return <Home />;
-            case "about":
-                return <About />;
-            case "education":
-                return <Education />;
-            case "experience":
-                return <Experience />;
-            case "projects":
-                return <Projects />;
-            case "skills":
-                return <Skills />;
-            case "achievements":
-                return <Achievements />;
-            default:
-                return <Error404 />;
-        }
+  const renderSwitch = (param) => {
+    switch (param) {
+      case "home":
+        return <Home />;
+      case "projects":
+        return <Projects />;
+      case "experience":
+        return <Experience />;
+      case "involvements":
+        return <Involvements />;
+      case "achievements":
+        return <Achievements />;
+      default:
+        return <NotFound />
     }
+  }
 
-    render() {
-        return (
-            <div>
-                <NavigationTabBar tabs={this.componentList} currentTab={this.state.currentTab} setTab={this.setTab} />
-                <Suspense fallback={Loading()}>{this.renderSwitch(this.state.currentTab)}</Suspense>
-                <Footer style={{ zIndex: -2 }} />
-            </div>
-        );
-    }
+  return (
+    <div className="App">
+      <NavigationBar currentTab={currentTab} setCurrentTab={setCurrentTab} />
+      <Suspense fallback={Loading()}>{renderSwitch(currentTab)}</Suspense>
+    </div>
+  );
 }
 
 export default App;

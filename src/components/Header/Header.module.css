@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    height: 6.5em;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects {
+    background: #1488cc; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2b32b2, #1488cc); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2b32b2, #1488cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.experience {
+    background: #cb356b; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #bd3f32, #cb356b); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #bd3f32, #cb356b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.involvements {
+    background: #198754; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #238a1d, #198754); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #238a1d, #198754); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.achievements {
+    background: #fc4a1a; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fc4a1a, #f7b733); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fc4a1a, #f7b733); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.headingOne {
+    font-family: "Lexend";
+    font-size: 3em;
+    color: white;
+}

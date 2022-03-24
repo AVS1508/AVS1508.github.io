@@ -1,0 +1,11 @@
+.button {
+    border: 2px solid;
+    padding: 0.5em 1em !important;
+    display: flex;
+    flex-direction: row;
+}
+
+.span {
+    font-size: 1.25em;
+    font-weight: 300;
+}

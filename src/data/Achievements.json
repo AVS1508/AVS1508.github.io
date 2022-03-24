@@ -1,0 +1,62 @@
+[
+    {
+        "title": "Dean's List",
+        "organization": "University of Massachusetts Amherst",
+        "description": "Received 5 Dean's List Honors nominations for outstanding academic performance in all semesters from Fall 2019 to Fall 2021 term, having attained a minimum of 3.5 GPA for each semester."
+    },
+    {
+        "title": "Intern of the Month",
+        "organization": "VirtuBox Infotech",
+        "description": "Deemed the Intern of the Month for exemplary work performance and initiative taken personally in the capacity of a business development associate, during the month of August."
+    },
+    {
+        "title": "AP Scholar with Distinction",
+        "organization": "The College Board",
+        "description": "Awarded the AP Scholar with Distinction Award for achieving an average score of at least 3.5 on all AP Exams taken, and scores of 3 or higher on five or more exams."
+    },
+    {
+        "title": "Chancellor's Award",
+        "organization": "University of Massachusetts Amherst",
+        "description": "Awarded the Chancellor's Award annual merit scholarship of $14,000, reserved specifically for international students, on admission to the University of Massachusetts Amherst."
+    },
+    {
+        "title": "Academic Gold Medal",
+        "organization": "Delhi Public School, R. K. Puram",
+        "description": "Awarded a Gold Medal for 7 consecutive years of academic excellence from 5th grade to 11th grade, obtaining 80% aggregate or more each year with 75%+ attendance."
+    },
+    {
+        "title": "Extracurricular Gold Medal",
+        "organization": "Delhi Public School, R. K. Puram",
+        "description": "Awarded a Gold Medal for excelling in the field of aerospace, through participation and achievements in Space Settlement Design Competitions and other aerospace/aviation challenges."
+    },
+    {
+        "title": "Winner",
+        "organization": "ISSDC 2018",
+        "description": "Won the 25th Annual International Space Settlement Design Competition (ISSDC), hosted at Kennedy Space Center, as a member of Team Oberth in Grumbo Aerospace company."
+    },
+    {
+        "title": "Alternate Finalist",
+        "organization": "Conrad Challenge 2018",
+        "description": "Received the spot of Alternate Finalist (one of top 7 teams globally) for proposing our product Ares in the Aerospace and Aviation category of the 2018 edition of the Conrad Spirit of Innovation Challenge."
+    },
+    {
+        "title": "Runners-Up",
+        "organization": "ARSSDC 2018",
+        "description": "Came runners-up in the 14th Annual Asian Regional Space Settlement Design Competition (ARSSDC), hosted at Om Shanti Retreat Center, Manesar, as a member of Team Coriolis in Vereinigten Flugfahrten company."
+    },
+    {
+        "title": "First Prize",
+        "organization": "NASA Ames SSDC 2017",
+        "description": "Won the first prize in the 2017 edition of the NASA Ames Space Settlement Design Contest, as the structural developer and 3D-modeler of Project Avanoa, in a team of 5 members."
+    },
+    {
+        "title": "Runners-Up",
+        "organization": "ARSSDC 2017",
+        "description": "Came runners-up in the 13th Annual Asian Regional Space Settlement Design Competition (ARSSDC), hosted at Om Shanti Retreat Center, Manesar, as a member of Team Alexiares in Dougeldyne Astrosystems & Flechtel Constructors company."
+    },
+    {
+        "title": "Second Prize",
+        "organization": "NASA Ames SSDC 2016",
+        "description": "Won the second prize in the 2016 edition of the NASA Ames Space Settlement Design Contest, as the structural design engineer of Project Novigo, in a team of 5 members."
+    }
+]

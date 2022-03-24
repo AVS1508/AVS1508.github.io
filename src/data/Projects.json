@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Project URefer",
+        "content": "Job referral portal designed and engineered by a team of 11 members using Scrum methodology.",
+        "gitHubUrl": "https://github.com/suikac/compsci-320-team-5",
+        "liveUrl": null,
+        "techStack": ["React", "NestJS", "MySQL"]
+    },
+    {
+        "title": "HackUMass Website",
+        "content": "HackUMass IX landing website with new functionalities and UI improvements, maintained alongside 10+ tech members.",
+        "gitHubUrl": "https://github.com/fuseumass/hackumass.github.io",
+        "liveUrl": "https://www.hackumass.com",
+        "techStack": ["HTML", "CSS"]
+    },
+    {
+        "title": "Perpetual Crusades",
+        "content": "Two-player online dice-based board game with a theme loosely set around Dungeons & Dragons.",
+        "gitHubUrl": "https://github.com/AVS1508/perpetual-crusades",
+        "liveUrl": "https://www.adityavsingh.com/perpetual-crusades/",
+        "techStack": ["React", "Bootstrap"]
+    }
+]

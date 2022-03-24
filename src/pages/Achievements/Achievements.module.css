@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #efefef;
+    min-height: calc(100vh - 10em);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+.container > div {
+    padding: 0.5em 0.25em;
+}
+
+.professionalHeadshot {
+    height: 10em;
+    border-radius: 50%;
+}
+
+.textWhite {
+    color: white !important;
+}
+
+.headingOne {
+    font-size: 2.5em;
+}
+
+.headingThree {
+    font-size: 1.5em;
+}

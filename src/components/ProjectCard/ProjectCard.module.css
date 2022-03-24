@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    width: 28em;
+    max-width: 90vw;
+    padding: 2em;
+    margin: 0.5em;
+}
+
+.button {
+    margin: 0.25em;
+}
+
+.icon {
+    font-size: 3em;
+    margin: 0em 0.125em;
+}

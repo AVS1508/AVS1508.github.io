@@ -1,243 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- Start Single Page Apps for GitHub Pages -->
-        <!--
-    <script type="text/javascript">
-      // Single Page Apps for GitHub Pages
-      // MIT License
-      // https://github.com/rafgraph/spa-github-pages
-      // This script checks to see if a redirect is present in the query string,
-      // converts it back into the correct url and adds it to the
-      // browser's history using window.history.replaceState(...),
-      // which won't cause the browser to attempt to load the new url.
-      // When the single page app is loaded further down in this file,
-      // the correct url will be waiting in the browser's history for
-      // the single page app to route accordingly.
-      (function (l) {
-        if (l.search[1] === "/") {
-          var decoded = l.search
-            .slice(1)
-            .split("&")
-            .map(function (s) {
-              return s.replace(/~and~/g, "&");
-            })
-            .join("?");
-          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash);
-        }
-      })(window.location);
-    </script>
-    -->
-        <!-- End Single Page Apps for GitHub Pages -->
-        <!--WebP Compatibility Analysis Script Begin-->
-        <script async type="text/javascript">
-            /*! modernizr 3.6.0 (Custom Build) | MIT *
-             * https://modernizr.com/download/?-webp-setclasses !*/
-            !(function (e, n, A) {
-                function o(e, n) {
-                    return typeof e === n;
-                }
-                function t() {
-                    var e, n, A, t, a, i, l;
-                    for (var f in r)
-                        if (r.hasOwnProperty(f)) {
-                            if (((e = []), (n = r[f]), n.name && (e.push(n.name.toLowerCase()), n.options && n.options.aliases && n.options.aliases.length)))
-                                for (A = 0; A < n.options.aliases.length; A++) e.push(n.options.aliases[A].toLowerCase());
-                            for (t = o(n.fn, "function") ? n.fn() : n.fn, a = 0; a < e.length; a++)
-                                (i = e[a]),
-                                    (l = i.split(".")),
-                                    1 === l.length
-                                        ? (Modernizr[l[0]] = t)
-                                        : (!Modernizr[l[0]] || Modernizr[l[0]] instanceof Boolean || (Modernizr[l[0]] = new Boolean(Modernizr[l[0]])), (Modernizr[l[0]][l[1]] = t)),
-                                    s.push((t ? "" : "no-") + l.join("-"));
-                        }
-                }
-                function a(e) {
-                    var n = u.className,
-                        A = Modernizr._config.classPrefix || "";
-                    if ((c && (n = n.baseVal), Modernizr._config.enableJSClass)) {
-                        var o = new RegExp("(^|\\s)" + A + "no-js(\\s|$)");
-                        n = n.replace(o, "$1" + A + "js$2");
-                    }
-                    Modernizr._config.enableClasses && ((n += " " + A + e.join(" " + A)), c ? (u.className.baseVal = n) : (u.className = n));
-                }
-                function i(e, n) {
-                    if ("object" == typeof e) for (var A in e) f(e, A) && i(A, e[A]);
-                    else {
-                        e = e.toLowerCase();
-                        var o = e.split("."),
-                            t = Modernizr[o[0]];
-                        if ((2 == o.length && (t = t[o[1]]), "undefined" != typeof t)) return Modernizr;
-                        (n = "function" == typeof n ? n() : n),
-                            1 == o.length
-                                ? (Modernizr[o[0]] = n)
-                                : (!Modernizr[o[0]] || Modernizr[o[0]] instanceof Boolean || (Modernizr[o[0]] = new Boolean(Modernizr[o[0]])), (Modernizr[o[0]][o[1]] = n)),
-                            a([(n && 0 != n ? "" : "no-") + o.join("-")]),
-                            Modernizr._trigger(e, n);
-                    }
-                    return Modernizr;
-                }
-                var s = [],
-                    r = [],
-                    l = {
-                        _version: "3.6.0",
-                        _config: { classPrefix: "", enableClasses: !0, enableJSClass: !0, usePrefixes: !0 },
-                        _q: [],
-                        on: function (e, n) {
-                            var A = this;
-                            setTimeout(function () {
-                                n(A[e]);
-                            }, 0);
-                        },
-                        addTest: function (e, n, A) {
-                            r.push({ name: e, fn: n, options: A });
-                        },
-                        addAsyncTest: function (e) {
-                            r.push({ name: null, fn: e });
-                        },
-                    },
-                    Modernizr = function () {};
-                (Modernizr.prototype = l), (Modernizr = new Modernizr());
-                var f,
-                    u = n.documentElement,
-                    c = "svg" === u.nodeName.toLowerCase();
-                !(function () {
-                    var e = {}.hasOwnProperty;
-                    f =
-                        o(e, "undefined") || o(e.call, "undefined")
-                            ? function (e, n) {
-                                  return n in e && o(e.constructor.prototype[n], "undefined");
-                              }
-                            : function (n, A) {
-                                  return e.call(n, A);
-                              };
-                })(),
-                    (l._l = {}),
-                    (l.on = function (e, n) {
-                        this._l[e] || (this._l[e] = []),
-                            this._l[e].push(n),
-                            Modernizr.hasOwnProperty(e) &&
-                                setTimeout(function () {
-                                    Modernizr._trigger(e, Modernizr[e]);
-                                }, 0);
-                    }),
-                    (l._trigger = function (e, n) {
-                        if (this._l[e]) {
-                            var A = this._l[e];
-                            setTimeout(function () {
-                                var e, o;
-                                for (e = 0; e < A.length; e++) (o = A[e])(n);
-                            }, 0),
-                                delete this._l[e];
-                        }
-                    }),
-                    Modernizr._q.push(function () {
-                        l.addTest = i;
-                    }),
-                    Modernizr.addAsyncTest(function () {
-                        function e(e, n, A) {
-                            function o(n) {
-                                var o = n && "load" === n.type ? 1 == t.width : !1,
-                                    a = "webp" === e;
-                                i(e, a && o ? new Boolean(o) : o), A && A(n);
-                            }
-                            var t = new Image();
-                            (t.onerror = o), (t.onload = o), (t.src = n);
-                        }
-                        var n = [
-                                {
-                                    uri: "data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",
-                                    name: "webp",
-                                },
-                                {
-                                    uri: "data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",
-                                    name: "webp.alpha",
-                                },
-                                {
-                                    uri: "data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",
-                                    name: "webp.animation",
-                                },
-                                {
-                                    uri: "data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",
-                                    name: "webp.lossless",
-                                },
-                            ],
-                            A = n.shift();
-                        e(A.name, A.uri, function (A) {
-                            if (A && "load" === A.type) for (var o = 0; o < n.length; o++) e(n[o].name, n[o].uri);
-                        });
-                    }),
-                    t(),
-                    a(s),
-                    delete l.addTest,
-                    delete l.addAsyncTest;
-                for (var p = 0; p < Modernizr._q.length; p++) Modernizr._q[p]();
-                e.Modernizr = Modernizr;
-            })(window, document);
-        </script>
-        <!--WebP Compatibility Analysis Script End-->
-        <!-- Metadata of the Webpage -->
-
-        <!-- Character-set Metadata -->
         <meta charset="utf-8" />
-        <!-- Viewport Metadata -->
+        <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <!-- Author Metadata -->
-        <meta name="author" content="Aditya Vikram Singh" />
-        <!-- Theme Metadata -->
-        <meta name="theme-color" content="#222222" />
-        <!-- Keyword Metadata -->
+        <meta name="theme-color" content="#000000" />
         <meta
             name="keywords"
-            content="Aditya Singh, Aditya Vikram Singh, Aditya Vikram Singh DPS,
-              Aditya Vikram Singh DPSRKP, Aditya Vikram Singh UMass, Aditya Vikram
-              Singh UMass Amherst, Aditya Vikram Singh New Delhi, Aditya Vikram
-              Singh Amherst, Aditya Vikram Singh ISSDC, Aditya Vikram Singh NASA,
-              Aditya Vikram Singh, Aditya Vikram Singh Website, Aditya V Singh"
+            content="Aditya Singh, Aditya Vikram Singh, Aditya Vikram Singh DPS, Aditya Vikram Singh DPSRKP, Aditya Vikram Singh UMass, Aditya Vikram Singh UMass Amherst, Aditya Vikram Singh New Delhi,  Aditya Vikram Singh Amherst,  Aditya Vikram Singh ISSDC, Aditya Vikram Singh NASA, Aditya Vikram Singh, Aditya Vikram Singh Website, Aditya V Singh"
         />
-        <!--OpenGraph Metadata-->
-        <!--OpenGraph Title-->
-        <meta name="title" property="og:title" content="Aditya Vikram Singh" />
-        <!--OpenGraph Description-->
         <meta
             name="description"
-            property="og:description"
-            content="Aditya Vikram Singh. Software Developer @ BUILD UMass, Computer Science and Mathematics @ UMass Amherst, Full-Stack Web
-              Developer, Graphic Designer. I'm actively searching for Software Engineering and/or Web Development internships for
-              Summer 2021!"
+            content="Aditya is a junior at UMass Amherst, majoring in Computer Science and Mathematics. He is an Undergraduate Course Assistant at Manning CICS, a Software Developer at BUILD UMass, and a Member of the HackUMass Organizing Team."
         />
-        <!--OpenGraph Type-->
-        <meta property="og:type" content="website" />
-        <!--OpenGraph Image-->
-        <meta name="image" property="og:image" content="https://www.adityavsingh.com/media/jpg/cocoa-beach-me.jpg" />
-        <!-- Webpage Logo -->
-        <title>Aditya Vikram Singh</title>
-        <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-        <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
+        <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
         <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-        <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+        <title>Aditya Vikram Singh</title>
+    </head>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    --></head>
     <body>
         <noscript>You need to enable JavaScript to run this app.</noscript>
         <div id="root"></div>
-        <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    --></body>
+    </body>
 </html>
