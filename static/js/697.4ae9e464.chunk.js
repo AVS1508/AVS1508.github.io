@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkpersonal_website=self.webpackChunkpersonal_website||[]).push([[697],{3697:function(e,n,s){s.r(n);s(2791);var l=s(184);n.default=function(){return(0,l.jsx)("div",{children:"Hello, World! NotFound."})}}}]);
+//# sourceMappingURL=697.4ae9e464.chunk.js.map
