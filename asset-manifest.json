@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.dea76c97.css",
-    "main.js": "/static/js/main.1f0fac02.js",
+    "main.js": "/static/js/main.621050e0.js",
     "static/css/598.808d535d.chunk.css": "/static/css/598.808d535d.chunk.css",
     "static/js/598.5da31b03.chunk.js": "/static/js/598.5da31b03.chunk.js",
     "static/css/866.535b7ca2.chunk.css": "/static/css/866.535b7ca2.chunk.css",
@@ -9,7 +9,7 @@
     "static/css/588.77ea37ac.chunk.css": "/static/css/588.77ea37ac.chunk.css",
     "static/js/588.562341a4.chunk.js": "/static/js/588.562341a4.chunk.js",
     "static/css/271.8600bb3c.chunk.css": "/static/css/271.8600bb3c.chunk.css",
-    "static/js/271.5be3abff.chunk.js": "/static/js/271.5be3abff.chunk.js",
+    "static/js/271.61d26e56.chunk.js": "/static/js/271.61d26e56.chunk.js",
     "static/css/385.f01cca2f.chunk.css": "/static/css/385.f01cca2f.chunk.css",
     "static/js/385.556fcfc4.chunk.js": "/static/js/385.556fcfc4.chunk.js",
     "static/js/697.4ae9e464.chunk.js": "/static/js/697.4ae9e464.chunk.js",
@@ -44,7 +44,7 @@
     "static/media/innovationm-logo.webp": "/static/media/innovationm-logo.c1128d8c05190f0ddcba.webp",
     "static/media/cicsoft-logo.webp": "/static/media/cicsoft-logo.485013520a43aaa7870f.webp",
     "main.dea76c97.css.map": "/static/css/main.dea76c97.css.map",
-    "main.1f0fac02.js.map": "/static/js/main.1f0fac02.js.map",
+    "main.621050e0.js.map": "/static/js/main.621050e0.js.map",
     "598.808d535d.chunk.css.map": "/static/css/598.808d535d.chunk.css.map",
     "598.5da31b03.chunk.js.map": "/static/js/598.5da31b03.chunk.js.map",
     "866.535b7ca2.chunk.css.map": "/static/css/866.535b7ca2.chunk.css.map",
@@ -52,13 +52,13 @@
     "588.77ea37ac.chunk.css.map": "/static/css/588.77ea37ac.chunk.css.map",
     "588.562341a4.chunk.js.map": "/static/js/588.562341a4.chunk.js.map",
     "271.8600bb3c.chunk.css.map": "/static/css/271.8600bb3c.chunk.css.map",
-    "271.5be3abff.chunk.js.map": "/static/js/271.5be3abff.chunk.js.map",
+    "271.61d26e56.chunk.js.map": "/static/js/271.61d26e56.chunk.js.map",
     "385.f01cca2f.chunk.css.map": "/static/css/385.f01cca2f.chunk.css.map",
     "385.556fcfc4.chunk.js.map": "/static/js/385.556fcfc4.chunk.js.map",
     "697.4ae9e464.chunk.js.map": "/static/js/697.4ae9e464.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dea76c97.css",
-    "static/js/main.1f0fac02.js"
+    "static/js/main.621050e0.js"
   ]
 }
