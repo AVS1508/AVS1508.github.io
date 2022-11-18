@@ -1,6 +1,6 @@
-import React, { useState, Suspense, lazy } from 'react';
+import React, { useState, Suspense, lazy } from "react";
 import { NavigationBar } from "./components";
-import { Spinner } from 'react-bootstrap';
+import { Spinner } from "react-bootstrap";
 
 const Home = lazy(() => import("./pages/Home/Home"));
 const Projects = lazy(() => import("./pages/Projects/Projects"));
@@ -11,7 +11,10 @@ const NotFound = lazy(() => import("./pages/NotFound/NotFound"));
 
 const Loading = () => {
   return (
-    <div className="center outer-structure" style={{ display: "flex", flexDirection: "column" }}>
+    <div
+      className="center outer-structure"
+      style={{ display: "flex", flexDirection: "column" }}
+    >
       <Spinner animation="border" variant="dark" />
     </div>
   );
@@ -33,9 +36,9 @@ const App = () => {
       case "achievements":
         return <Achievements />;
       default:
-        return <NotFound />
+        return <NotFound />;
     }
-  }
+  };
 
   return (
     <div className="App">
@@ -43,6 +46,6 @@ const App = () => {
       <Suspense fallback={Loading()}>{renderSwitch(currentTab)}</Suspense>
     </div>
   );
-}
+};
 
 export default App;

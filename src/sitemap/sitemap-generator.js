@@ -1,5 +1,5 @@
 require("babel-register")({
-    presets: ["es2015", "react"],
+  presets: ["es2015", "react"],
 });
 
 require.extensions[".jpg"] = () => {};
@@ -12,6 +12,9 @@ require.extensions[".pdf"] = () => {};
 const router = require("./sitemap-routes").default;
 const Sitemap = require("react-router-sitemap").default;
 
-const generateSitemap = () => new Sitemap(router).build("https://www.adityavsingh.com").save("./public/sitemap.xml");
+const generateSitemap = () =>
+  new Sitemap(router)
+    .build("https://www.adityavsingh.com")
+    .save("./public/sitemap.xml");
 
 generateSitemap();
