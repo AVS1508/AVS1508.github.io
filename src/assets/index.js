@@ -9,6 +9,8 @@ export { default as BUILDUMassLogo } from "./organizations/webp/build-logo.webp"
 export { default as FallbackBUILDUMassLogo } from "./organizations/jpg/build-logo.jpg";
 export { default as UMassLogo } from "./organizations/webp/umass-logo.webp";
 export { default as FallbackUMassLogo } from "./organizations/jpg/umass-logo.jpg";
+export { default as ILinkDigitalLogo } from "./organizations/webp/ilinkdigital-logo.webp";
+export { default as FallbackILinkDigitalLogo } from "./organizations/jpg/ilinkdigital-logo.jpg";
 export { default as InnovationMLogo } from "./organizations/webp/innovationm-logo.webp";
 export { default as FallbackInnovationMLogo } from "./organizations/jpg/innovationm-logo.jpg";
 export { default as VirtuBoxLogo } from "./organizations/webp/virtubox-logo.webp";
