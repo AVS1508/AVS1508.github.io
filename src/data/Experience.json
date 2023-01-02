@@ -3,13 +3,24 @@
     "title": "Undergraduate Course Assistant",
     "organization": "Manning CICS, UMass Amherst",
     "liveUrl": "https://www.cics.umass.edu/",
-    "duration": "August 2021 - Current",
+    "duration": "August 2021 - December 2022",
     "description": [
-      "Assist the instructor and TAs to help students taking CS 240 understand the principles and applications of Probability Theory",
-      "Grade homework assignments for 300+ students and provide constructive feedback to help students learn better",
-      "Respond to students’ questions on Piazza promptly to explain core concepts and resolve doubts pertaining to course materials"
+      "Coordinated with the instructor to aid students taking COMPSCI 240 understand the principles of Probability Theory",
+      "Graded homework assignments for 300+ students, provided constructive feedback to help students employ better strategies, and responded to students' questions on Piazza to clarify core concepts and resolve doubts about the course materials"
     ],
     "logo": "CICS"
+  },
+  {
+    "title": "Software Engineer Intern",
+    "organization": "iLink Digital",
+    "liveUrl": "https://www.ilink-digital.com/",
+    "duration": "May 2022 - August 2022",
+    "description": [
+      "Enhanced and refactored an organization effectiveness management dashboard built on Angular and Ionic, in a team of 4 frontend developers, by constructing generating methods for 2 large-scale UI components consuming served JSON",
+      "Reduced server-client latency by minimizing the key-value terms by ~30% while maintaining a lossless JSON structure",
+      "Consulted on hybrid cloud portal for managing client Edge-computing resources, and AWS and Azure cloud resources"
+    ],
+    "logo": "ILinkDigital"
   },
   {
     "title": "Software Development Intern",
@@ -17,10 +28,8 @@
     "liveUrl": "https://www.innovationm.com/",
     "duration": "June 2021 - August 2021",
     "description": [
-      "Developed a grievance redressal platform for internal use by 200+ employees from scratch, in a team of 2 developers",
-      "Built the backend using Node.js with Express server and modelled the database layer using MongoDB through mongoose wrapper",
-      "Designed the frontend using React along with Redux state management and performed partial API integration",
-      "Containerized the application using Docker for ease of deployment as a service in a microservice architecture framework"
+      "Developed a grievance redress platform for internal use by 200+ employees from scratch, engineering the back end using Node.js + Express server and modeling database layer with MongoDB through the mongoose wrapper for JavaScript",
+      "Designed the front end using React with Redux for state management and performed API integration of 10+ endpoints, followed by containerizing the application through Docker for easier deployment in an expansive micro-service architecture"
     ],
     "logo": "InnovationM"
   },
