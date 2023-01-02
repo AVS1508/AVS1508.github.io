@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #efefef;
+    height: calc(100vh - 3.5em);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+.spinner {
+    width: 5em;
+    height: 5em;
+}
