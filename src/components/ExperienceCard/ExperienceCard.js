@@ -37,6 +37,14 @@ const assets = {
       className={`card-img ${styles.image}`}
     />
   ),
+  ILinkDigital: (
+    <ImageHolder
+      primarySource={Asset.ILinkDigitalLogo}
+      secondarySource={Asset.FallbackILinkDigitalLogo}
+      alt="iLink Digital Inc."
+      className={`card-img ${styles.image}`}
+    />
+  ),
   InnovationM: (
     <ImageHolder
       primarySource={Asset.InnovationMLogo}
