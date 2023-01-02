@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.d6665fc9.css",
-    "main.js": "/static/js/main.8afe03ef.js",
+    "main.js": "/static/js/main.90ce9d5d.js",
     "static/css/598.808d535d.chunk.css": "/static/css/598.808d535d.chunk.css",
     "static/js/598.d65834be.chunk.js": "/static/js/598.d65834be.chunk.js",
     "static/css/866.535b7ca2.chunk.css": "/static/css/866.535b7ca2.chunk.css",
@@ -11,7 +11,7 @@
     "static/css/271.8600bb3c.chunk.css": "/static/css/271.8600bb3c.chunk.css",
     "static/js/271.c8168d25.chunk.js": "/static/js/271.c8168d25.chunk.js",
     "static/css/385.f01cca2f.chunk.css": "/static/css/385.f01cca2f.chunk.css",
-    "static/js/385.a2c63c1a.chunk.js": "/static/js/385.a2c63c1a.chunk.js",
+    "static/js/385.a5b76841.chunk.js": "/static/js/385.a5b76841.chunk.js",
     "static/js/697.4ae9e464.chunk.js": "/static/js/697.4ae9e464.chunk.js",
     "static/media/perpetual-crusades.jpg": "/static/media/perpetual-crusades.afc69c1bf50a272f7d1f.jpg",
     "static/media/background.jpg": "/static/media/background.22687e163f7b2a60d9e2.jpg",
@@ -45,7 +45,7 @@
     "static/media/cicsoft-logo.webp": "/static/media/cicsoft-logo.485013520a43aaa7870f.webp",
     "static/media/ilinkdigital-logo.webp": "/static/media/ilinkdigital-logo.8763b6b78896d67068a7.webp",
     "main.d6665fc9.css.map": "/static/css/main.d6665fc9.css.map",
-    "main.8afe03ef.js.map": "/static/js/main.8afe03ef.js.map",
+    "main.90ce9d5d.js.map": "/static/js/main.90ce9d5d.js.map",
     "598.808d535d.chunk.css.map": "/static/css/598.808d535d.chunk.css.map",
     "598.d65834be.chunk.js.map": "/static/js/598.d65834be.chunk.js.map",
     "866.535b7ca2.chunk.css.map": "/static/css/866.535b7ca2.chunk.css.map",
@@ -55,11 +55,11 @@
     "271.8600bb3c.chunk.css.map": "/static/css/271.8600bb3c.chunk.css.map",
     "271.c8168d25.chunk.js.map": "/static/js/271.c8168d25.chunk.js.map",
     "385.f01cca2f.chunk.css.map": "/static/css/385.f01cca2f.chunk.css.map",
-    "385.a2c63c1a.chunk.js.map": "/static/js/385.a2c63c1a.chunk.js.map",
+    "385.a5b76841.chunk.js.map": "/static/js/385.a5b76841.chunk.js.map",
     "697.4ae9e464.chunk.js.map": "/static/js/697.4ae9e464.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d6665fc9.css",
-    "static/js/main.8afe03ef.js"
+    "static/js/main.90ce9d5d.js"
   ]
 }
