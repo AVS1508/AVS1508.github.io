@@ -69,7 +69,7 @@ const NavigationBar = (props) => {
             >
               Involvements
             </Nav.Link>
-            <Nav.Link
+            {/* <Nav.Link
               eventKey="achievements"
               className={
                 props.currentTab === "achievements"
@@ -78,7 +78,7 @@ const NavigationBar = (props) => {
               }
             >
               Achievements
-            </Nav.Link>
+            </Nav.Link> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
