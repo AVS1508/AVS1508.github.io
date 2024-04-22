@@ -25,6 +25,7 @@ const Experience = () => {
               duration={obj.duration}
               description={obj.description}
               logo={obj.logo}
+              techStack={obj.techStack}
               variant="danger"
             />
           ))}

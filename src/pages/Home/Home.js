@@ -40,11 +40,16 @@ const Home = () => {
       <Row>
         <Col>
           <span className={`${styles.textWhite} ${styles.headingThree}`}>
-            Software Engineer, Full-Stack Developer, College Student
+            Software Engineer experienced in Full-Stack Web and Android development
           </span>
         </Col>
       </Row>
       <Row>
+        <Col>
+          <a href="https://www.linkedin.com/in/avs1508" target="_blank_">
+            <FaLinkedin className={styles.icon} />
+          </a>
+        </Col>
         <Col>
           <a href="https://www.github.com/AVS1508" target="_blank_">
             <FaGithubSquare className={styles.icon} />
@@ -53,11 +58,6 @@ const Home = () => {
         <Col>
           <a href="https://www.behance.net/AVS1508" target="_blank_">
             <FaBehanceSquare className={styles.icon} />
-          </a>
-        </Col>
-        <Col>
-          <a href="https://www.linkedin.com/in/avs1508" target="_blank_">
-            <FaLinkedin className={styles.icon} />
           </a>
         </Col>
         <Col>
