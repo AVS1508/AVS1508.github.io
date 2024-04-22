@@ -1,14 +1,55 @@
 [
   {
-    "title": "Undergraduate Course Assistant",
-    "organization": "Manning CICS, UMass Amherst",
+    "title": "M.S. in Computer Science",
+    "organization": "University of Massachusetts Amherst",
+    "duration": "Grad. May 2024",
     "liveUrl": "https://www.cics.umass.edu/",
-    "duration": "August 2021 - December 2022",
-    "description": [
-      "Coordinated with the instructor to aid students taking COMPSCI 240 understand the principles of Probability Theory",
-      "Graded homework assignments for 300+ students, provided constructive feedback to help students employ better strategies, and responded to students' questions on Piazza to clarify core concepts and resolve doubts about the course materials"
-    ],
     "logo": "CICS"
+  },
+  {
+    "title": "Software Engineer Intern",
+    "organization": "Altius Strategic Consulting",
+    "liveUrl": "https://www.altius.us/",
+    "duration": "November 2023 - Current",
+    "description": [
+      "Building an Android mobile application using Jetpack Compose with Kotlin Coroutines and Dagger-Hilt dependency injections",
+      "Integrated MediaPipe and MLKit alongside custom TFLite models for provisioning on-device machine learning routines for user flows",
+      "Fine-tuned existing TFLite models for downstream tasks with knowledge distillation from custom pre-trained PyTorch models",
+      "Engineered various remote functionalities via Firebase Authentication, Cloud Firestore, and AWS S3, tying in Crashlytics and Firebase Analytics for streamlined development"
+    ],
+    "logo": "Altius",
+    "techStack": ["JetpackCompose", "Kotlin", "Tensorflow", "PyTorch", "Firebase", "AWS"]
+  },
+  {
+    "title": "Junior Programmer",
+    "organization": "ICAD - KSA",
+    "liveUrl": "https://www.icad.com/",
+    "duration": "July 2023 - August 2023",
+    "description": [
+      "Developed mobile email client module in Flutter for administering 200+ email accounts by interfacing with IMAP/POP/SMTP servers",
+      "Implemented user account backup-restore functionality, configuration-based login process for Microsoft Exchange servers, and caching process for user credentials and associated email messages via in-memory and persistent binary storage techniques for reduced latency"
+    ],
+    "logo": "ICAD",
+    "techStack": ["Flutter", "Dart"]
+  },
+  {
+    "title": "Solutions Architect and Developer",
+    "organization": "MoSPI, Govt. of India",
+    "liveUrl": "https://www.mospi.gov.in/",
+    "duration": "June 2023 - August 2023",
+    "description": [
+      "Architected and developed a data management and dissemination platform for public access to 100+ macro-economic indicators and 1000+ aggregate reports for India, built using React, Node.js, and MongoDB, with an existing landing page updated using Drupal and custom PHP embeds",
+      "Developed features for efficient data filtering, paginated fetching, and UI improvements for improved responsiveness and UX appeal"
+    ],
+    "logo": "MoSPI",
+    "techStack": ["React", "Nodedotjs", "MongoDB", "Express", "Nginx"]
+  },
+  {
+    "title": "B.S. in Computer Science & Math",
+    "organization": "University of Massachusetts Amherst",
+    "duration": "Grad. December 2022",
+    "liveUrl": "https://www.umass.edu/",
+    "logo": "UMass"
   },
   {
     "title": "Software Engineer Intern",
@@ -20,7 +61,8 @@
       "Reduced server-client latency by minimizing the key-value terms by ~30% while maintaining a lossless JSON structure",
       "Consulted on hybrid cloud portal for managing client Edge-computing resources, and AWS and Azure cloud resources"
     ],
-    "logo": "ILinkDigital"
+    "logo": "ILinkDigital",
+    "techStack": ["Angular", "Ionic"]
   },
   {
     "title": "Software Development Intern",
@@ -31,7 +73,8 @@
       "Developed a grievance redress platform for internal use by 200+ employees from scratch, engineering the back end using Node.js + Express server and modeling database layer with MongoDB through the mongoose wrapper for JavaScript",
       "Designed the front end using React with Redux for state management and performed API integration of 10+ endpoints, followed by containerizing the application through Docker for easier deployment in an expansive micro-service architecture"
     ],
-    "logo": "InnovationM"
+    "logo": "InnovationM",
+    "techStack": ["React", "Nodedotjs", "MongoDB", "Express"]
   },
   {
     "title": "Business Development Associate",
@@ -43,18 +86,14 @@
       "Worked on competitor analysis, keyword research, and image production, for app-store optimization of 5 client applications",
       "Produced 10+ video tutorials explaining the functionality of the company’s CMS dashboard, for publication on YouTube"
     ],
-    "logo": "VirtuBox"
+    "logo": "VirtuBox",
+    "techStack": ["React", "GooglePlay", "AppleAppStore"]
   },
   {
-    "title": "Class of 2023",
-    "organization": "University of Massachusetts Amherst",
-    "liveUrl": "https://www.umass.edu",
-    "logo": "UMass"
-  },
-  {
-    "title": "Class of 2019",
+    "title": "High School Diploma",
     "organization": "Delhi Public School, R. K. Puram",
-    "liveUrl": "https://www.dpsrkp.net",
+    "duration": "Grad. May 2019",
+    "liveUrl": "https://www.dpsrkp.net/",
     "logo": "DPSRKP"
   }
 ]
