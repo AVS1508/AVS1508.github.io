@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 3.5em);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+.title {
+    font-size: 2.5em;
+}
+
+.message {
+    font-size: 1.5em;
+}
