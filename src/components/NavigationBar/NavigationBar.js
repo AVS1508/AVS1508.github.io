@@ -40,16 +40,6 @@ const NavigationBar = (props) => {
               Home
             </Nav.Link>
             <Nav.Link
-              eventKey="projects"
-              className={
-                props.currentTab === "projects"
-                  ? styles.activeLink
-                  : styles.inactiveLink
-              }
-            >
-              Projects
-            </Nav.Link>
-            <Nav.Link
               eventKey="experience"
               className={
                 props.currentTab === "experience"
@@ -70,6 +60,16 @@ const NavigationBar = (props) => {
               Involvements
             </Nav.Link>
             <Nav.Link
+              eventKey="projects"
+              className={
+                props.currentTab === "projects"
+                  ? styles.activeLink
+                  : styles.inactiveLink
+              }
+            >
+              Projects
+            </Nav.Link>
+            {/* <Nav.Link
               eventKey="achievements"
               className={
                 props.currentTab === "achievements"
@@ -78,7 +78,7 @@ const NavigationBar = (props) => {
               }
             >
               Achievements
-            </Nav.Link>
+            </Nav.Link> */}
           </Nav>
         </Navbar.Collapse>
       </Container>

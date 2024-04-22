@@ -6,7 +6,7 @@ const Home = lazy(() => import("./pages/Home/Home"));
 const Projects = lazy(() => import("./pages/Projects/Projects"));
 const Experience = lazy(() => import("./pages/Experience/Experience"));
 const Involvements = lazy(() => import("./pages/Involvements/Involvements"));
-const Achievements = lazy(() => import("./pages/Achievements/Achievements"));
+// const Achievements = lazy(() => import("./pages/Achievements/Achievements"));
 const NotFound = lazy(() => import("./pages/NotFound/NotFound"));
 
 const App = () => {
@@ -22,8 +22,9 @@ const App = () => {
         return <Experience />;
       case "involvements":
         return <Involvements />;
-      case "achievements":
-        return <Achievements />;
+      // // Uncomment the below case to add Achievements page
+      // case "achievements":
+      //   return <Achievements />;
       default:
         return <NotFound />;
     }

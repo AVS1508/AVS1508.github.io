@@ -2,8 +2,7 @@ import React from "react";
 import { Card, Button } from "react-bootstrap";
 import { ImageHolder } from "..";
 import * as Asset from "../../assets";
-import { FaReact, FaCss3Alt, FaHtml5, FaBootstrap } from "react-icons/fa";
-import { SiNestjs, SiMysql } from "react-icons/si";
+import { SiNestjs, SiMysql, SiFlutter, SiBootstrap, SiReact, SiHtml5, SiCss3, SiFirebase, SiFlask, SiNumpy, SiPython, SiPytorch } from "react-icons/si";
 import styles from "./ProjectCard.module.css";
 
 const assets = {
@@ -31,17 +30,53 @@ const assets = {
       className="card-img"
     />
   ),
+  "Foliage": (
+    <ImageHolder
+      primarySource={Asset.Foliage}
+      secondarySource={Asset.FallbackFoliage}
+      alt="Foliage"
+      className="card-img"
+    />
+  ),
+  "Cough Detector": (
+    <ImageHolder
+      primarySource={Asset.CoughDetector}
+      secondarySource={Asset.FallbackCoughDetector}
+      alt="Cough Detector"
+      className="card-img"
+    />
+  ),
+  "SpectralCNN": (
+    <ImageHolder
+      primarySource={Asset.SpectralCNN}
+      secondarySource={Asset.FallbackSpectralCNN}
+      alt="SpectralCNN"
+      className="card-img"
+    />
+  ),
 };
 
 const icons = {
-  React: <FaReact className={styles.icon} style={{ color: "#61DAFB" }} />,
-  CSS: <FaCss3Alt className={styles.icon} style={{ color: "#1572B6" }} />,
-  HTML: <FaHtml5 className={styles.icon} style={{ color: "#E34F26" }} />,
   Bootstrap: (
-    <FaBootstrap className={styles.icon} style={{ color: "#7952B3" }} />
+    <SiBootstrap className={styles.icon} style={{ color: "#7952B3" }} />
   ),
-  NestJS: <SiNestjs className={styles.icon} style={{ color: "#E0234E" }} />,
+  CSS: <SiCss3 className={styles.icon} style={{ color: "#1572B6" }} />,
+  Firebase: (
+    <SiFirebase className={styles.icon} style={{ color: "#FFCA28" }} />
+  ),
+  Flask: (
+    <SiFlask className={styles.icon} style={{ color: "#000000" }} />
+  ),
+  Flutter: (
+    <SiFlutter className={styles.icon} style={{ color: "#02569B" }} />
+  ),
+  HTML: <SiHtml5 className={styles.icon} style={{ color: "#E34F26" }} />,
   MySQL: <SiMysql className={styles.icon} style={{ color: "#4479A1" }} />,
+  NestJS: <SiNestjs className={styles.icon} style={{ color: "#E0234E" }} />,
+  NumPy: <SiNumpy className={styles.icon} style={{ color: "#013243" }} />,
+  Python: <SiPython className={styles.icon} style={{ color: "#3776AB" }} />,
+  PyTorch: <SiPytorch className={styles.icon} style={{ color: "#EE4C2C" }} />,
+  React: <SiReact className={styles.icon} style={{ color: "#61DAFB" }} />,
 };
 
 const ProjectCard = (props) => {

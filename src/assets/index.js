@@ -21,6 +21,12 @@ export { default as AerossLogo } from "./organizations/webp/aeross-logo.webp";
 export { default as FallbackAerossLogo } from "./organizations/jpg/aeross-logo.jpg";
 export { default as DPSRKPLogo } from "./organizations/webp/dpsrkp-logo.webp";
 export { default as FallbackDPSRKPLogo } from "./organizations/jpg/dpsrkp-logo.jpg";
+export { default as AltiusLogo } from "./organizations/webp/altius-logo.webp";
+export { default as FallbackAltiusLogo } from "./organizations/jpg/altius-logo.jpg";
+export { default as ICADLogo } from "./organizations/webp/icad-logo.webp";
+export { default as FallbackICADLogo } from "./organizations/jpg/icad-logo.jpg";
+export { default as MoSPILogo } from "./organizations/webp/mospi-logo.webp";
+export { default as FallbackMoSPILogo } from "./organizations/jpg/mospi-logo.jpg";
 
 // Personal Assets
 export { default as ProfessionalHeadshot } from "./personal/webp/professional-headshot.webp";
@@ -35,3 +41,9 @@ export { default as ProjectURefer } from "./projects/webp/project-urefer.webp";
 export { default as FallbackProjectURefer } from "./projects/jpg/project-urefer.jpg";
 export { default as HackUMassWebsite } from "./projects/webp/hackumass-website.webp";
 export { default as FallbackHackUMassWebsite } from "./projects/jpg/hackumass-website.jpg";
+export { default as Foliage } from "./projects/webp/foliage.webp";
+export { default as FallbackFoliage } from "./projects/jpg/foliage.jpg";
+export { default as CoughDetector } from "./projects/webp/cough-detector.webp";
+export { default as FallbackCoughDetector } from "./projects/jpg/cough-detector.jpg";
+export { default as SpectralCNN } from "./projects/webp/spectral-cnn.webp";
+export { default as FallbackSpectralCNN } from "./projects/jpg/spectral-cnn.jpg";

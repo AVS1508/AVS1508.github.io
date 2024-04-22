@@ -1,23 +1,49 @@
 [
   {
+    "title": "Grader",
+    "organization": "Manning CICS, UMass Amherst",
+    "liveUrl": "https://www.cics.umass.edu/",
+    "duration": "August 2023 - May 2024",
+    "description": [
+      "Coordinated with the instructor to aid graduate students taking COMPSCI 688 understand the principles of Probabilistic Graphical Models for Spring 2024",
+      "Coordinated with the instructor to aid graduate and undergraduate students taking COMPSCI 514 understand the principles of Data Science Algorithms for Fall 2023",
+      "Graded homework assignments for 50+ students and provided constructive feedback and alternative strategies."
+    ],
+    "logo": "CICS"
+  },
+  {
     "title": "Co-President",
     "organization": "CICSoft",
-    "liveUrl": "https://umass-cicsoft.github.io/",
-    "duration": "August 2022 - Current",
+    "liveUrl": "https://www.cicsoft.tech/",
+    "duration": "August 2022 - May 2023",
     "description": [
-      "Lead 8 core members in optimizing logistics, outreach, teaching, and development, coordinating with other co-president"
+      "Lead 8 core members in optimizing logistics, outreach, teaching, and development, coordinating with other co-president",
+      "Taught web development and version control to 150+ students through tutorials on JavaScript, React and Git across three semesters"
     ],
-    "logo": "CICSoft"
+    "logo": "CICSoft",
+    "techStack": ["JavaScript", "React", "Git"]
   },
   {
     "title": "Co-Director",
     "organization": "HackUMass",
     "liveUrl": "https://www.hackumass.com",
-    "duration": "March 2022 - Current",
+    "duration": "March 2022 - February 2023",
     "description": [
       "Direct the organizers in preparation of HackUMass X, focusing on the technology and hardware components of the event"
     ],
-    "logo": "HackUMass"
+    "logo": "HackUMass",
+    "techStack": ["RubyOnRails", "Ruby", "Heroku"]
+  },
+  {
+    "title": "Undergraduate Course Assistant",
+    "organization": "Manning CICS, UMass Amherst",
+    "liveUrl": "https://www.cics.umass.edu/",
+    "duration": "August 2021 - December 2022",
+    "description": [
+      "Coordinated with the instructor to aid students taking COMPSCI 240 understand the principles of Probability Theory",
+      "Graded homework assignments for 300+ students, provided constructive feedback to help students employ better strategies, and responded to students' questions on Piazza to clarify core concepts and resolve doubts about the course materials"
+    ],
+    "logo": "CICS"
   },
   {
     "title": "Technical Lead",
@@ -27,7 +53,8 @@
     "description": [
       "Served as the technical lead for a team of 4 software developers and 2 business developers, responsible for building the user interface of a data analytics solution for a fintech startup"
     ],
-    "logo": "BUILD"
+    "logo": "BUILD",
+    "techStack": ["D3dotjs", "JavaScript"]
   },
   {
     "title": "Director of Technology",
@@ -37,7 +64,8 @@
     "description": [
       "Supervised the development team in designing the organization's landing page, using HTML, CSS, and JavaScript, and building CICapi - a unified back-end for handling member logistics using Flask, Firebase, and Heroku, with 170+ users"
     ],
-    "logo": "CICSoft"
+    "logo": "CICSoft",
+    "techStack": ["Flask", "Firebase", "JavaScript", "HTML", "CSS", "Heroku"]
   },
   {
     "title": "Member, Organizing Team",
@@ -48,7 +76,8 @@
       "Overhauled HackUMass's landing website with novel functionalities and UI bug fixes, implemented 3 new enhancements, and resolved 5+ bugs in Dashboard, the event's logistics management solution on Ruby on Rails",
       "Designed and created logos, icons, and mockups for the events and assembled the sponsorship prospectus"
     ],
-    "logo": "HackUMass"
+    "logo": "HackUMass",
+    "techStack": ["RubyOnRails", "JavaScript", "Ruby", "HTML", "CSS", "Heroku"]
   },
   {
     "title": "Software Developer",
@@ -59,7 +88,8 @@
       "Partially developed a career enhancement tool in Django + TailwindCSS framework for a student-run startup, as part of a team of 4 software developers, 1 tech lead, and 2 business developers",
       "Created an interactive landing site for the UMass Entrepreneurship Club using React, CSS, and Netlify CMS, along with 2 other software developers, 1 tech lead, and 1 business developer"
     ],
-    "logo": "BUILD"
+    "logo": "BUILD",
+    "techStack": ["Django", "TailwindCSS", "React", "Netlify"]
   },
   {
     "title": "President",
@@ -85,7 +115,8 @@
       "Designed ID cards & certificates for speakers and volunteers",
       "Coordinated with other departments of the Organizing Committee"
     ],
-    "logo": "TEDx@DPSRKP"
+    "logo": "TEDx@DPSRKP",
+    "techStack": ["AdobeIndesign", "AdobePhotoshop", "AdobeIllustrator"]
   },
   {
     "title": "Honorary Advisor",
@@ -97,6 +128,7 @@
       "Took part in promoting space exploration and colonization to peers",
       "Advised the executive team regarding new focuses for the club"
     ],
-    "logo": "Aeross"
+    "logo": "Aeross",
+    "techStack": ["Blender", "AdobePhotoshop", "AdobeIllustrator"]
   }
 ]
